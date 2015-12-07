@@ -1,5 +1,5 @@
 
-/* 
+/*
  *  Some useful numbers...
  *
  *  When font-size is 1em/12pt/16px/100%:
@@ -225,7 +225,7 @@ td, th {
     clear: both;
     background-color: #FFF;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: 100%;
     width: 51em; /* = 8.5in at 12pt (1em) */
     min-height: 66em; /* = 11in at 12pt (1em) */
@@ -450,14 +450,14 @@ td, th {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-		
-}            
+
+}
 
 .whos-on-first-look-at-display  {
 	background-color: black;
 	color: white;
 }
-                            
+
 .whos-on-first-step1-table td table td
 {
 	font-size: 1em;
@@ -620,7 +620,7 @@ td, th {
     display: inline-table;
     margin-top: 1em;
     margin-bottom: 1em;
-    width: 15.3em;
+    width: 15em;
     font-size: 0.9em;
 }
 
@@ -876,7 +876,7 @@ td, th {
     img {
         max-width: 100% !important;
     }
-    
+
     @page {
         margin: 0;
     }
