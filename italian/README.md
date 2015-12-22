@@ -2,6 +2,8 @@ Keep Talking and Nobody Explodes
 ================================
 > Italian translation
 
+http://bombmanual.github.io/italian/
+
 Feel free to collaborate to this project
 
 # Notice
