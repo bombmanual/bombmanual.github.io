@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   viewBox="0 0 275 200"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg3587"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="legend.svg">
+  <metadata
+     id="metadata3623">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3621" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview3619"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="2.36"
+     inkscape:cx="223.41234"
+     inkscape:cy="145.05298"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3587">
+    <sodipodi:guide
+       position="148.72881,214.40678"
+       orientation="1,0"
+       id="guide3629" />
+  </sodipodi:namedview>
+  <rect
+     x="2"
+     y="2"
+     width="250"
+     height="180"
+     stroke="black"
+     fill="none"
+     stroke-width="2"
+     stroke-dasharray=""
+     id="rect3589" />
+  <line
+     x1="20"
+     x2="130"
+     y1="30"
+     y2="30"
+     stroke="black"
+     stroke-width="3"
+     stroke-dasharray="15,10,4,10"
+     fill="none"
+     id="line3591" />
+  <line
+     x1="20"
+     x2="130"
+     y1="70"
+     y2="70"
+     stroke="black"
+     stroke-width="3"
+     stroke-dasharray=""
+     fill="none"
+     id="line3593" />
+  <line
+     x1="20"
+     x2="130"
+     y1="110"
+     y2="110"
+     stroke="black"
+     stroke-width="3"
+     stroke-dasharray="3"
+     fill="none"
+     id="line3595" />
+  <line
+     x1="20"
+     x2="130"
+     y1="150"
+     y2="150"
+     stroke="black"
+     stroke-width="8"
+     stroke-dasharray="8"
+     fill="none"
+     id="line3597" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="149.15254"
+     y="153.38982"
+     id="text3625"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3627"
+       x="149.15254"
+       y="153.38982"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">LED encendido</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="148.72881"
+     y="26.271187"
+     id="text3631"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3633"
+       x="148.72881"
+       y="26.271187"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">El cable tiene</tspan><tspan
+       sodipodi:role="line"
+       x="148.72881"
+       y="38.771187"
+       id="tspan3635"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">color rojo</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="149.15253"
+     y="66.525429"
+     id="text3637"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3639"
+       x="149.15253"
+       y="66.525429"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">El cable tiene</tspan><tspan
+       sodipodi:role="line"
+       x="149.15253"
+       y="79.025429"
+       id="tspan3641"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">color azul</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="149.15253"
+     y="106.35594"
+     id="text3643"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3645"
+       x="149.15253"
+       y="106.35594"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">Tiene el </tspan><tspan
+       sodipodi:role="line"
+       x="149.15253"
+       y="119.48468"
+       id="tspan3647"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:'Special Elite';-inkscape-font-specification:'Special Elite'">símbolo ★</tspan></text>
+</svg>
