@@ -9,7 +9,7 @@ $(document).ready(function () {
             currentPage++;
             $(".page-footer", $(this)).each(function (index) {
                 if ($(this).hasClass("no-auto-footer") == false) {
-                    $(this).html("Page " + currentPage + " of " + pageCount);
+                    $(this).html("Pagina " + currentPage + " di " + pageCount);
                 }
             });
 			
