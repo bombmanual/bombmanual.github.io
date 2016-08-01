@@ -1,4 +1,4 @@
-Manual de Desarmamento de Bombas
+Manual de Desarmamento de Bombas 
 =======================
 
 Tradução ao português do Brasil do manual de «Keep Talking And Nobody Explodes»
