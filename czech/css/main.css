@@ -232,8 +232,8 @@ td, th {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    width: 51em; /* = 8.5in at 12pt (1em) */
-    min-height: 66em; /* = 11in at 12pt (1em) */
+    width: 49.8em; /* = 8.3in at 12pt (1em) */
+    min-height: 70.2em; /* = 11.7in at 12pt (1em) */
 }
 @media print {
     .page {
@@ -243,38 +243,45 @@ td, th {
         max-width: none;
         min-height: initial;
 
-        width: 51em; /* = 8.5in at 12pt (1em) */
-        height: 66em; /* = 11in at 12pt (1em) */
+        width: 49.8em; /* = 8.3in at 12pt (1em) */
+        height: 70.2em; /* = 11.7in at 12pt (1em) */
         page-break-before: always;
     }
 }
 
 .page-bg-01 {
     background-image: url("../img/page-bg-noise-01.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-02 {
     background-image: url("../img/page-bg-noise-02.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-03 {
     background-image: url("../img/page-bg-noise-03.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-04 {
     background-image: url("../img/page-bg-noise-04.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-05 {
     background-image: url("../img/page-bg-noise-05.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-06 {
     background-image: url("../img/page-bg-noise-06.png");
+    background-size: 100% 100%;
 }
 
 .page-bg-07 {
     background-image: url("../img/page-bg-noise-07.png");
+    background-size: 100% 100%;
 }
 
 @media print {
@@ -284,8 +291,8 @@ td, th {
 }
 
 .page-content {
-    margin: 4.5em 8.82% 0; /* = 0.75in ~0.75in 0 at 12pt (1em) */
-    min-height: 57em; /* Leaving 3em at the bottom for footer (0.75in) */
+    margin: 4.5em 6.83% 0; /* = 0.75in ~0.75in 0 at 12pt (1em) */
+    min-height: 60em; /* Leaving 3em at the bottom for footer (0.75in) */
 }
 
 .page-header {
@@ -322,7 +329,7 @@ td, th {
 .absolute-footer {
     position: relative;
     height: 0;
-    top: 63em; /* = 10.5in at 12pt (1em) */
+    top: 66em; /* = 10.5in at 12pt (1em) */
     display: none;
 }
 
@@ -455,7 +462,6 @@ td, th {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .whos-on-first-look-at-display  {
@@ -487,7 +493,7 @@ td, th {
 }
 
 .whos-on-first-step2-table {
-    width: 105%;
+    width: 100%;
 }
 
 .whos-on-first-step2-table th {
@@ -498,7 +504,7 @@ td, th {
 }
 
 .whos-on-first-step2-table td {
-    font-size: .78em;
+    font-size: .71em;
 }
 
 .keypad-table {
