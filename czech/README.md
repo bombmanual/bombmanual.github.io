@@ -1,0 +1,3 @@
+BombManual.com translated file
+==============================
+
