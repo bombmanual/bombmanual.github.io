@@ -38,6 +38,11 @@ textarea {
     }
 }
 
+@font-face {
+	font-family: 'Special Elite';
+	src: url(SpecialElite.ttf);
+}
+
 html {
     font-family: 'Special Elite', 'Courier New', monospace;
     font-size: 1em;
