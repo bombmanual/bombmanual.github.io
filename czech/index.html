@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keep Talking and Nobody Explodes v. 1</title>
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48421906-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <div id="ManualContent">
+    <div class="section">
+
+    <div class="page section-title">
+        <div style="position:relative; height:0;">&nbsp;</div>
+        <div class="page-footer absolute-footer no-auto-footer">Revize 3</div>
+        <div class="page-content">
+            <img src="img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
+            <h1 style="font-size: 1em; font-weight: normal; margin: 3.85em auto 0;"><span style="font-size: 9.2em; line-height: 1.13em;">MANUÁL</span><br /><span style="font-size: 4.0em; line-height: 0em;">KE ZNEŠKODNĚNÍ</span><br /><span style="font-size: 10.9em; line-height: 1.1em;">BOMBY</span></h1>
+            <h2 style="margin: 1.2em auto; text-decoration: none; line-height: 1em; font-size: 2.8em;">Verze 1<br />
+                <span style="font-size: 0.57em; font-weight: normal;">Ověřovací kód: 241</span><br /></h2>
+            <span style="font-size: 1em; font-weight: normal;">Neoficiální český překlad</span>
+        </div>
+        <div class="page-footer relative-footer no-auto-footer">Revize 3</div>
+    </div>
+</div><div class="section">
+    <div class="section">
+    <div class="page section-title">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Úvod</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
+
+            <p style="font-style:italic;">Vítejte v nebezpečném a náročném světě zneškodňování bomb.</p>
+            <p style="font-style:italic;">Pečlivě si prostudujte tento manuál; <em style="font-style:italic;">Vy jste tady expert</em>. Na těchto stránkách naleznete vše potřebné k úspěšnému zneškodnění i těch nejzákeřnějších bomb.<br />A pamatujte &ndash; jedno malé přehlédnutí a mohlo by být po všem!</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Zneškodňování bomby</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h1>Zneškodňování bomby</h1>
+
+            <p>Bomba vybuchne, pokud časovač dojde k 0:00 nebo nebo pokud se dopustíte příliš mnoha chyb. Jediná možnost, jak bombu zneškodnit, je úspěšné deaktivovat všechny moduly dříve, než vyprší čas.</p>
+
+            <div class="bomb-diagram">
+                <span class="diagram-label">Vzorová bomba</span><br />
+                <table><tr><td><img src="img/Bomb.svg" class="bomb-diagram-front" /><br />Předek</td><td><img src="img/BombSide.svg" class="bomb-diagram-side" /><br />Bok</td></tr></table>
+            </div>
+
+            <h3>Moduly</h3>
+            <p>Každá bomba se skládá až z 11 modulů, které musí být deaktivovány. Každý modul je nezávislý a může být deaktivován v libovolném pořadí.</p>
+            <p>Instrukce k deaktivaci modulů naleznete v kapitole 1. &bdquo;Potřebné&ldquo; moduly jsou speciální případ a jsou popsány v kapitole 2.</p>
+
+
+            <h3>Chyby</h3>
+            <div class="timer-diagram">Ukazatel chyb<br /><img src="img/TimerComponent.svg"/></div>
+            <p>Pokud zneškodňující udělá chybu, bomba ji zaznamená a zobrazí na ukazateli nad časovačem. Bomby s ukazatelem chyb explodují při třetí chybě. Časovač začne odpočítávat rychleji, je-li zaznamenána chyba.</p>
+            <p>Pokud nad časovačem není ukazatel chyb, bomba vybuchne při první chybě nenechajíc prostor pro omyly.</p>
+
+            <h3>Sběr informací</h3>
+            <p>Některé instrukce pro zneškodnění vyžadují specifické informace o bombě, jako například sériové číslo. Tento druh informací naleznete typicky na vrchu, spodku nebo stranách krytu. Vizte Přílohu A, B a C pro instrukce k identifikaci, které mohou být užitečné k deaktivaci některých modulů.</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page section-title">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Kapitola 1: Moduly</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
+            <img src="img/Component.svg" class="diagram" />
+            <div class="new-block-formatting-context">
+                <h1>Kapitola 1: Moduly</h1>
+                <p>Moduly poznáte podle LED diody v pravém horním rohu. Pokud dioda svítí zeleně, modul je deaktivován.</p>
+                <p>Všechny moduly je potřeba deaktivovat k úspěšnému zneškodnění bomby.</p>
+            </div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Vodiče</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/WireComponent.svg" class="diagram" />
+            <h2>Na téma Vodiče</h2>
+            <p class="flavour-text">
+                Vodiče jsou mízou elektroniky! Počkat, ne, elektřina je mízou. Vodiče jsou spíše jako tepny. Žíly? Na tom nezáleží&hellip;</p>
+
+            <ul>
+                <li>Modul s vodiči může mít 3 &ndash; 6 drátů.</li>
+                <li>Pouze <em>jeden</em> správný drát je potřeba přestřihnout k deaktivaci modulu.</li>
+
+                <li>Pořadí drátů začíná od prvního shora.</li>
+            </ul>
+
+            <table>
+                <tr><td><strong><em>3 dráty:</em></strong>  <br />Pokud žádný drát není červený, přestřihnete druhý drát.<br />Jinak, pokud je poslední drát bílý, přestřihněte poslední drát.<br />Jinak, pokud je více než jeden drát modrý, přestřihněte poslední modrý drát.<br />Jinak, přestřihněte poslední drát.</tr>
+                <tr><td><strong><em>4 dráty:</em></strong><br />Pokud je více než jeden drát červený a poslední číslice sériového čísla je lichá, přestřihněte poslední červený drát.<br />Jinak, pokud je poslední drát žlutý a žádný drát není červený, přestřihněte první drát.<br />Jinak, pokud je právě jeden drát modrý, přestřihněte první drát.<br />Jinak, pokud je více než jeden drát žlutý, přestřihněte poslední drát.<br />Jinak, přestřihněte druhý drát.</tr>
+                <tr><td><strong><em>5 drátů:</em></strong><br />Pokud je poslední drát černý a poslední číslice sériového čísla je lichá, přestřihněte čtvrtý drát.<br />Jinak, pokud je právě jeden drát červený a více než jeden drát je žlutý, přestřihněte první drát.<br />Jinak, pokud žádný drát není černý, přestřihněte druhý drát.<br />Jinak, přestřihněte první drát.</tr>
+                <tr><td><strong><em>6 drátů:</em></strong><br />Pokud žádný drát není žlutý a poslední číslice sériového čísla je lichá, přestřihněte třetí drát.<br />Jinak, pokud je právě jeden drát žlutý a více než jeden drát je bílý, přestřihněte čtvrtý drát.<br />Jinak, pokud žádný drát není červený, přestřihněte poslední drát.<br />Jinak, přestřihněte čtvrtý drát.</tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Tlačítko</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/ButtonComponent.svg" class="diagram" />
+            <h2>Na téma Tlačítka</h2>
+            <p class="flavour-text">Možná si myslíte, že tlačítko, které vás nabádá ke stisknutí, je celkem přímočaré. To je přesně ten způsob myšlení, který dostává lidi do povětří.</p>
+            <p class="appendix-reference">Vizte Přílohu A pro identifikaci kontrolek.<br />Vizte Přílohu B pro identifikaci baterií.</p>
+            <p>Postupujte podle těchto pravidel v pořadí, ve kterém jsou uvedeny. Vykonejte první vyhovující akci:</p>
+            <ol>
+                <li>Pokud je tlačítko modré a je na něm nápis &bdquo;Abort&ldquo;, podržte tlačítko a odkažte se na &bdquo;Uvolnění stisknutého tlačítka&ldquo;.</li>
+                <li>Pokud je na bombě více než 1 baterie a na tlačítku je nápis &bdquo;Detonate&ldquo;, stiskněte a ihned uvolněte tlačítko.</li>
+                <li>Pokud je tlačítko bílé a na bombě svítí kontrolka označená CAR, podržte tlačítko a odkažte se na &bdquo;Uvolnění stisknutého tlačítka&ldquo;.</li>
+                <li>Pokud je na bombě více než 2 baterie a na bombě svítí kontrolka s nápisem FRK, stiskněte a ihned uvolněte tlačítko.</li>
+                <li>Pokud je tlačítko žluté, podržte tlačítko a odkažte se na &bdquo;Uvolnění stisknutého tlačítka&ldquo;.</li>
+                <li>Pokud je tlačítko červené a je na něm nápis &bdquo;Hold&ldquo;, stiskněte a ihned uvolněte tlačítko.</li>
+                <li>Pokud neplatí nic z výše uvedeného, podržte tlačítko a odkažte se na &bdquo;Uvolnění stisknutého tlačítka&ldquo;.</li>
+            </ol>
+            <h3>Uvolnění stisknutého tlačítka</h3>
+            <p>Pokud stisknete tlačítko, na pravé straně modulu se rozsvítí barevný proužek. Na základě jeho barvy musíte uvolnit tlačítko v určený čas:</p>
+            <ul>
+                <li><em>Modrý proužek:</em> uvolnit, když časovač má číslici 4 na libovolné pozici.</li>
+                <li><em>Bílý proužek:</em> uvolnit, když časovač má číslici 1 na libovolné pozici.</li>
+                <li><em>Žlutý proužek:</em> uvolnit, když časovač má číslici 5 na libovolné pozici.</li>
+                <li><em>Libovolná jiná barva:</em> uvolnit, když časovač má číslici 1 na libovolné pozici.</li>
+            </ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Klávesnice</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/KeypadComponent.svg" class="diagram" />
+            <h2>Na téma Klávesnic</h2>
+            <p class="flavour-text">Nejsem si jistý, co jsou ty symboly zač, ale mám podezření, že to má něco společného s okultismem.</p>
+            <ul>
+                <li>Pouze jeden ze spodních sloupců obsahuje všechny čtyři symboly z klávesnice.</li>
+                <li>Stiskněte všechny čtyři tlačítka v pořadí, ve kterém se jejich symboly vyskytují od shora dolů v daném sloupci.</li>
+            </ul>
+            <br />
+            <table class="keypad-table">
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/1-copyright.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/13-at.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/8-pumpkin.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/27-tracks.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/12-squigglyn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/22-rightc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/14-ae.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/15-meltedthree.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/19-dragon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/18-nwithhat.png"></img></td></tr>
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/2-filledstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/6-omega.png"></img></td></tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Simon říká</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/SimonComponent.svg" class="diagram" />
+            <h2>Na téma Simon říká</h2>
+            <p class="flavour-text">Tohle je jako jedna z těch hraček, se kterými jste si hráli jako malí, kde se musí zopakovat vzor, který se objeví. Až na to, že tohle je nejspíš zmetek koupený v bazaru.</p>
+            <ol>
+                <li>Jedno ze čtyř barevných tlačítek bude blikat.</li>
+                <li>Pomocí správné tabulky dole, stiskněte tlačítko odpovídající barvy.</li>
+                <li>Původní tlačítko blikne následováno dalším. Pomocí mapovací tabulky opakujte tuto sekvenci.</li>
+                <li>Sekvence se prodlouží o jednu barvu pokaždé, když správně zadáte sekvenci, dokud se modul nedeaktivuje.</li>
+            </ol>
+            <img src="img/SimonComponent_ColourLegend.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Nahoře: modrá, Vlevo: červená, Vpravo: žlutá, Dole: zelená" />
+
+    <p>Pokud sériové číslo obsahuje samohlásku:<p>
+            <table class="repeaters-table">
+                <tr>
+                    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Červený záblesk</th>
+                    <th>Modrý záblesk</th>
+                    <th>Zelený záblesk</th>
+                    <th>Žlutý záblesk</th>
+                </tr>
+                <tr><th rowspan="3">Tlačítko ke&nbsp;stisknutí:</th><th>Bez&nbsp;chyb</th><td>Modrá</td><td>Červená</td><td>Žlutá</td><td>Zelená</td></tr><th>1&nbsp;chyba</th><td>Žlutá</td><td>Zelená</td><td>Modrá</td><td>Červená</td></tr><th>2&nbsp;chyby</th><td>Zelená</td><td>Červená</td><td>Žlutá</td><td>Modrá</td></tr>
+            </table>
+
+    <p>Pokud sériové číslo <em>ne</em>obsahuje samohlásku:<p>
+            <table class="repeaters-table">
+                <tr>
+                    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Červený záblesk</th>
+                    <th>Modrý záblesk</th>
+                    <th>Zelený záblesk</th>
+                    <th>Žlutý záblesk</th>
+                </tr>
+                <tr><th rowspan="3">Tlačítko ke&nbsp;stisknutí:</th><th>Bez&nbsp;chyb</th><td>Modrá</td><td>Žlutá</td><td>Zelená</td><td>Červená</td></tr><th>1&nbsp;chyba</th><td>Červená</td><td>Modrá</td><td>Žlutá</td><td>Zelená</td></tr><th>2&nbsp;chyby</th><td>Žlutá</td><td>Zelená</td><td>Modrá</td><td>Červená</td></tr>
+            </table>
+
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+
+<div class="section">
+        <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Kdo je na řadě</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/WhosOnFirstComponent.svg" class="diagram" />
+            <h2>Na téma Kdo je řadě</h2>
+            <p class="flavour-text">Tento výmysl je jako něco z klasického skeče, což by mohlo být vtipné nebýt to připojené k bombě. Budu stručný, protože slova vše jenom komplikují.</p>
+            <ol>
+                <li>Přečtěte si nápis na displeji a podle kroku 1 určete, který nápis na tlačítku máte <em>přečíst</em>.</li>
+                <li>Na základě nápisu na tlačítku, podle kroku 2 určete, které tlačítko máte <em>stisknout</em>.</li>
+                <li>Opakujte dokud se modul nedeaktivuje.</li>
+            </ol>
+            <h3>Krok 1:</h3>
+            <p>Na základě displeje <em>přečtěte</em> popisek na určitém tlačítku a pokračujte na krok 2:</p>
+            <table class="whos-on-first-step1-table">
+            <tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YES</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">FIRST</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">OKAY</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SAYS</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NOTHING</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2"><br/></th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">BLANK</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NO</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEAD</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">READ</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">RED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">REED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOUR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">UR</th></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THERE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEIR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">C</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">CEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td>          </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Kdo je na řadě</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h3>Krok 2:</h3>
+            <p>Za použití popisku z kroku 1, <em>stiskněte první tlačítko</em> z&nbsp;odpovídajícího seznamu, které naleznete:</p>
+            <table class="whos-on-first-step2-table">
+                <tr><th>"READY":</th><td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY, NO, FIRST, UHHH, NOTHING, WAIT</td></tr><tr><th>"FIRST":</th><td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td></tr><tr><th>"NO":</th><td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO, MIDDLE</td></tr><tr><th>"BLANK":</th><td>WAIT, RIGHT, OKAY, MIDDLE, BLANK, PRESS, READY, NOTHING, NO, WHAT, LEFT, UHHH, YES, FIRST</td></tr><tr><th>"NOTHING":</th><td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING, READY</td></tr><tr><th>"YES":</th><td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES, LEFT, BLANK, NO, WAIT</td></tr><tr><th>"WHAT":</th><td>UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT</td></tr><tr><th>"UHHH":</th><td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST</td></tr><tr><th>"LEFT":</th><td>RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING</td></tr><tr><th>"RIGHT":</th><td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST</td></tr><tr><th>"MIDDLE":</th><td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE, RIGHT, FIRST, UHHH, YES</td></tr><tr><th>"OKAY":</th><td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY, LEFT, READY, BLANK, PRESS, WHAT, RIGHT</td></tr><tr><th>"WAIT":</th><td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT, NOTHING, READY, RIGHT, MIDDLE</td></tr><tr><th>"PRESS":</th><td>RIGHT, MIDDLE, YES, READY, PRESS, OKAY, NOTHING, UHHH, BLANK, LEFT, FIRST, WHAT, NO, WAIT</td></tr><tr><th>"YOU":</th><td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU, UH UH, LIKE, DONE, U</td></tr><tr><th>"YOU ARE":</th><td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, UH UH, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td></tr><tr><th>"YOUR":</th><td>UH UH, YOU ARE, UH HUH, YOUR, NEXT, UR, SURE, U, YOU'RE, YOU, WHAT?, HOLD, LIKE, DONE</td></tr><tr><th>"YOU'RE":</th><td>YOU, YOU'RE, UR, NEXT, UH UH, YOU ARE, U, YOUR, WHAT?, UH HUH, SURE, DONE, LIKE, HOLD</td></tr><tr><th>"UR":</th><td>DONE, U, UR, UH HUH, WHAT?, SURE, YOUR, HOLD, YOU'RE, LIKE, NEXT, UH UH, YOU ARE, YOU</td></tr><tr><th>"U":</th><td>UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U, YOU, LIKE, HOLD, YOU ARE, YOUR</td></tr><tr><th>"UH HUH":</th><td>UH HUH, YOUR, YOU ARE, YOU, DONE, HOLD, UH UH, NEXT, SURE, LIKE, YOU'RE, UR, U, WHAT?</td></tr><tr><th>"UH UH":</th><td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH, DONE, YOU, UH HUH, LIKE, YOUR, SURE, HOLD, WHAT?</td></tr><tr><th>"WHAT?":</th><td>YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?, SURE</td></tr><tr><th>"DONE":</th><td>SURE, UH HUH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, UH UH, DONE</td></tr><tr><th>"NEXT":</th><td>WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT, LIKE, DONE, YOU ARE, UR, YOU'RE, U, YOU</td></tr><tr><th>"HOLD":</th><td>YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD, UH HUH, YOUR, LIKE</td></tr><tr><th>"SURE":</th><td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE, U, WHAT?, NEXT, YOUR, UH UH</td></tr><tr><th>"LIKE":</th><td>YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE, SURE, YOU ARE, YOUR</td></tr>            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Paměť</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/MemoryComponent.svg" class="diagram" />
+            <h2>Na téma Paměti</h2>
+            <p class="flavour-text">Paměť je křehká věc, ale to i všechno ostatní, když bomba vybuchne. Takže dávejte pozor!</p>
+            <ul>
+                <li>Stiskněte správné tlačítko k přepnutí modulu do dalšího stupně. Dokončete všechny stupně k deaktivaci modulu.</li>
+                <li>Stiskem špatného tlačítka se modul resetuje zpět do 1.&nbsp;stupně.</li>
+                <li>Pozice tlačítek jsou řazeny zleva doprava.</li>
+            </ul>
+            <div class="memory-rules">
+                <h4>Stupeň 1:</h4>
+                <p>Pokud je na displeji 1, stiskněte tlačítko na druhé pozici.<br />Pokud je na displeji 2, stiskněte tlačítko na druhé pozici.<br />Pokud je na displeji 3, stiskněte tlačítko na třetí pozici.<br />Pokud je na displeji 4, stiskněte tlačítko na čtvrté pozici.<br /></p>
+                <h4>Stupeň 2:</h4>
+                <p>Pokud je na displeji 1, stiskněte tlačítko s popiskem &bdquo;4&ldquo;.<br />Pokud je na displeji 2, stiskněte tlačítko na stejné pozici jako ve stupni 1.<br />Pokud je na displeji 3, stiskněte tlačítko na první pozici.<br />Pokud je na displeji 4, stiskněte tlačítko na stejné pozici jako ve stupni 1.<br /></p>
+                <h4>Stupeň 3:</h4>
+                <p>Pokud je na displeji 1, stiskněte tlačítko se stejným popiskem jako ve stupni 2.<br />Pokud je na displeji 2, stiskněte tlačítko se stejným popiskem jako ve stupni 1.<br />Pokud je na displeji 3, stiskněte tlačítko na třetí pozici.<br />Pokud je na displeji 4, stiskněte tlačítko s popiskem &bdquo;4&ldquo;.<br /></p>
+                <h4>Stupeň 4:</h4>
+                <p>Pokud je na displeji 1, stiskněte tlačítko na stejné pozici jako ve stupni 1.<br />Pokud je na displeji 2, stiskněte tlačítko na první pozici.<br />Pokud je na displeji 3, stiskněte tlačítko na stejné pozici jako ve stupni 2.<br />Pokud je na displeji 4, stiskněte tlačítko na stejné pozici jako ve stupni 2.<br /></p>
+                <h4>Stupeň 5:</h4>
+                <p>Pokud je na displeji 1, stiskněte tlačítko se stejným popiskem jako ve stupni 1.<br />Pokud je na displeji 2, stiskněte tlačítko se stejným popiskem jako ve stupni 2.<br />Pokud je na displeji 3, stiskněte tlačítko se stejným popiskem jako ve stupni 4.<br />Pokud je na displeji 4, stiskněte tlačítko se stejným popiskem jako ve stupni 3.<br /></p>
+            </div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page morse-code">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Morseovka</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/MorseCodeComponent.svg" class="diagram" />
+            <h2>Na téma Morseovky</h2>
+            <p class="flavour-text">Zastaralá verze námořní komunikace? Co dál? Alespoň je to pravá Morseovka, takže dávejte pozor a třeba se něco naučíte.</p>
+            <ul>
+                <li>Interpretujte signál z blikajícího světla pomocí tabulky s Morseovkou a přečtěte jedno slovo z tabulky.</li>
+                <li>Signál se bude opakovat s dlouhou pauzou mezi jednotlivými opakováními.</li>
+                <li>Jakmile je slovo identifikováno, nastavte odpovídající frekvenci a stiskněte tlačítko pro vysílání (TX).</li>
+            </ul>
+
+            <img id="morseCodeChart" src="img/MorseCode/International_Morse_Code.svg"/>
+
+            <table>
+                <tr><th>Pokud slovo je:</th><th>Použijte frekvenci:</th></tr>
+                <tr><td>shell</td><td>3.505 MHz</td></tr><tr><td>halls</td><td>3.515 MHz</td></tr><tr><td>slick</td><td>3.522 MHz</td></tr><tr><td>trick</td><td>3.532 MHz</td></tr><tr><td>boxes</td><td>3.535 MHz</td></tr><tr><td>leaks</td><td>3.542 MHz</td></tr><tr><td>strobe</td><td>3.545 MHz</td></tr><tr><td>bistro</td><td>3.552 MHz</td></tr><tr><td>flick</td><td>3.555 MHz</td></tr><tr><td>bombs</td><td>3.565 MHz</td></tr><tr><td>break</td><td>3.572 MHz</td></tr><tr><td>brick</td><td>3.575 MHz</td></tr><tr><td>steak</td><td>3.582 MHz</td></tr><tr><td>sting</td><td>3.592 MHz</td></tr><tr><td>vector</td><td>3.595 MHz</td></tr><tr><td>beats</td><td>3.600 MHz</td></tr>         </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page venn-wires">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Komplikované vodiče</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/VennWireComponent.svg" class="diagram" />
+            <h2>Na téma Komplikovaných vodičů</h2>
+            <p class="flavour-text">Tyto vodiče nejsou jako ostatní. Některé mají proužky! To z nich dělá úplně jiné. Dobrá zpráva je, že jsme našli stručný soubor instrukcí, co dělat. Možná až moc stručný&hellip;</p>
+            <ul>
+                <li>Podívejte se na každý drát: je zde LED dioda nad drátem a místo na symbol &bdquo;★&ldquo; pod drátem.</li>
+                <li>Pro <em>každou</em> kombinaci drátu/LED/symbolu, použijte Vennův diagram k rozhodnutí, zda drát přestřihnout nebo nepřestřihnout.</li>
+                <li>Každý drát může mít proužky různých barev.</li>
+            </ul>
+
+            <div>
+                <object id="venndiagram" width="100%" height="100%" data="img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
+            </div>
+            <div>
+                <object width="100%" height="100%" id="vennlegend" data="img/gen/venn/legend.svg" type="image/svg+xml"></object>
+                <table id="venntable">
+                    <tr><th>Písmeno</th><th>Instrukce</th></tr>
+                    <tr><td>C</td><td>Přestřihnout drát</td></tr>
+                    <tr><td>D</td><td>Nestříhat drát</td></tr>
+                    <tr><td>S</td><td>Přestřihnout drát, pokud poslední číslice sériového čísla je sudá</td></tr>
+                    <tr><td>P</td><td>Přestřihnout drát, pokud má bomba paralelní port</td></tr>
+                    <tr><td>B</td><td>Přestřihnout drát, pokud má bomba dvě a více baterií</td></tr>
+                </table>
+            </div>
+            <div style="clear:both;"/>
+            <p class="appendix-reference">Vizte Přílohu B pro identifikaci baterií.<br />Vizte Přílohu C pro identifikaci portů.</p>        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page wire-sequence">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Posloupnosti vodičů</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/WireSequenceComponent.svg" class="diagram" />
+            <h2>Na téma Posloupností vodičů</h2>
+            <p class="flavour-text">Je těžké říct, jak tento mechanismus funguje. Technicky je to působivé, ale musí existovat jednodušší cesta jak uspořádat devět drátů.</p>
+            <ul>
+                <li>Uvnitř tohoto modulu je několik panelů s dráty, ale v každé chvíli je vidět jen jeden panel. Na další panel se přepnete pomocí tlačítka dolů a na předchozí pomocí tlačítka nahoru.</li>
+                <li>Nepřepínejte na další panel, dokud si nebudete jisti, že jste přestřihli všechny nezbytné dráty na aktuálním panelu.</li>
+                <li>Přestřihněte dráty dle instrukcí v následující tabulce. Výskyty drátů jsou kumulativní napříč všemi panely v rámci modulu.</li>
+            </ul>
+            <div style="clear:both"></div>
+
+            <table class='red-table'><tr><th colspan='2' class='header'>Výskyty červeného drátu</th></tr><tr><th class='first-col'>Výskyt drátu</th><th class='second-col'>Přestřihnout pokud je připojen&nbsp;k:</th></tr><tr><td class='first-col'>První&nbsp;červený výskyt</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Druhý&nbsp;červený výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Třetí&nbsp;červený výskyt</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Čtvrtý&nbsp;červený výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Pátý&nbsp;červený výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Šestý&nbsp;červený výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Sedmý&nbsp;červený výskyt</td><td class='second-col'>A, B or C</td></tr><tr><td class='first-col'>Osmý&nbsp;červený výskyt</td><td class='second-col'>A or B</td></tr><tr><td class='first-col'>Devátý&nbsp;červený výskyt</td><td class='second-col'>B</td></tr></table>
+            <table class='blue-table'><tr><th colspan='2' class='header'>Výskyty modrého drátu</th></tr><tr><th class='first-col'>Výskyt drátu</th><th class='second-col'>Přestřihnout pokud je připojen&nbsp;k:</th></tr><tr><td class='first-col'>První&nbsp;modrý výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Druhý&nbsp;modrý výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Třetí&nbsp;modrý výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Čtvrtý&nbsp;modrý výskyt</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Pátý&nbsp;modrý výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Šestý&nbsp;modrý výskyt</td><td class='second-col'>B or C</td></tr><tr><td class='first-col'>Sedmý&nbsp;modrý výskyt</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Osmý&nbsp;modrý výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Devátý&nbsp;modrý výskyt</td><td class='second-col'>A</td></tr></table>
+            <table class='black-table'><tr><th colspan='2' class='header'>Výskyty černého drátu</th></tr><tr><th class='first-col'>Výskyt drátu</th><th class='second-col'>Přestřihnout pokud je připojen&nbsp;k:</th></tr><tr><td class='first-col'>První&nbsp;černý výskyt</td><td class='second-col'>A, B or C</td></tr><tr><td class='first-col'>Druhý&nbsp;černý výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Třetí&nbsp;černý výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Čtvrtý&nbsp;černý výskyt</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Pátý&nbsp;černý výskyt</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Šestý&nbsp;černý výskyt</td><td class='second-col'>B or C</td></tr><tr><td class='first-col'>Sedmý&nbsp;černý výskyt</td><td class='second-col'>A or B</td></tr><tr><td class='first-col'>Osmý&nbsp;černý výskyt</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Devátý&nbsp;černý výskyt</td><td class='second-col'>C</td></tr></table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Bludiště</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/MazeComponent.svg" class="diagram" />
+            <h2>Na téma bludišť</h2>
+            <p class="flavour-text">Tohle vypadá jako nějaký druh bludiště, pravděpodobně ukradené z prostírání v restauraci.</p>
+            <ul>
+                <li>Najdi bludiště s odpovídajícími kruhovými značkami.</li>
+                <li>Člověk zneškodňující bombu musí navigovat bílé světlo k červenému trojúhelníku pomocí tlačítek s šipkami.</li>
+                <li><strong>Varování:</strong> Nepřekračujte čáry značené v bludišti. Tyto čáry nejsou na bombě vidět.</li>
+            </ul>
+            <img class="maze" src="img/gen/maze/maze0.svg"/>
+            <img class="maze" src="img/gen/maze/maze1.svg"/>
+            <img class="maze" src="img/gen/maze/maze2.svg"/>
+            <img class="maze" src="img/gen/maze/maze3.svg"/>
+            <img class="maze" src="img/gen/maze/maze4.svg"/>
+            <img class="maze" src="img/gen/maze/maze5.svg"/>
+            <img class="maze" src="img/gen/maze/maze6.svg"/>
+            <img class="maze" src="img/gen/maze/maze7.svg"/>
+            <img class="maze" src="img/gen/maze/maze8.svg"/>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Hesla</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/PasswordComponent.svg" class="diagram" />
+            <h2>Na téma Hesel</h2>
+            <p class="flavour-text">Naštěstí toto heslo nesplňuje vládní standardy zabezpečení: 22 znaků, velká a malá písmena, čísla v náhodném pořadí bez palindromů delších než 3.</p>
+            <ul>
+                <li>Tlačítka nad a pod každým písmenem rotují mezi možnostmi pro danou pozici.</li>
+                <li>Jen jedna kombinace dostupných písmen souhlasí s heslem dole.</li>
+                <li>Stiskněte tlačítko &bdquo;submit&ldquo; jakmile je nastaveno správné slovo.</li>
+            </ul>
+            <table class="password-table">
+                <tr><tr><td>about</td><td>after</td><td>again</td><td>below</td><td>could</td></tr><tr><td>every</td><td>first</td><td>found</td><td>great</td><td>house</td></tr><tr><td>large</td><td>learn</td><td>never</td><td>other</td><td>place</td></tr><tr><td>plant</td><td>point</td><td>right</td><td>small</td><td>sound</td></tr><tr><td>spell</td><td>still</td><td>study</td><td>their</td><td>there</td></tr><tr><td>these</td><td>thing</td><td>think</td><td>three</td><td>water</td></tr><tr><td>where</td><td>which</td><td>world</td><td>would</td><td>write</td></tr>            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page section-title">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Kapitola 2: Potřebné moduly</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
+            <img src="img/NeedyComponent.svg" class="diagram" />
+            <div class="new-block-formatting-context">
+                <h1>Kapitola 2: Potřebné moduly</h1>
+                <p>Potřebné moduly nemohou být deaktivovány, ale představují opakující se nebezpečí.</p>
+                <p>Potřebné moduly mohou být identifikovány podle malého dvoumístného časovače nahoře uprostřed. Interakce s bombou může zapříčinit jejich aktivaci. Jakmile jsou aktivované, tyto moduly vyžadují pravidelnou pozornost než jejich časovač vyprší, abyste předešli vzniku chyby.</p>
+                <p>Buďte obezřetní: potřebné moduly se mohou kdykoli reaktivovat.</p>
+            </div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Upouštění páry</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/NeedyVentComponent.svg" class="diagram" />
+            <h2>Na téma Upouštění páry</h2>
+            <p class="flavour-text">Hackování počítačů je těžká práce! Dobře, většinou je. Tuhle práci by pravděpodobně zvládla i slepice, kdyby okolo klávesy měla nasypané zrní.</p>
+            <ul>
+                <li>Odpovídejte na výzvy počítače pomocí tlačítek &bdquo;Y&ldquo; pro &bdquo;Ano&ldquo; nebo &bdquo;N&ldquo; pro &bdquo;Ne&ldquo;.</li>
+            </ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Vybíjení kondenzátoru</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/NeedyDischargeComponent.svg" class="diagram" />
+            <h2>Na téma Vybíjení kondenzátoru</h2>
+            <p class="flavour-text">Budu hádat, tohle je zde jen proto, aby to vyžadovalo vaši pozornost, protože jinak by to bylo pěkně šmejdové zapojení.</p>
+            <ul>
+                <li>Přidržením páky ve spodní poloze vybijte kondenzátor dříve, než se přetíží.</li>
+            <ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page needy-knob">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Knoflíky</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/NeedyKnobComponent.svg" class="diagram" />
+            <h2>Na téma Knoflíků</h2>
+            <p class="flavour-text">Zbytečně komplikované a nekonečně potřebné. Představte si, že by takové odborné znalosti byly použity k výrobě něčeho jiného než ďábelských hříček.</p>
+            <ul>
+                <li>Knoflík může být otočen do jednoho ze čtyř směrů.</li>
+                <li>Knoflík musí být otočen do správné pozice ve chvíli, kdy časovač modulu dojde k nule.</li>
+                <li>Správná pozice může být určena stavem dvanácti LED diod.</li>
+                <li>Pozice knoflíku je relativní vůči nápisu &bdquo;UP&ldquo;, který označuje horní polohu a může být otočen.</li>
+            </ul>
+            <h3>Konfigurace LED diod</h3>
+
+            <h4>Horní pozice:</h4>
+            <table style="display: inline-table"><tr><td> </td><td> </td><td>X</td><td> </td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr></table>
+            <h4>Dolní pozice:</h4>
+            <table style="display: inline-table"><tr><td> </td><td>X</td><td>X</td><td> </td><td> </td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td> </td><td> </td><td> </td><td>X</td></tr></table>
+            <h4>Levá pozice:</h4>
+            <table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td>X</td><td> </td><td> </td><td>X</td><td>X</td><td>X</td></tr></table><table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td> </td><td> </td><td>X</td><td>X</td><td> </td></tr></table>
+            <h4>Pravá pozice:</h4>
+            <table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td> </td><td> </td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table>            <br>
+            <br>
+            <p class="needy-diagram-label">X = LED dioda svítí</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page appendix-indicators">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Příloha A</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Příloha A: Instrukce k identifikaci kontrolek</h2>
+            <p>Světelné kontrolky s popiskem mohou být nalezeny na stranách krytu bomby.</p>
+            <img src="img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
+            <h3>Běžné kontrolky</h3>
+            <ul>
+                <li>SND</li>
+                <li>CLR</li>
+                <li>CAR</li>
+                <li>IND</li>
+                <li>FRQ</li>
+                <li>SIG</li>
+                <li>NSA</li>
+                <li>MSA</li>
+                <li>TRN</li>
+                <li>BOB</li>
+                <li>FRK</li>
+            </ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page appendix-batteries">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Příloha B</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Příloha B: Instrukce k identifikaci baterií</h2>
+            <p>Běžné typy baterií mohou být nalezeny v pouzdrech na stranách krytu bomby.</p>
+            <table style="margin-top: 1em;">
+                <tr><th>Baterie</th><th>Typ</th></tr>
+                <tr><td><img src="img/appendix-batteries/Battery-AA.svg" style="width: 4.09375em; height: 6.18125em;"></td><td>AA</td></tr>
+                <tr><td><img src="img/appendix-batteries/Battery-D.svg" style="width: 4.09375em; height: 5.553125em;"></td><td>D</td></tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page appendix-ports">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Příloha C</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Příloha C: Instrukce k identifikaci portů</h2>
+            <p>Digitální a analogové porty mohou být nalezeny na stranách krytu bomby.</p>
+            <table>
+                <tr><th>Port</th><th>Označení</th></tr>
+                <tr><td><img src="img/appendix-ports/DVI.svg" style="width: 10.15em;"></td><td>DVI-D</td></tr>
+                <tr><td><img src="img/appendix-ports/Parallel.svg" style="width: 16.1em;"></td><td>Paralelní port</td></tr>
+                <tr><td><img src="img/appendix-ports/PS2.svg" style="width: 5.55em;"></td><td>PS/2</td></tr>
+                <tr><td><img src="img/appendix-ports/RJ45.svg" style="width: 5.2em;"></td><td>RJ-45</td></tr>
+                <tr><td><img src="img/appendix-ports/Serial.svg" style="width: 8.35em;"></td><td>Sériový port</td></tr>
+                <tr><td><img src="img/appendix-ports/StereoRCA.svg" style="width: 5em;"></td><td>Stereo RCA</td></tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>    </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+</body>
+</html>
+<!-- vim: set expandtab: -->
