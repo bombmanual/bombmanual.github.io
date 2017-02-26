@@ -21,6 +21,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+template {
+  display: none;
+}
+
 html,
 button,
 input,
