@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>BombManual unofficial translations</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>BombManual unofficial translations</title>
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
-        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
+    crossorigin="anonymous">
 
-</head>
-<body>
+    <style>
+      .btn-group>.btn:first-child {
+        width: 230px;
+      }
 
-<div class="container">
+      .btn-group>.btn:first-child:last-child {
+        width: 320px;
+      }
+    </style>
 
-  <div class="jumbotron">
-    <h1>Hi, there!</h1>
-    <p>This is currently a work in progress. Feel free to collaborate!</p>
+  </head>
+  <body>
 
-    <p><a class="btn btn-primary btn-lg" href="/pt-br/pt-br.pdf" role="button">Brazilian Portuguese</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/czech" role="button">Czech</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/dutch/dutch.pdf" role="button">Dutch</a></p>
-    <p><a class="btn btn-primary btn-lg" href="http://bombmanual.com" role="button" target="_blank">English</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/german" role="button">German</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/greek/greek.pdf" role="button">Greek</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/italian" role="button">Italian</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/russian" role="button">Russian</a></p>
-    <p><a class="btn btn-primary btn-lg" href="/spanish" role="button">Spanish</a></p>
-  </div>
+    <div class="container">
 
-</div>
+      <div class="jumbotron">
+        <h1>Hi, there!</h1>
+        <p>This is currently a work in progress. Feel free to collaborate!</p>
 
-<!-- "Fork me on GitHub" ribbon -->
-<a href="https://github.com/bombmanual"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-info btn-lg" href="http://bombmanual.com" target="_blank">English <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <button class="btn btn-primary btn-lg disabled">Brazilian Portuguese</button>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 PTR-BR.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/czech">Czech</a>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 CZE.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/dutch">Dutch</a>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 NL.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/german">German</a>
+            <button class="btn btn-default btn-lg disabled">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></button>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <button class="btn btn-primary btn-lg disabled">Greek</button>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 GR.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/italian">Italian</a>
+            <button class="btn btn-default btn-lg disabled">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></button>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/russian">Russian</a>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 RU.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+        <p>
+          <div class="btn-group">
+            <a class="btn btn-primary btn-lg" href="/spanish">Spanish</a>
+            <a class="btn btn-default btn-lg" href="/PDF/Keep Talking and Nobody Explodes v1 ES.pdf">PDF <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></a>
+          </div>
+        </p>
+      </div>
 
-</body>
+    </div>
+
+    <!-- "Fork me on GitHub" ribbon -->
+    <a href="https://github.com/bombmanual"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+  </body>
 </html>
