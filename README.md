@@ -17,3 +17,7 @@ Inofficial BombManual.com Translations
 
 ### Spanish
   * [yeuk0](https://steamcommunity.com/id/yeuk0)
+
+### Swedish
+  * Stefan [’FappaR’](http://steamcommunity.com/id/FappaR) Engdahl
+  * Eric [’eric1894’](http://steamcommunity.com/id/eric1894) Odmyr
