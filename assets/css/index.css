@@ -1,5 +1,6 @@
 body {
 	background-color: #222326;
+	padding: 20px;
 }
 
 h1 {
@@ -51,11 +52,15 @@ a:hover {
 }
 
 .section {
-	margin: auto;
+	margin: 20px auto;
 	border-radius: 32px;
 	background: #fbf8f8;
 	padding: 4px 26px 26px;
 	max-width: 716px;
+}
+
+.linkwrapper {
+	text-align: center;
 }
 
 .button {
@@ -63,17 +68,28 @@ a:hover {
 	border: none;
 	color: white;
 	border-radius: 25px;
-	padding: 8px 32px;
+	padding: 8px 20px;
 	text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 	font-family: Cabin, sans-serif;
-    font-size: 20px;
-    margin: 6px 0px;
-    cursor: pointer;
+  font-size: 20px;
+  margin: 6px 0px;
+  cursor: pointer;
+	width: 180px;
 }
 
 .button:hover {
 	background-color: #ea5d35;
 	color: white;
+}
+
+.button.disabled {
+	cursor: not-allowed;
+	background-color: #777777 !important;
+}
+
+.button.pdf {
+	margin-left: 10px;
+	width: 35px;
 }
