@@ -1,3 +1,0 @@
-BombManual.com original file
-============================
-
