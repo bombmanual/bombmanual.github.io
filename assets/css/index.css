@@ -47,7 +47,8 @@ a:hover {
 
 .header {
 	display: block;
-    margin: auto;
+  margin: auto;
+	max-width: 100%;
 	padding: 4px 16px 16px;
 }
 
@@ -60,6 +61,7 @@ a:hover {
 }
 
 .linkwrapper {
+	padding: 10px 0;
 	text-align: center;
 }
 
