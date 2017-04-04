@@ -8,4 +8,6 @@ Esta traducción se ha encontrado en el [hilo de la Comunidad de Steam para la t
 
 En caso de que algo pudiera ser mejorado en el formato o traducción, por favor, envía tu propuesta.
 
+La versión más reciente para descarga de este manual para ver sin conexión está disponible en [este enlace](https://github.com/bombmanual/spanish/archive/master.zip) a GitHub.
+
 Todo el crédito para la gente que realizó la traducción.

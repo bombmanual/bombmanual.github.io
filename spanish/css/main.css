@@ -526,7 +526,7 @@ td, th {
 
 #morseCodeChart {
 	float: left;
-	margin-right: 1em;
+	margin-right: 0.6em;
     height: 32em;
 	width: 24.8270625em; /* Hardcode for IE */
 	border:1px solid #021a40;
@@ -646,7 +646,7 @@ td, th {
 
 .memory-rules p {
     margin-top: .3em;
-    font-size: 0.95em; /* TODO: Remove this, it's a quick hack to get printing looking nicer with our placeholder graphic design. */
+    font-size: 0.92em; /* TODO: Remove this, it's a quick hack to get printing looking nicer with our placeholder graphic design. */
 }
 
 .rhythm-heaven .sub-components {
