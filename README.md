@@ -1,4 +1,4 @@
-Inofficial BombManual.com Translations
+Unofficial BombManual.com Translations
 ==============================
 
 ## Contributors:
@@ -9,11 +9,16 @@ Inofficial BombManual.com Translations
   * Caken
   * Jan Baier
 
+### Italian
+  * BrightSoul
+  * brugnara
+  * jaramir
+
 ### Russian
-  * [soemone](http://steamcommunity.com/id/Weather_Wizard/)
-  * [Flash](http://steamcommunity.com/id/Flash2243/)
-  * [ColdFlame](http://steamcommunity.com/id/flamecold/)
   * [BTGDelta](http://steamcommunity.com/id/btgdelta/)
+  * [ColdFlame](http://steamcommunity.com/id/flamecold/)
+  * [Flash](http://steamcommunity.com/id/Flash2243/)
+  * [soemone](http://steamcommunity.com/id/Weather_Wizard/)
 
 ### Spanish
   * [yeuk0](https://steamcommunity.com/id/yeuk0)
