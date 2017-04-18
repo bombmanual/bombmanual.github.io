@@ -12,18 +12,19 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="/favicon.ico" type="image/png">
+	<link rel="icon" href="favicon.ico" type="image/png">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-48421906-2', 'auto');
+
+	  ga('create', 'UA-48421906-2', 'auto');
 	  ga('send', 'pageview');
+
 	</script>
 </head>
-
 <body>
     <template id="pagecount">Seite % von %</template>
     <div id="ManualContent">
@@ -227,14 +228,10 @@
                 </tr>
                 <tr><th rowspan="3">Zu&nbsp;drückender&nbsp;Knopf</th><th>Keine&nbsp;Fehler</th><td>Blau</td><td>Gelb</td><td>Grün</td><td>Rot</td></tr><th>1&nbsp;Fehler</th><td>Rot</td><td>Blau</td><td>Gelb</td><td>Grün</td></tr><th>2&nbsp;Fehler</th><td>Gelb</td><td>Grün</td><td>Blau</td><td>Rot</td></tr>            </table>
 
-               <ol>
-                  <li>Einer der vier farbigen Knöpfe wird blinken.</li>
-                  <li>Mit Hilfe der korrekten Tabelle, drücken Sie den Knopf mit der entsprechenden Farbe.</li>
-                  <li>Der vorige Knopf wird blinken, gefolgt von einem anderen. Wiederholen Sie diese Sequenz mit der Farbzuordnung
-                     aus der Tabelle.</li>
-                  <li>Die Sequenz wird sich bei jeder richtigen Eingabe um eins verlängern, bis das Modul entschärft ist.</li>
-               </ol>
-               <img src="img/SimonComponent_ColourLegend.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Oben: Blau, Links: Rot, Rechts: Gelb, Unten: Grün" />
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
 
 <div class="section">
         <div class="page">
@@ -244,7 +241,7 @@
 		</div>
         <div class="page-footer absolute-footer"></div>
         <div class="page-content">
-    	    <img src="/assets/img/WhosOnFirstComponent.svg" class="diagram" />
+    	    <img src="/assets/img/WhosOnFirstComponent-DE.svg" class="diagram" />
             <h2>Bezüglich Who’s on First</h2>
             <p class="flavour-text">Diese Vorrichtung ist wie etwas aus einem Comedy-Sketch, und wäre vielleicht lustig, wenn es nicht Teil einer Bombe wäre. Ich fasse mich hier kurz, da Worte das Ganze nur komplizieren.</p>
 		    <ol>
@@ -585,5 +582,4 @@
 </div>    </div>
 	    <script src="/assets/js/main.js"></script>
 </body>
-
 </html>
