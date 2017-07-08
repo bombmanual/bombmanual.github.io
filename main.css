@@ -73,6 +73,15 @@ a:hover {
     cursor: pointer;
 }
 
+.button.pdf  {
+	padding: 8px 16px;
+}
+
+.button img {
+	width: 16px;
+	height: 16px;
+}
+
 .button:hover {
 	background-color: #ea5d35;
 	color: white;
