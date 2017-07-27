@@ -1,2096 +1,575 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="de"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="de"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="de"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="de"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keep Talking and Nobody Explodes v. 1</title>
+    <meta name="viewport" content="initial-scale=1">
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Keep Talking and Nobody Explodes v. 1</title>
-   <meta name="viewport" content="initial-scale=1">
-
-   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel="stylesheet" type="text/css" href="css/main.css">
-   <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-   <link rel="icon" href="favicon.ico" type="image/png">
-   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-   <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-48421906-2', 'auto');
-	  ga('send', 'pageview');
-	</script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="favicon.ico" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 </head>
-
 <body>
-   <div id="ManualContent">
-      <div class="section">
-         <div class="page section-title">
-            <div style="position:relative; height:0;">&nbsp;</div>
-            <div class="page-footer absolute-footer no-auto-footer">Revision 3</div>
-            <div class="page-content">
-               <img src="img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
-               <h1 style="font-size: 1em; font-weight: normal; margin: 3.85em auto 0;">
-                  <span style="font-size: 8.9em; line-height: 1.13em;">BOMBEN</span><br />
-                  <span style="font-size: 4.1em; line-height: 0em;">ENTSCHÄRFUNGS</span><br />
-                  <span style="font-size: 6.7em; line-height: 1.1em;">HANDBUCH</span>
-               </h1>
-               <h2 style="margin: 1.2em auto; text-decoration: none; line-height: 1em; font-size: 2.8em;"> Version 1 <br />
-                  <span style="font-size: 0.57em; font-weight: normal;">Verifizierungs-Code: 241</span>
-               </h2>
-            </div>
-            <div class="page-footer relative-footer no-auto-footer">Revision 3</div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page section-title">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Einleitung</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <div class="vertical-spacer"></div>
-               <p style="font-style:italic;">Willkommen in der gefährlichen und herausfordernden Welt der Bombenentschärfung.</p>
-               <p style="font-style:italic;">
-                  Studieren Sie dieses Handbuch sorgfältig; <em style="font-style:italic;">Sie sind der Experte</em>.
-                  Auf diesen Seiten werden Sie alles finden, was Sie brauchen, um selbst die heimtückischsten
-                  Bomben zu entschärfen.<br />Und denken Sie daran - Eine kleine Unachtsamkeit und es könnte alles vorüber sein!
-               </p>
-               <p style="font-style:italic;">Inoffizielle Deutsche Version</p>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
+    <template id="pagecount">Seite % von %</template>
+    <div id="ManualContent">
+    <div class="section">
 
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Bomben entschärfen</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <h1>Bomben entschärfen</h1>
+    <div class="page section-title">
+		<div style="position:relative; height:0;">&nbsp;</div>
+		<div class="page-footer absolute-footer no-auto-footer">Revision 3</div>
+        <div class="page-content">
+			<img src="/assets/img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
+    	    <h1 style="font-size: 1em; font-weight: normal; margin: 3.85em auto 0;"><span style="font-size: 8.9em; line-height: 1.13em;">BOMBEN</span><br /><span style="font-size: 4.1em; line-height: 0em;">ENTSCHÄRFUNGS</span><br /><span style="font-size: 6.7em; line-height: 1.1em;">HANDBUCH</span></h1>
+			<h2 style="margin: 1.2em auto; text-decoration: none; line-height: 1em; font-size: 2.8em;">Version 1							<br />
+				<span style="font-size: 0.57em; font-weight: normal;">Verification Code: 241</span>
+						</h2>
+        </div>
+		<div class="page-footer relative-footer no-auto-footer">Revision 3</div>
+    </div>
+</div><div class="section">
+    <div class="section">
+    <div class="page section-title">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Einleitung</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
 
-               <p>Eine Bombe explodiert, wenn ihr Countdown-Timer 0:00 erreicht oder wenn zu viele Fehler gemacht wurden. Die einzige
-                  Möglichkeit, eine Bombe zu entschärfen besteht darin, alle ihre Module zu entschärfen, bevor der Countdown abgelaufen
-                  ist.
-               </p>
+            <p style="font-style:italic;">Willkommen in der gefährlichen und herausfordernden Welt der Bombenentschärfung.</p>
+            <p style="font-style:italic;">Studieren Sie dieses Handbuch sorgfältig; <em style="font-style:italic;">Sie sind der Experte</em>. Auf diesen Seiten werden Sie alles finden, was Sie brauche, um selbst die heimtückischsten Bomben zu entschärfen.<br />Und denken Sie daran - Eine kleine Unachtsamkeit und es könnte alles vorüber sein!</p>
+            <p style="font-style:italic;">Inoffizielle Deutsche Version</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
 
-               <div class="bomb-diagram">
-                  <span class="diagram-label">Beispiel einer Bombe</span><br />
-                  <table>
-                     <tr>
-                        <td><img src="img/Bomb.svg" class="bomb-diagram-front" /><br />Vorderseite</td>
-                        <td><img src="img/BombSide.svg" class="bomb-diagram-side" /><br />Seitenansicht</td>
-                     </tr>
-                  </table>
-               </div>
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Bomben entschärfen</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h1>Bomben entschärfen</h1>
 
-               <h3>Module</h3>
-               <p>Jede Bombe besteht aus bis zu 11 Modulen, die entschärft werden müssen. Module sind unabhängig voneinander und können
-                  in beliebiger Reihenfolge entschärft werden.</p>
-               <p>Anleitungen zur Entschärfung von Modulen finden Sie in Abschnitt 1. &bdquo;Hartnäckige&ldquo; Module sind ein Spezialfall und
-                  in Abschnitt 2 beschrieben.</p>
+			<p>Eine Bombe explodiert, wenn ihr Countdown-Timer 0:00 erreicht oder wenn zu viele Fehler gemacht wurden. Die einzige Möglichkeit, eine Bombe zu entschärfen besteht darin, alle ihre Module zu entschärfen, bevor der Countdown abgelaufen ist.</p>
 
-               <h3>Fehler</h3>
-               <div class="timer-diagram">Fehleranzeige<br /><img src="img/TimerComponent.svg" /></div>
-               <p>Wird bei der Entschärfung ein Fehler gemacht, wird dieser über dem Countdown-Timer vermerkt.
-                  Bomben mit Fehleranzeige explodieren beim dritten Fehler. Der Countdown zählt schneller, wenn ein Fehler gemacht wurde.</p>               
-               <p>Wenn es keine Fehleranzeige über dem Countdown-Timer gibt, wird die Bombe beim ersten Fehler explodieren.</p>
+			<div class="bomb-diagram">
+				<span class="diagram-label">Beispiel einer Bombe</span><br />
+				<table><tr><td><img src="/assets/img/Bomb.svg" class="bomb-diagram-front" /><br />Vorderseite</td><td><img src="/assets/img/BombSide.svg" class="bomb-diagram-side" /><br />Seitenansicht</td></tr></table>
+			</div>
 
-               <h3>Informationen sammeln</h3>
-               <p>Manche Entschärfungsanleitungen benötigen spezifische Informationen über die Bombe, zum Beispiel die Seriennummer.
-                  Diese Art von Information ist üblicherweise oben, an den Seiten oder unter dem Bombengehäuse zu finden (siehe Anhang
-                  A, B, und C).</p>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page section-title">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Abschnitt 1: Module</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <div class="vertical-spacer"></div>
-               <img src="img/Component.svg" class="diagram" />
-               <div class="new-block-formatting-context">
-                  <h1>Abschnitt 1: Module</h1>
-                  <p>Module können an einer LED in der oberen rechten Ecke erkannt werden. Wenn die LED grün leuchtet, wurde das Modul
-                     entschärft.
-                  </p>
-                  <p>Alle Module müssen entschärft werden, um die Bombe zu entschärfen.</p>
-               </div>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Kabel</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/WireComponent.svg" class="diagram" />
-               <h2>Zum Thema Kabel</h2>
-               <p class="flavour-text">
-                  Kabel sind das Blut der Elektronik! Nein, warte, Elektrizität ist das Blut. Kabel sind eher wie die Arterien. Die Venen?
-                  Egal…
-               </p>
+			<h3>Module</h3>
+			<p>Jede Bombe besteht aus bis zu 11 Modulen, die entschärft werden müssen. Module sind unabhängig voneinander und können in beliebiger Reihenfolge entschärft werden.</p>
+			<p>Anleitungen zur Entschärfung von Modulen finden sich in Abschnitt 1. "Hartnäckige" Module sind ein Spezialfall und in Abschnitt 2 beschrieben.</p>
 
-               <ul>
-                  <li>Ein Kabelmodul kann 3-6 Kabel enthalten.</li>
-                  <li>Es gibt genau <em>ein</em> korrektes Kabel, das durchgeschnitten werden muss, um das Modul zu entschärfen.
-                  </li>
 
-                  <li>Die Reihenfolge der Kabel beginnt mit dem Obersten.</li>
-               </ul>
+            <h3>Fehler</h3>
+			<div class="timer-diagram">Fehleranzeige<br /><img src="/assets/img/TimerComponent.svg"/></div>
+            <p>Wenn die entschärfende Person einen Fehler macht, wird die Bombe diesen Fehler bemerken und in der Fehleranzeige die Anzahl der Fehler darstellen. Bombem mit Fehleranzeige explodieren beim dritten Fehler. Der Countdown zählt schneller, wenn ein Fehler bemerkt wurde.</p>
+			<p>Wenn es keine Fehleranzeige über dem Countdown-Timer gibt, wird die Bombe beim ersten gemachten Fehler explodieren.</p>
 
-               <table>
-                  <tr>
-                     <td><strong><em>3 Kabel:</em></strong> <br />Wenn es keine roten Kabel gibt, das zweite Kabel durchschneiden.
-                        <br />Ansonsten, wenn das letzte Kabel weiß ist, das letzte Kabel durchschneiden.<br />Ansonsten, wenn
-                        es mehr als ein blaues Kabel gibt, das letzte blaue Kabel durchschneiden.<br />Ansonsten, das letzte Kabel
-                        durchschneiden.
-                  </tr>
-                  <tr>
-                     <td><strong><em>4 Kabel:</em></strong><br />Wenn es mehr als ein rotes Kabel gibt, und die letzte Ziffer der Seriennummer
-                        ungerade ist, das letzte rote Kabel durchschneiden.<br />Ansonsten, wenn das letzte Kabel gelb ist und
-                        es keine roten Kabel gibt, das erste Kabel durchschneiden.<br />Ansonsten, wenn es genau ein blaues Kabel
-                        gibt, das erste Kabel durchschneiden.<br />Ansonsten, wenn es mehr als ein gelbes Kabel gibt, das letzte
-                        Kabel durchschneiden.<br />Ansonsten, das zweite Kabel durchschneiden.</tr>
-                  <tr>
-                     <td><strong><em>5 Kabel:</em></strong><br />Wenn das letzte Kabel schwarz ist, und die letzte Ziffer der Seriennummer
-                        ungerade, das vierte Kabel durchschneiden.<br />Ansonsten, wenn es genau ein rotes Kabel gibt, und mehr
-                        als ein gelbes Kabel, das erste Kabel durchschneiden.<br />Ansonsten, wenn es keine schwarzen Kabel gibt,
-                        das zweite Kabel durchschneiden.<br />Ansonsten, das erste Kabel durchschneiden.</tr>
-                  <tr>
-                     <td><strong><em>6 Kabel:</em></strong><br />Wenn es keine gelben Kabel gibt, und die letzte Ziffer der Seriennummer
-                        ungerade ist, das dritte Kabel durchschneiden.<br />Ansonsten, wenn es genau ein gelbes Kabel gibt, und
-                        mehr als ein weißes Kabel, das vierte durchschneiden.<br />Ansonsten, wenn es keine roten Kabel gibt, das
-                        letzte Kabel durchschneiden.<br />Ansonsten, das vierte Kabel durchschneiden.</tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Der Knopf</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/ButtonComponent.svg" class="diagram" />
-               <h2>Zum Thema Knopf</h2>
-               <p class="flavour-text">
-                  Sie denken vielleicht, dass ein Knopf, der Ihnen befiehlt, ihn zu drücken, relativ unkompliziert ist. Das ist die Denkweise, die Menschen zum Explodieren bringt.
-               </p>
-               <p class="appendix-reference" style="font-size: 0.9em">
-                  Siehe Anhang A für die Referenz zur Indikator-Identifikation.<br />Siehe Anhang B für die Referenz zur Batterie-Identifikation.
-               </p>
-               <p style="font-size: 0.9em">Folgen Sie diesen Regeln in der Reihenfolge, in der sie aufgelistet sind. Folgen Sie der ersten zutreffenden Anweisung.</p>
-               <ol style="font-size: 0.9em">
-                  <li>Wenn der Knopf blau und mit "Abort" beschriftet ist, halten Sie den Knopf gedrückt und folgen Sie den
-                     "Anweisungen für das Loslassen eines gedrückten Knopfs".</li>
-                  <li>Wenn die Bombe mehr als 1 Batterie hat, und der Knopf mit "Detonate" beschriftet ist, drücken Sie den Knopf und
-                     lassen Sie ihn unmittelbar danach wieder los.</li>
-                  <li>Wenn der Knopf weiß ist, und es ein Indikator mit der Beschriftung CAR leuchtet, halten Sie den Knopf gedrückt
-                     und folgen Sie den "Anweisungen für das Loslassen eines gedrückten Knopfs".</li>
-                  <li>Wenn die Bombe mehr als 2 Batterien hat und ein Indikator mit der Beschriftung FRK leuchtet, drücken Sie den
-                     Knopf und lassen Sie ihn unmittelbar danach wieder los.</li>
-                  <li>Wenn der Knopf gelb ist, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines
-                     gedrückten Knopfs".</li>
-                  <li>Wenn der Knopf rot und mit "Hold" beschriftet ist, drücken Sie den Knopf und lassen Sie ihn unmittelbar
-                     danach wieder los.</li>
-                  <li>Andernfalls, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines gedrückten
-                     Knopfs".
-                  </li>
-               </ol>
-               <h3>Anweisungen für das Loslassen eines gedrückten Knopfs</h3>
-               <p style="font-size: 0.9em">Wenn Sie den Knopf gedrückt halten, wird ein farbiger Streifen auf der rechten Seite des Moduls aufleuchten. Abhängig
-                  von seiner Farbe müssen Sie den Knopf zu einem bestimmten Zeitpunkt loslassen:</p>
-               <ul style="font-size: 0.9em">
-                  <li><em>Blauer Streifen:</em> Loslassen, wenn der Countdown eine 4 in einer beliebigen Position hat
-                  </li>
-                  <li><em>Weißer Streifen:</em> Loslassen, wenn der Countdown eine 1 in einer beliebigen Position hat.
-                  </li>
-                  <li><em>Gelber Streifen:</em> Loslassen, wenn der Countdown eine 5 in einer beliebigen Position hat
-                  </li>
-                  <li><em>Alle anderen Streifen:</em> Loslassen, wenn der Countdown eine 1 in einer beliebigen Position hat</li>
-               </ul>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Tastenfelder</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/KeypadComponent.svg" class="diagram" />
-               <h2>Zum Thema Tastenfelder</h2>
-               <p class="flavour-text">
-                  Ich bin mir nicht sicher, was diese Symbole sind, aber ich vermute, sie haben mit etwas Okkultem zu tun.
-               </p>
-               <ul>
-                  <li>
-                     Nur eine der unteren Spalten hat alle vier Symbole des Tastenfelds.
-                  </li>
-                  <li>
-                     Drücken Sie die vier Knöpfe in der Reihenfolge, in der sie von oben nach unten in dieser Spalte erscheinen.
-                  </li>
-               </ul>
-               <br/>
-               <br/>
-               <table class="keypad-table">
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/1-copyright.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/13-at.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/8-pumpkin.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/27-tracks.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/12-squigglyn.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/22-rightc.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/14-ae.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/15-meltedthree.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/19-dragon.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/18-nwithhat.png" />
-                     </td>
-                  </tr>
-                  <tr>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/2-filledstar.png" />
-                     </td>
-                     <td class="keypad-table-spacer"></td>
-                     <td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/6-omega.png" />
-                     </td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Senso</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/SimonComponent.svg" class="diagram" />
-               <h2>Zum Thema Senso</h2>
-               <p class="flavour-text">
-                  Es ist wie eins dieser Spiele, dass Sie als Kind gespielt haben, wo sie die erscheinende Sequenz nachmachen mussten, nur
-                  dass dieses hier wahrscheinlich eine billige Kopie ist.
-               </p>
+			<h3>Informationen sammeln</h3>
+			<p>Manche Entschärfungsanleitungen benötigen spezifische Informationen über die Bombe, zum Beispiel die Seriennummer. Diese Art von Information ist üblicherweise oben, an den Seiten oder unter dem Bombengehäuse zu finden (siehe Anhang A, B, und C).</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page section-title">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Abschnitt 1: Module</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
+		    <img src="/assets/img/Component.svg" class="diagram" />
+			<div class="new-block-formatting-context">
+				<h1>Abschnitt 1: Module</h1>
+				<p>Module können an einer LED in der oberen rechten Ecke erkannt werden. Wenn die LED grün leuchtet, wurde das Modul entschärft.</p>
+				<p>Alle Module müssen entschärft werden, um die Bombe zu entschärfen.</p>
+			</div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Kabel</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/WireComponent.svg" class="diagram" />
+            <h2>Bezüglich Kabel</h2>
+            <p class="flavour-text">
+                Kabel sind das Blut der Elektronik! Nein, warte, Elektrizität ist das Blut. Kabel sind eher wie die Arterien. Die Venen? Egal…</p>
 
-               <ol>
-                  <li>Einer der vier farbigen Knöpfe wird blinken.</li>
-                  <li>Mit Hilfe der korrekten Tabelle, drücken Sie den Knopf mit der entsprechenden Farbe.</li>
-                  <li>Der vorige Knopf wird blinken, gefolgt von einem anderen. Wiederholen Sie diese Sequenz mit der Farbzuordnung
-                     aus der Tabelle.</li>
-                  <li>Die Sequenz wird sich bei jeder richtigen Eingabe um eins verlängern, bis das Modul entschärft ist.</li>
-               </ol>
-               <img src="img/SimonComponent_ColourLegend.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Oben: Blau, Links: Rot, Rechts: Gelb, Unten: Grün" />
+			<ul>
+				<li>Ein Kabelmodul kann 3-6 Kabel enthalten.</li>
+				<li>Es gibt genau <em>ein</em> korrektes Kabel, das durchgeschnitten werden muss, um das Modul zu entschärfen.</li>
 
-               <p>Falls die Seriennummer einen Vokal enthält:</p>
-               <table class="repeaters-table">
-                  <tr>
-                     <th colspan="2" class="repeaters-spacer"></th>
-                     <th>Rotes Licht</th>
-                     <th>Blaues Licht</th>
-                     <th>Grünes Licht</th>
-                     <th>Gelbes Licht</th>
-                  </tr>
-                  <tr>
-                     <th rowspan="3">Zu&nbsp;drückender&nbsp;Knopf</th>
-                     <th>Keine&nbsp;Fehler</th>
-                     <td>Blau</td>
-                     <td>Rot</td>
-                     <td>Gelb</td>
-                     <td>Grün</td>
-                  </tr>
-                  <tr>
-                     <th>1&nbsp;Fehler</th>
-                     <td>Gelb</td>
-                     <td>Grün</td>
-                     <td>Blau</td>
-                     <td>Rot</td>
-                  </tr>
-                  <tr>
-                     <th>2&nbsp;Fehler</th>
-                     <td>Grün</td>
-                     <td>Rot</td>
-                     <td>Gelb</td>
-                     <td>Blau</td>
-                  </tr>
-               </table>
+				<li>Die Reihenfolge der Kabel beginnt mit dem Obersten.</li>
+			</ul>
 
-               <p>Falls die Seriennummer <em>keinen</em> Vokal enthält:</p>
-               <table class="repeaters-table">
-                  <tr>
-                     <th colspan="2" class="repeaters-spacer"></th>
-                     <th>Rotes Licht</th>
-                     <th>Blaues Licht</th>
-                     <th>Grünes Licht</th>
-                     <th>Gelbes Licht</th>
-                  </tr>
-                  <tr>
-                     <th rowspan="3">Zu&nbsp;drückender&nbsp;Knopf</th>
-                     <th>Keine&nbsp;Fehler</th>
-                     <td>Blau</td>
-                     <td>Gelb</td>
-                     <td>Grün</td>
-                     <td>Rot</td>
-                  </tr>
-                  <tr>
-                     <th>1&nbsp;Fehler</th>
-                     <td>Rot</td>
-                     <td>Blau</td>
-                     <td>Gelb</td>
-                     <td>Grün</td>
-                  </tr>
-                  <tr>
-                     <th>2&nbsp;Fehler</th>
-                     <td>Gelb</td>
-                     <td>Grün</td>
-                     <td>Blau</td>
-                     <td>Rot</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Who's on First</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/WhosOnFirstComponent.svg" class="diagram" />
-               <h2>Zum Thema &bdquo;Who’s on First&ldquo;</h2>
-               <p class="flavour-text">Diese Vorrichtung ist wie etwas aus einem Comedy-Sketch, und wäre vielleicht lustig, wenn es nicht Teil
-                  einer Bombe wäre. Ich fasse mich hier kurz, da Worte das Ganze nur komplizieren.</p>
-               <ol>
-                  <li>Lesen Sie die Anzeige und folgen Sie den Anweisungen in Schritt 1, um herauszufinden, welcher Knopf
-                     zu <u>lesen</u> ist.</li>
-                  <li>Mit Hilfe dieser Beschriftung finden Sie in Schritt 2 heraus, welchen Knopf Sie
-                     <u>drücken</u> müssen.</li>
-                  <li>Wiederholen Sie das Prozedere, bis das Modul entschärft ist.</li>
-               </ol>
-               <h3>Schritt 1:</h3>
-               <p>Abhängig von der Anzeige, <u>lesen</u> sie die Beschriftung eines bestimmten Knopfes und fahren Sie mit Schritt 2 fort:</p>
-               <table class="whos-on-first-step1-table">
-                  <tr>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">YES</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">FIRST</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">OKAY</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">SAYS</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">NOTHING</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2"><br/></th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">BLANK</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">NO</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">LED</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">LEAD</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">READ</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">RED</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">REED</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">LEED</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">YOU</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">YOUR</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">UR</th>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">THERE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">THEIR</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td></td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">SEE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">C</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td>
-                        <table>
-                           <tr>
-                              <th class="whos-on-first-look-at-display" colspan="2">CEE</th>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td><br /></td>
-                           </tr>
-                           <tr>
-                              <td><br /></td>
-                              <td class="whos-on-first-look-at">
-                                 <img src="img/eye-icon.png" alt="Look At" style="height: 1em;" />
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Who's on First</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <h3>Schritt 2:</h3>
-               <p>Mit Hilfe der Beschriftung von Schritt 1,
-                  <u>drücken Sie den ersten Knopf</u> der in der entsprechenden Liste erscheint:</p>
-               <table class="whos-on-first-step2-table">
-                  <tr>
-                     <th>"READY":</th>
-                     <td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY, NO, FIRST, UHHH, NOTHING, WAIT</td>
-                  </tr>
-                  <tr>
-                     <th>"FIRST":</th>
-                     <td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td>
-                  </tr>
-                  <tr>
-                     <th>"NO":</th>
-                     <td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO, MIDDLE</td>
-                  </tr>
-                  <tr>
-                     <th>"BLANK":</th>
-                     <td>WAIT, RIGHT, OKAY, MIDDLE, BLANK, PRESS, READY, NOTHING, NO, WHAT, LEFT, UHHH, YES, FIRST</td>
-                  </tr>
-                  <tr>
-                     <th>"NOTHING":</th>
-                     <td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING, READY</td>
-                  </tr>
-                  <tr>
-                     <th>"YES":</th>
-                     <td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES, LEFT, BLANK, NO, WAIT</td>
-                  </tr>
-                  <tr>
-                     <th>"WHAT":</th>
-                     <td>UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT</td>
-                  </tr>
-                  <tr>
-                     <th>"UHHH":</th>
-                     <td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST</td>
-                  </tr>
-                  <tr>
-                     <th>"LEFT":</th>
-                     <td>RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING</td>
-                  </tr>
-                  <tr>
-                     <th>"RIGHT":</th>
-                     <td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST</td>
-                  </tr>
-                  <tr>
-                     <th>"MIDDLE":</th>
-                     <td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE, RIGHT, FIRST, UHHH, YES</td>
-                  </tr>
-                  <tr>
-                     <th>"OKAY":</th>
-                     <td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY, LEFT, READY, BLANK, PRESS, WHAT, RIGHT</td>
-                  </tr>
-                  <tr>
-                     <th>"WAIT":</th>
-                     <td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT, NOTHING, READY, RIGHT, MIDDLE</td>
-                  </tr>
-                  <tr>
-                     <th>"PRESS":</th>
-                     <td>RIGHT, MIDDLE, YES, READY, PRESS, OKAY, NOTHING, UHHH, BLANK, LEFT, FIRST, WHAT, NO, WAIT</td>
-                  </tr>
-                  <tr>
-                     <th>"YOU":</th>
-                     <td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU, UH UH, LIKE, DONE, U</td>
-                  </tr>
-                  <tr>
-                     <th>"YOU ARE":</th>
-                     <td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, UH UH, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td>
-                  </tr>
-                  <tr>
-                     <th>"YOUR":</th>
-                     <td>UH UH, YOU ARE, UH HUH, YOUR, NEXT, UR, SURE, U, YOU'RE, YOU, WHAT?, HOLD, LIKE, DONE</td>
-                  </tr>
-                  <tr>
-                     <th>"YOU'RE":</th>
-                     <td>YOU, YOU'RE, UR, NEXT, UH UH, YOU ARE, U, YOUR, WHAT?, UH HUH, SURE, DONE, LIKE, HOLD</td>
-                  </tr>
-                  <tr>
-                     <th>"UR":</th>
-                     <td>DONE, U, UR, UH HUH, WHAT?, SURE, YOUR, HOLD, YOU'RE, LIKE, NEXT, UH UH, YOU ARE, YOU</td>
-                  </tr>
-                  <tr>
-                     <th>"U":</th>
-                     <td>UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U, YOU, LIKE, HOLD, YOU ARE, YOUR</td>
-                  </tr>
-                  <tr>
-                     <th>"UH HUH":</th>
-                     <td>UH HUH, YOUR, YOU ARE, YOU, DONE, HOLD, UH UH, NEXT, SURE, LIKE, YOU'RE, UR, U, WHAT?</td>
-                  </tr>
-                  <tr>
-                     <th>"UH UH":</th>
-                     <td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH, DONE, YOU, UH HUH, LIKE, YOUR, SURE, HOLD, WHAT?</td>
-                  </tr>
-                  <tr>
-                     <th>"WHAT?":</th>
-                     <td>YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?, SURE</td>
-                  </tr>
-                  <tr>
-                     <th>"DONE":</th>
-                     <td>SURE, UH HUH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, UH UH, DONE</td>
-                  </tr>
-                  <tr>
-                     <th>"NEXT":</th>
-                     <td>WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT, LIKE, DONE, YOU ARE, UR, YOU'RE, U, YOU</td>
-                  </tr>
-                  <tr>
-                     <th>"HOLD":</th>
-                     <td>YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD, UH HUH, YOUR, LIKE</td>
-                  </tr>
-                  <tr>
-                     <th>"SURE":</th>
-                     <td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE, U, WHAT?, NEXT, YOUR, UH UH</td>
-                  </tr>
-                  <tr>
-                     <th>"LIKE":</th>
-                     <td>YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE, SURE, YOU ARE, YOUR</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Memory</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/MemoryComponent.svg" class="diagram" />
-               <h2>Zum Thema Memory</h2>
-               <p class="flavour-text">
-                  Das Gedächtnis ist ein zerbrechliches Ding. Aber das trifft auch auf so ziemlich alles andere zu, wenn eine Bombe
-                  hochgeht. Also passen Sie auf!
-               </p>
-               <ul>
-                  <li>Drücken Sie den richtigen Knopf, um das Modul in die nächste Phase zu bringen. Lösen Sie alle Phasen, um das Modul zu entschärfen.</li>
-                  <li>Drücken Sie einen falschen Knopf wird das Modul auf Phase 1 zurückgesetzt.</li>
-                  <li>Die Reihenfolge der Knöpfe ist von links nach rechts.</li>
-               </ul>
-               <div class="memory-rules" style="font-size: 11pt">
-                  <h4>Phase 1:</h4>
-                  <p>
-                     Wenn 1 angezeigt wird, drücken Sie den Knopf in der 2. Position.<br />
-                     Wenn 2 angezeigt wird, drücken Sie den Knopf in der 2. Position.<br />
-                     Wenn 3 angezeigt wird, drücken Sie den Knopf in der 3. Position.<br />
-                     Wenn 4 angezeigt wird, drücken Sie den Knopf in der 4. Position.
-                  </p>
-                  <h4>Phase 2:</h4>
-                  <p>
-                     Wenn 1 angezeigt wird, drücken Sie den Knopf mit der Zahl "4".<br />
-                     Wenn 2 angezeigt wird, drücken Sie den Knopf in derselben Position wie in Phase 1.<br />
-                     Wenn 3 angezeigt wird, drücken Sie den Knopf in der 1. Position.<br />
-                     Wenn 4 angezeigt wird, drücken Sie den Knopf in derselben Position wie in Phase 1.
-                  </p>
-                  <h4>Phase 3:</h4>
-                  <p>
-                     Wenn 1 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 2.<br />
-                     Wenn 2 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 1.<br />
-                     Wenn 3 angezeigt wird, drücken Sie den Knopf in der 3. Position.<br />
-                     Wenn 4 angezeigt wird, drücken Sie den Knopf mit der Zahl "4".
-                  </p>
-                  <h4>Phase 4:</h4>
-                  <p>
-                     Wenn 1 angezeigt wird, drücken Sie den Knopf in derselben Position wie in Phase 1.<br />
-                     Wenn 2 angezeigt wird, drücken Sie den Knopf in der 1. Position.<br />
-                     Wenn 3 angezeigt wird, drücken Sie den Knopf in derselben Position wie in Phase 2.<br />
-                     Wenn 4 angezeigt wird, drücken Sie den Knopf in derselben Position wie in Phase 2.
-                  </p>
-                  <h4>Phase 5:</h4>
-                  <p>
-                     Wenn 1 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 1.<br />
-                     Wenn 2 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 2.<br />
-                     Wenn 3 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 4.<br />
-                     Wenn 4 angezeigt wird, drücken Sie den Knopf mit derselben Zahl wie in Phase 3.<br />
-                  </p>
-               </div>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page morse-code">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Morsecode</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/MorseCodeComponent.svg" class="diagram" />
-               <h2>Zum Thema Morsecode</h2>
-               <p class="flavour-text">
-                  Eine antiquierte Form nautischer Kommunikation? Was kommt als nächstes? Wenigstens ist es echter Morsecode, also könnten
-                  Sie sogar etwas lernen, wenn Sie aufpassen.
-               </p>
-               <ul>
-                  <li>Interpretieren Sie das Signal des blinkenden Lichtes mithilfe der Morsecode-Legende um eins der Wörter in der
-                     Tabelle zu erhalten.</li>
-                  <li>Das Signal wird sich wiederholen, mit einer langen Pause zwischen Wiederholungen.</li>
-                  <li>Sobald das Wort identifiziert wurde, stellen Sie die entsprechende Frequenz ein und drücken Sie den mit TX beschrifteten Knopf.</li>
-               </ul>
+			<table>
+				<tr><td><strong><em>3 Kabel:</em></strong>	<br />Wenn es keine roten Kabel gibt, das zweite Kabel durchschneiden.<br />Ansonsten, wenn das letzte Kabel weiß ist, das letzte Kabel durchschneiden.<br />Ansonsten, wenn es mehr als ein blaues Kabel gibt, das letzte blaue Kabel durchschneiden.<br />Ansonsten, das letzte Kabel durchschneiden.</tr><tr><td><strong><em>4 Kabel:</em></strong><br />Wenn es mehr als ein rotes Kabel gibt, und die letzte Ziffer der Seriennummer ungerade ist, das letzte rote Kabel durchschneiden.<br />Ansonsten, wenn das letzte Kabel gelb ist und es keine roten Kabel gibt, das erste Kabel durchschneiden.<br />Ansonsten, wenn es genau ein blaues Kabel gibt, das erste Kabel durchschneiden.<br />Ansonsten, wenn es mehr als ein gelbes Kabel gibt, das letzte Kabel durchschneiden.<br />Ansonsten, das zweite Kabel durchschneiden.</tr><tr><td><strong><em>5 Kabel:</em></strong><br />Wenn das letzte Kabel schwarz ist, und die letzte Ziffer der Seriennummer ungerade, das vierte Kabel durchschneiden.<br />Ansonsten, wenn es genau ein rotes Kabel gibt, und mehr als ein gelbes Kabel, das erste Kabel durchschneiden.<br />Ansonsten, wenn es keine schwarzen Kabel gibt, das zweite Kabel durchschneiden.<br />Ansonsten, das erste Kabel durchschneiden.</tr><tr><td><strong><em>6 Kabel:</em></strong><br />Wenn es keine gelben Kabel gibt, und die letzte Ziffer der Seriennummer ungerade ist, das dritte Kabel durchschneiden.<br />Ansonsten, wenn es genau ein gelbes Kabel gibt, und mehr als ein weißes Kabel, das vierte durchschneiden.<br />Ansonsten, wenn es keine roten Kabel gibt, das letzte Kabel durchschneiden.<br />Ansonsten, das vierte Kabel durchschneiden.</tr>			</table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Der Knopf</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/ButtonComponent.svg" class="diagram" />
+            <h2>Bezüglich dem Knopf</h2>
+            <p class="flavour-text">Sie denken vielleicht, dass ein Knopf, der Ihnen befiehlt, ihn zu drücken, relativ unkompliziert ist. Das ist die Denkweise, die Menschen zum Explodieren bringt.</p>
+            <p class="appendix-reference">Siehe Anhang A für die Indikatoridentifizierungsreferenz.<br />Siehe Anhang B für die Batterienidentificationsreferenz.</p>		    <p>Folgen Sie diesen Regeln in der Reihenfolge, in der sie aufgelistet sind. Folgen Sie der ersten Anweisung, deren Bedingungen zutreffen.</p>
+		    <ol>
+		    	<li>Wenn der Knopf blau ist, und er mit "Abort" beschriftet ist, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines gedrückten Knopfs".</li><li>Wenn die Bombe mehr als 1 Batterie hat, und der Knopf mit "Detonate" beschriftet ist, drücken Sie den Knopf und lassen Sie ihn unmittelbar danach wieder los.</li><li>Wenn der Knopf weiß ist, und es ein Indikator mit der Beschriftung CAR leuchtet, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines gedrückten Knopfs".</li><li>Wenn die Bombe mehr als 2 Batterien hat und ein Indikator mit der Beschriftung FRK leuchtet, drücken Sie den Knopf und lassen Sie ihn unmittelbar danach wieder los.</li><li>Wenn der Knopf gelb ist, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines gedrückten Knopfs".</li><li>Wenn der Knopf rot ist, und er mit "Hold" beschriftet ist, drücken Sie den Knopf und lassen Sie ihn unmittelbar danach wieder los.</li><li>Andernfalls, halten Sie den Knopf gedrückt und folgen Sie den "Anweisungen für das Loslassen eines grdrückten Knopfs".</li>            </ol>
+		    <h3>Anweisungen für das Loslassen eines gedrückten Knopfs</h3>
+            <p>Wenn Sie den Knopf gedrückt halten, wird ein farbiger Streifen auf der rechten Seite des Moduls aufleuchten. Abhängig von seiner Farbe müssen Sie den Knopf zu einem bestimmten Zeitpunkt loslassen:</p>
+            <ul>
+           		<li><em>Blauer Streifen:</em> Lassen Sie den Knopf los, wenn der Countdown eine 4 in einer beliebigen Position hat</li><li><em>Weißer Streifen:</em> Lassen Sie den Knopf los, wenn der Countdown eine 1 in einer beliebigen Position hat.</li><li><em>Gelber Streifen:</em> Lassen Sie den Knopf los, wenn der Countdown eine 5 in einer beliebigen Position hat</li><li><em>Streifen einer anderen Farbe:</em> Lassen Sie den Knopf los, wenn der Countdown eine 1 in einer beliebigen Position hat</li>            </ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+	<div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Tastenfelder</span>
+		</div>
+	    <div class="page-footer absolute-footer"></div>
+	    <div class="page-content">
+		    <img src="/assets/img/KeypadComponent.svg" class="diagram" />
+		    <h2>Bezüglich Tastenfelder</h2>
+		    <p class="flavour-text">
+			    Ich bin mir nicht sicher, was diese Symbole sind, aber ich vermute, sie haben mit etwas Okkultem zu tun.
+		    </p>
+			<ul>
+				<li>
+					Nur eine der unteren Spalten hat alle vier Symbole des Tastenfelds.
+				</li>
+				<li>
+					Drücken Sie die vier Knöpfe in der Reihenfolge, in der sie von oben nach unten in dieser Spalte erscheinen.
+				</li>
+			</ul>
+			<br/>
+			<br/>
+			<table class="keypad-table">
+				<tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/1-copyright.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/13-at.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/8-pumpkin.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/27-tracks.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/12-squigglyn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/22-rightc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/14-ae.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/15-meltedthree.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/19-dragon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/18-nwithhat.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/2-filledstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/6-omega.png"></img></td></tr>			</table>
+	    </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Senso</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/SimonComponent.svg" class="diagram" />
+            <h2>Bezüglich Senso</h2>
+            <p class="flavour-text">Es ist wie eins dieser Spiele, das Sie als Kind gespielt haben, wo sie die erscheinende Sequenz nachmachen mussten, nur dass diese hier wahrscheinlich eine billige Kopie ist.</p>
 
-               <img id="morseCodeChart" src="img/MorseCode/International_Morse_Code.svg" />
+			<ol>
+				<li>Eine der vier farbigen Knöpfe wird blinken.</li>
+				<li>Mit Hilfe der korrekten Tabelle, drücken Sie den Knopf mit der entsprechenden Farbe.</li>
+				<li>Der vorherige Knopf wird blinken, gefolgt von einem anderen. Wiederholen Sie diese Sequenz mit der Farbenzuordnung.</li>
+				<li>Die Sequenz wird sich jedes Mal um eins verlängern, bis das Modul entschärft ist.</li>
+			</ol>
+		    <img src="/assets/img/SimonComponent_ColourLegend-DE.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Oben: Blau, Links: Rot, Rechts: Geld, Unten: Grün" />
 
-               <table>
-                  <tr>
-                     <th>Wort:</th>
-                     <th>Frequenz:</th>
-                  </tr>
-                  <tr>
-                     <td>shell</td>
-                     <td>3.505 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>halls</td>
-                     <td>3.515 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>slick</td>
-                     <td>3.522 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>trick</td>
-                     <td>3.532 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>boxes</td>
-                     <td>3.535 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>leaks</td>
-                     <td>3.542 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>strobe</td>
-                     <td>3.545 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>bistro</td>
-                     <td>3.552 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>flick</td>
-                     <td>3.555 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>bombs</td>
-                     <td>3.565 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>break</td>
-                     <td>3.572 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>brick</td>
-                     <td>3.575 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>steak</td>
-                     <td>3.582 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>sting</td>
-                     <td>3.592 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>vector</td>
-                     <td>3.595 MHz</td>
-                  </tr>
-                  <tr>
-                     <td>beats</td>
-                     <td>3.600 MHz</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page venn-wires">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Komplizierte Kabel</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/VennWireComponent.svg" class="diagram" />
-               <h2>Zum Thema Komplizierte Kabel</h2>
-               <p class="flavour-text">
-                  Diese Kabel sind nicht wie die Anderen. Manche haben Streifen! Das macht sie total anders. Die gute Nachricht ist, dass wir
-                  eine prägnante Art gefunden haben, die Anleitung darzustellen. Vielleicht zu prägnant...</p>
-               <ul>
-                  <li>Schauen Sie sich jedes Kabel an: Es gibt eine LED über dem Kabel und Platz für ein "★"-Symbol unter dem Kabel.</li>
-                  <li><b>Pro</b> Kabel/LED/Symbol-Kombination, ziehen Sie das Venn-Diagram zur Hilfe, um zu entscheiden, ob das Kabel
-                     durchgeschnitten werden soll.</li>
-                  <li>Ein Kabel kann mit mehreren Farben gestreift sein.</li>
-               </ul>
+    <p>Falls die Seriennummer einen Vokal enthält:<p>
+                        <table class="repeaters-table">
+                <tr>
+            	    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Rotes Licht</th>
+                    <th>Blaues Licht</th>
+                    <th>Grünes Licht</th>
+                    <th>Gelbes Licht</th>
+                </tr>
+                <tr><th rowspan="3">Zu&nbsp;drückender&nbsp;Knopf</th><th>Keine&nbsp;Fehler</th><td>Blau</td><td>Rot</td><td>Gelb</td><td>Grün</td></tr><th>1&nbsp;Fehler</th><td>Gelb</td><td>Grün</td><td>Blau</td><td>Rot</td></tr><th>2&nbsp;Fehler</th><td>Grün</td><td>Rot</td><td>Gelb</td><td>Blau</td></tr>            </table>
 
-               <div>
-                  <object id="venndiagram" data="img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
-               </div>
-               <div>
-                  <object id="vennlegend" data="img/gen/venn/legend.svg" type="image/svg+xml"></object>
-                  <table id="venntable">
-                     <tr>
-                        <th>Buchstabe</th>
-                        <th>Anweisung</th>
-                     </tr>
-                     <tr>
-                        <td>D</td>
-                        <td>Kabel durchschneiden</td>
-                     </tr>
-                     <tr>
-                        <td>N</td>
-                        <td>Kabel nicht durchschneiden</td>
-                     </tr>
-                     <tr>
-                        <td>S</td>
-                        <td>Kabel durchschneiden, wenn die letzte Ziffer der Seriennummer gerade ist.</td>
-                     </tr>
-                     <tr>
-                        <td>P</td>
-                        <td>Kabel durchschneiden, wenn die Bombe einen Parallelport hat.</td>
-                     </tr>
-                     <tr>
-                        <td>B</td>
-                        <td>Kabel durchschneiden, wenn die Bombe zwei oder mehr Batterien hat.</td>
-                     </tr>
-                  </table>
-               </div>
-               <div style="clear:both;"></div>
-               <p class="appendix-reference">
-                  Siehe Anhang B für die Referenz zum Identifizieren von Batterien.<br />
-                  Siehe Anhang C für die Referenz zum Identifizieren von Ports.
-               </p>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page wire-sequence">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Kabel-Sequenzen</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/WireSequenceComponent.svg" class="diagram" />
-               <h2>Zum Thema Kabel-Sequenzen</h2>
-               <p class="flavour-text">Es ist schwer zu sagen, wie dieser Mechanismus funktioniert. Die Konstruktion ist ziemlich beeindruckend, aber es
-                  muss einen einfacheren Weg geben, 9 Drähte zu verkabeln.</p>
-               <ul style="font-size: 11pt">
-                  <li>
-                     In diesem Modul gibt es mehrere Paneele auf denen Kabeln sind. Wechseln Sie zum nächsten Paneel, indem Sie den Pfeil-nach-unten-Knopf
-                     drücken, und zum vorigen mit dem Pfeil-nach-oben-Knopf.
-                  </li>
-                  <li>
-                     Wechseln Sie erst zum nächsten Paneel, wenn Sie alle notwendigen Kabel auf dem aktuellen Paneel durchgeschnitten haben.
-                  </li>
-                  <li>
-                     Wählen Sie die durchzuschneidenden Kabel mithilfe der folgenden Tabelle aus. Kabelvorkommen sind kumulativ über die gesamten
-                     Paneele des Moduls.
-                  </li>
-               </ul>
-               <div style="clear:both"></div>
-               <table class='red-table'>
-                  <tr>
-                     <th colspan='2' class='header'>Vorkommen roter Kabel</th>
-                  </tr>
-                  <tr>
-                     <th class='first-col'>Kabelvorkommen</th>
-                     <th class='second-col'>Schneiden, wenn verbunden mit:</th>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>1.&nbsp; Vorkommen</td>
-                     <td class='second-col'>C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>2.&nbsp; Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>3.&nbsp; Vorkommen</td>
-                     <td class='second-col'>A</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>4.&nbsp; Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>5.&nbsp; Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>6.&nbsp; Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>7.&nbsp; Vorkommen</td>
-                     <td class='second-col'>A, B oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>8.&nbsp; Vorkommen</td>
-                     <td class='second-col'>A oder B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>9.&nbsp; Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-               </table>
-               <table class='blue-table'>
-                  <tr>
-                     <th colspan='2' class='header'>Vorkommen blauer Kabel</th>
-                  </tr>
-                  <tr>
-                     <th class='first-col'>Kabelvorkommen</th>
-                     <th class='second-col'>Schneiden, wenn verbunden mit:</th>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>1.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>2.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>3.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>4.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>5.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>6.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>7.&nbsp;Vorkommen</td>
-                     <td class='second-col'>C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>8.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>9.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A</td>
-                  </tr>
-               </table>
-               <table class='black-table'>
-                  <tr>
-                     <th colspan='2' class='header'>Vorkommen schwarzer Kabel</th>
-                  </tr>
-                  <tr>
-                     <th class='first-col'>Kabelvorkommen</th>
-                     <th class='second-col'>Schneiden, wenn verbunden mit:</th>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>1.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A, B oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>2.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>3.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>4.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>5.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>6.&nbsp;Vorkommen</td>
-                     <td class='second-col'>B oder C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>7.&nbsp;Vorkommen</td>
-                     <td class='second-col'>A oder B</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>8.&nbsp;Vorkommen</td>
-                     <td class='second-col'>C</td>
-                  </tr>
-                  <tr>
-                     <td class='first-col'>9.&nbsp;Vorkommen</td>
-                     <td class='second-col'>C</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Labyrinthe</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/MazeComponent.svg" class="diagram" />
-               <h2>Zum Thema Labyrinthe</h2>
-               <p class="flavour-text">Dies scheint eine Art Labyrinth zu sein, wahrscheinlich von so einem Restaurant-Platzdeckchen gestohlen.</p>
-               <ul>
-                  <li>Finden Sie das Labyrinth mit den passenden runden Markierungen.</li>
-                  <li>Die entschärfende Person muss das weiße Licht mithilfe der Pfeilknöpfe zum roten Dreieck navigieren.</li>
-                  <li><strong>Warnung:</strong> Übertreten Sie nicht die Linien, die Sie in der Labyrinth-Anleitung sehen können. Diese
-                     Linien sind auf der Bombe unsichtbar.</li>
-               </ul>
-               <img class="maze" src="img/gen/maze/maze0.svg" />
-               <img class="maze" src="img/gen/maze/maze1.svg" />
-               <img class="maze" src="img/gen/maze/maze2.svg" />
-               <img class="maze" src="img/gen/maze/maze3.svg" />
-               <img class="maze" src="img/gen/maze/maze4.svg" />
-               <img class="maze" src="img/gen/maze/maze5.svg" />
-               <img class="maze" src="img/gen/maze/maze6.svg" />
-               <img class="maze" src="img/gen/maze/maze7.svg" />
-               <img class="maze" src="img/gen/maze/maze8.svg" />
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Passwörter</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/PasswordComponent.svg" class="diagram" />
-               <h2>Zum Thema Passwörter</h2>
-               <p class="flavour-text">Glücklicherweise scheint dieses Passwort nicht den Sicherheitsstandards der Regierung zu genügen: 22 Zeichen, gemischte
-                  Groß-/Kleinschreibung, Zahlen in zufälliger Reihenfolge ohne Palindrome über der Länge 3.</p>
-               <ul>
-                  <li>Die Knöpfe über und unter jedem Buchstaben schalten durch die Möglichkeiten für diese Position.</li>
-                  <li>Nur exakt eine Kombination der verfügbaren Buchstaben wird eins der unten genannten Passwörter ergeben.</li>
-                  <li>Drücken Sie den "SUBMIT"-Knopf sobald das korrekte Wort eingestellt wurde.</li>
-               </ul>
-               <table class="password-table">
-                  <tr>
-                     <td>about</td>
-                     <td>after</td>
-                     <td>again</td>
-                     <td>below</td>
-                     <td>could</td>
-                  </tr>
-                  <tr>
-                     <td>every</td>
-                     <td>first</td>
-                     <td>found</td>
-                     <td>great</td>
-                     <td>house</td>
-                  </tr>
-                  <tr>
-                     <td>large</td>
-                     <td>learn</td>
-                     <td>never</td>
-                     <td>other</td>
-                     <td>place</td>
-                  </tr>
-                  <tr>
-                     <td>plant</td>
-                     <td>point</td>
-                     <td>right</td>
-                     <td>small</td>
-                     <td>sound</td>
-                  </tr>
-                  <tr>
-                     <td>spell</td>
-                     <td>still</td>
-                     <td>study</td>
-                     <td>their</td>
-                     <td>there</td>
-                  </tr>
-                  <tr>
-                     <td>these</td>
-                     <td>thing</td>
-                     <td>think</td>
-                     <td>three</td>
-                     <td>water</td>
-                  </tr>
-                  <tr>
-                     <td>where</td>
-                     <td>which</td>
-                     <td>world</td>
-                     <td>would</td>
-                     <td>write</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page section-title">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Abschnitt 2: Hartnäckige Module</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <div class="vertical-spacer"></div>
-               <img src="img/NeedyComponent.svg" class="diagram" />
-               <div class="new-block-formatting-context">
-                  <h1>Abschnitt 2: Hartnäckige Module</h1>
-                  <p>
-                     Hartnäckige Module können nicht entschärft werden und stellen eine wiederkehrende Gefahr dar.
-                  </p>
-                  <p>
-                     Hartnäckige Module können an ihrem kleinen zweistelligen Timer oben in der Mitte erkannt werden. Mit der Bombe zu interagieren
-                     kann sie aktivieren. Wenn sie aktiviert wurden, muss sich um sie gekümmert werden bevor der Timer abläuft,
-                     um einen Fehler zu vermeiden.
-                  </p>
-                  <p>
-                     Bleiben Sie wachsam: Hartnäckige Module können jederzeit reaktiviert werden.
-                  </p>
-               </div>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Gas ablassen</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/NeedyVentComponent.svg" class="diagram" />
-               <h2>Zum Thema Ablassen von Gas</h2>
-               <p class="flavour-text">Hacken ist harte Arbeit! Naja, normalerweise jedenfalls. Diese Aufgabe könnte wahrscheinlich auch von einem betrunkenen
-                  Vogel erledigt werden, der immer wieder die selbe Taste drückt.</p>
-               <ul>
-                  <li>Beantworten Sie die Computer-Anfragen, indem Sie mit "Y" für "Ja" und "N" für "Nein" antworten.</li>
-               </ul>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Kondensator entladen</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/NeedyDischargeComponent.svg" class="diagram" />
-               <h2>Zum Thema Entladen von Kondensatoren</h2>
-               <p class="flavour-text">Ich nehme mal an, dass das nur dafür da ist, Ihre Aufmerksamkeit zu stehlen, denn andernfalls ist das ziemlich schlampige
-                  Elektronik.
-               </p>
-               <ul>
-                  <li>Entladen Sie den Kondensator, indem Sie den Hebel runterdrücken, bevor er überlädt.</li>
-               </ul>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page needy-knob">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Drehknopf</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <img src="img/NeedyKnobComponent.svg" class="diagram" />
-               <h2>Zum Thema Drehknopf</h2>
-               <p class="flavour-text">
-                  Unnötig kompliziert und ziemlich hartnäckig. Stellen Sie sich vor, solch Expertise würde für etwas anderes als diabolische
-                  Rätsel verwendet.
-               </p>
-               <ul>
-                  <li>Der Drehknopf kann zu einer von vier Positionen gedreht werden.</li>
-                  <li>Der Drehknopf muss auf der richtigen Position sein, wenn der Timer des Moduls 0 erreicht.</li>
-                  <li>Die korrekte Position kann mit der An/Aus-Konfiguration der zwölf LEDs bestimmt werden.</li>
-                  <li>Drehknopf-Positionen sind relativ zur "UP"-Beschriftung, die rotiert sein kann.</li>
-               </ul>
-               <h3>LED-Konfigurationen</h3>
+    <p>Falls die Seriennummer <em>keinen</em> Vokal enthält:<p>
+            <table class="repeaters-table">
+                <tr>
+            	    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Rotes Licht</th>
+                    <th>Blaues Licht</th>
+                    <th>Grünes Licht</th>
+                    <th>Gelbes Licht</th>
+                </tr>
+                <tr><th rowspan="3">Zu&nbsp;drückender&nbsp;Knopf</th><th>Keine&nbsp;Fehler</th><td>Blau</td><td>Gelb</td><td>Grün</td><td>Rot</td></tr><th>1&nbsp;Fehler</th><td>Rot</td><td>Blau</td><td>Gelb</td><td>Grün</td></tr><th>2&nbsp;Fehler</th><td>Gelb</td><td>Grün</td><td>Blau</td><td>Rot</td></tr>            </table>
 
-               <h4>Up-Position:</h4>
-               <table style="display: inline-table">
-                  <tr>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                  </tr>
-                  <tr>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                  </tr>
-               </table>
-               <table style="display: inline-table">
-                  <tr>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-                  <tr>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                  </tr>
-               </table>
-               <h4>Down-Position:</h4>
-               <table style="display: inline-table">
-                  <tr>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                  </tr>
-                  <tr>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                  </tr>
-               </table>
-               <table style="display: inline-table">
-                  <tr>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-                  <tr>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                  </tr>
-               </table>
-               <h4>Left-Position:</h4>
-               <table style="display: inline-table">
-                  <tr>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-                  <tr>
-                     <td>X</td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                  </tr>
-               </table>
-               <table style="display: inline-table">
-                  <tr>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-                  <tr>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-               </table>
-               <h4>Right-Position:</h4>
-               <table style="display: inline-table">
-                  <tr>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                  </tr>
-                  <tr>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-               </table>
-               <table style="display: inline-table">
-                  <tr>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td> </td>
-                  </tr>
-                  <tr>
-                     <td>X</td>
-                     <td>X</td>
-                     <td>X</td>
-                     <td> </td>
-                     <td>X</td>
-                     <td> </td>
-                  </tr>
-               </table>
-               <br /><br />
-               <p class="needy-diagram-label">X = LED ist an</p>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page appendix-indicators">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Anhang A</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <h2>Anhang A: Referenz zur Indikator-Identifikation</h2>
-               <p>Beschriftete Indikatorlichter können auf den Seiten des Bombengehäuses gefunden werden.</p>
-               <img src="img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
-               <h3>Häufige Indikatoren</h3>
-               <ul>
-                  <li>SND</li>
-                  <li>CLR</li>
-                  <li>CAR</li>
-                  <li>IND</li>
-                  <li>FRQ</li>
-                  <li>SIG</li>
-                  <li>NSA</li>
-                  <li>MSA</li>
-                  <li>TRN</li>
-                  <li>BOB</li>
-                  <li>FRK</li>
-               </ul>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page appendix-batteries">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Anhang B</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <h2>Anhang B: Referenz zur Batterie-Identifikation</h2>
-               <p>Häufige Batterietypen können auf den Seiten des Bombemgehäuses gefunden werden.</p>
-               <table style="margin-top: 1em;">
-                  <tr>
-                     <th>Batterie</th>
-                     <th>Typ</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-batteries/Battery-AA.svg" style="width: 4.09375em; height: 6.18125em;">
-                     </td>
-                     <td>AA</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-batteries/Battery-D.svg" style="width: 4.09375em; height: 5.553125em;">
-                     </td>
-                     <td>D</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-      <div class="section">
-         <div class="page appendix-ports">
-            <div class="page-header">
-               <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-               <span class="page-header-section-title">Anhang C</span>
-            </div>
-            <div class="page-footer absolute-footer"></div>
-            <div class="page-content">
-               <h2>Anhang C: Referenz zur Port-Identifikation</h2>
-               <p>Digitale und analoge Schnittstellen können auf den Seiten des Bombengehäuses gefunden werden.</p>
-               <table>
-                  <tr>
-                     <th>Port</th>
-                     <th>Name</th>
-                  </tr>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
 
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/DVI.svg" style="width: 10.15em;">
-                     </td>
-                     <td>DVI-D</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/Parallel.svg" style="width: 16.1em;">
-                     </td>
-                     <td>Parallel</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/PS2.svg" style="width: 5.55em;">
-                     </td>
-                     <td>PS/2</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/RJ45.svg" style="width: 5.2em;">
-                     </td>
-                     <td>RJ-45</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/Serial.svg" style="width: 8.35em;">
-                     </td>
-                     <td>Seriell</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <img src="img/appendix-ports/StereoRCA.svg" style="width: 5em;">
-                     </td>
-                     <td>Stereo RCA (Chinch)</td>
-                  </tr>
-               </table>
-            </div>
-            <div class="page-footer relative-footer"></div>
-         </div>
-      </div>
-   </div>
+<div class="section">
+        <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Who's on First</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/WhosOnFirstComponent-DE.svg" class="diagram" />
+            <h2>Bezüglich Who’s on First</h2>
+            <p class="flavour-text">Diese Vorrichtung ist wie etwas aus einem Comedy-Sketch, und wäre vielleicht lustig, wenn es nicht Teil einer Bombe wäre. Ich fasse mich hier kurz, da Worte das Ganze nur komplizieren.</p>
+		    <ol>
+                        <li>Lesen Sie die Anzeige und folgen Sie den Anweisungen in Schritt 1, um herauszufinden, den Knopf mit welcher Beschriftung zu <u>lesen</u>.</li>
+                        <li>Mit Hilfe dieser Beschriftung finden Sie in Schritt 2 heraus, welchen Knopf sie <u>drücken</u> müssen.</li>
+			    <li>Wiederholen Sie das Prozedere, bis das Modul entschärft ist.</li>
+		    </ol>
+            <h3>Schritt 1:</h3>
+            <p>Abhängig von der Anzeige, <u>lesen</u> sie die Beschriftung eines bestimmten Knopfes und fahren Sie mit Schritt 2 fort:</p>
+			<table class="whos-on-first-step1-table">
+			<tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YES</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">FIRST</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">OKAY</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SAYS</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NOTHING</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2"><br/></th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">BLANK</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NO</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEAD</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">READ</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">RED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">REED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOUR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">UR</th></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THERE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEIR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">C</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">CEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td>			</table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
 
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-   <script src="js/main.js"></script>
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Who's on First</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h3>Schritt 2:</h3>
+            <p>Mit Hilfe der Beschriftung von Schritt 1, <u>drücken Sie den ersten Knopf</u> der in der entsprechenden Liste erscheint:</p>
+            <table class="whos-on-first-step2-table">
+            	<tr><th>"READY":</th><td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY, NO, FIRST, UHHH, NOTHING, WAIT</td></tr><tr><th>"FIRST":</th><td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td></tr><tr><th>"NO":</th><td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO, MIDDLE</td></tr><tr><th>"BLANK":</th><td>WAIT, RIGHT, OKAY, MIDDLE, BLANK, PRESS, READY, NOTHING, NO, WHAT, LEFT, UHHH, YES, FIRST</td></tr><tr><th>"NOTHING":</th><td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING, READY</td></tr><tr><th>"YES":</th><td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES, LEFT, BLANK, NO, WAIT</td></tr><tr><th>"WHAT":</th><td>UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT</td></tr><tr><th>"UHHH":</th><td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST</td></tr><tr><th>"LEFT":</th><td>RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING</td></tr><tr><th>"RIGHT":</th><td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST</td></tr><tr><th>"MIDDLE":</th><td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE, RIGHT, FIRST, UHHH, YES</td></tr><tr><th>"OKAY":</th><td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY, LEFT, READY, BLANK, PRESS, WHAT, RIGHT</td></tr><tr><th>"WAIT":</th><td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT, NOTHING, READY, RIGHT, MIDDLE</td></tr><tr><th>"PRESS":</th><td>RIGHT, MIDDLE, YES, READY, PRESS, OKAY, NOTHING, UHHH, BLANK, LEFT, FIRST, WHAT, NO, WAIT</td></tr><tr><th>"YOU":</th><td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU, UH UH, LIKE, DONE, U</td></tr><tr><th>"YOU ARE":</th><td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, UH UH, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td></tr><tr><th>"YOUR":</th><td>UH UH, YOU ARE, UH HUH, YOUR, NEXT, UR, SURE, U, YOU'RE, YOU, WHAT?, HOLD, LIKE, DONE</td></tr><tr><th>"YOU'RE":</th><td>YOU, YOU'RE, UR, NEXT, UH UH, YOU ARE, U, YOUR, WHAT?, UH HUH, SURE, DONE, LIKE, HOLD</td></tr><tr><th>"UR":</th><td>DONE, U, UR, UH HUH, WHAT?, SURE, YOUR, HOLD, YOU'RE, LIKE, NEXT, UH UH, YOU ARE, YOU</td></tr><tr><th>"U":</th><td>UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U, YOU, LIKE, HOLD, YOU ARE, YOUR</td></tr><tr><th>"UH HUH":</th><td>UH HUH, YOUR, YOU ARE, YOU, DONE, HOLD, UH UH, NEXT, SURE, LIKE, YOU'RE, UR, U, WHAT?</td></tr><tr><th>"UH UH":</th><td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH, DONE, YOU, UH HUH, LIKE, YOUR, SURE, HOLD, WHAT?</td></tr><tr><th>"WHAT?":</th><td>YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?, SURE</td></tr><tr><th>"DONE":</th><td>SURE, UH HUH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, UH UH, DONE</td></tr><tr><th>"NEXT":</th><td>WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT, LIKE, DONE, YOU ARE, UR, YOU'RE, U, YOU</td></tr><tr><th>"HOLD":</th><td>YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD, UH HUH, YOUR, LIKE</td></tr><tr><th>"SURE":</th><td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE, U, WHAT?, NEXT, YOUR, UH UH</td></tr><tr><th>"LIKE":</th><td>YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE, SURE, YOU ARE, YOUR</td></tr>            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Memory</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/MemoryComponent.svg" class="diagram" />
+            <h2>Bezüglich Memory</h2>
+		    <p class="flavour-text">Das Gedächtnis ist ein zerbrechliches Ding, aber das trifft auch auf so ziemlich alles andere zu, wenn eine Bombe hochgeht, also passen Sie auf!</p>
+		    <ul>
+				<li>Drücken Sie den richtigen Knopf, um das Model in die nächste Phase zu bringen. Lösen Sie alle Phasen, um das Modul zu entschärfen.</li>
+			    <li>Das Drücken eines falschen Knopfes wird das Modul zu Phase 1 zurücksetzen.</li>
+                <li>Die Knopfreihenfolge ist von links nach rechts.</li>
+		    </ul>
+            <div class="memory-rules">
+            	<h4>Phase 1:</h4><p>Wenn 1 angezeigt wird, drücken Sie den Knopf in der zweiten Position.<br />Wenn 2 angezeigt wird, drücken Sie den Knopf in der zweiten Position.<br />Wenn 3 angezeigt wird, drücken Sie den Knopf in der dritten Position.<br />Wenn 4 angezeigt wird, drücken Sie den Knopf in der vierten Position.<br /></p><h4>Phase 2:</h4><p>Wenn 1 angezeigt wird, drücken Sie den Knopf mit der Beschriftung "4".<br />Wenn 2 angezeigt wird, drücken Sie den Knopf in der selben Position wie der, die Sie in Phase 1 gedrückt haben.<br />Wenn 3 angezeigt wird, drücken Sie den Knopf in der ersten Position.<br />Wenn 4 angezeigt wird, drücken Sie den Knopf in der selben Position wie der, die Sie in Phase 1 gedrückt haben.<br /></p><h4>Phase 3:</h4><p>Wenn 1 angezeigt wird, drücken Sie den Knopf mit der gleichen Beschriftung wie die des Knopfes, den Sie in Phase 2 gedrückt haben.<br />Wenn 2 angezeigt wird, drücken Sie den Knopf mit der gleichen Beschriftung wie die des Knopfes, den Sie in Phase 1 gedrückt haben.<br />Wenn 3 angezeigt wird, drücken Sie den Knopf in der dritten Position.<br />Wenn 4 angezeigt wird, drücken Sie den Knopf mit der Beschriftung "4".<br /></p><h4>Phase 4:</h4><p>Wenn 1 angezeigt wird, drücken Sie den Knopf in der gleichen Position wie der, die Sie in Phase 1 gedrückt haben.<br />Wenn 2 angezeigt wird, drücken Sie den Knopf in der ersten Position.<br />Wenn 3 angezeigt wird, drücken Sie den Knopf in der selben Position wie der, die Sie in Phase 2 gedrückt haben.<br />Wenn 4 angezeigt wird, drücken Sie den Knopf in der gleichen Position wie der, die Sie in Phase 2 gedrückt haben.<br /></p><h4>Phase 5:</h4><p>Wenn 1 angezeigt wird, drücken Sie den Knopf mit der selben Beschriftung wie die des Knopfes, den Sie in Phase 1 gedrückt haben.<br />Wenn 2 angezeigt wird, drücken Sie den Knopf mit der selben Beschriftung wie die des Knopfes, den Sie in Phase 2 gedrückt haben.<br />Wenn 3 angezeigt wird, drücken Sie den Knopf mit der selben Beschriftung wie die des Knopfes, den Sie in Phase 4 gedrückt haben.<br />Wenn 4 angezeigt wird, drücken Sie den Knopf mit der selben Beschriftung wie die des Knopfes, den Sie in Phase 3 gedrückt haben.<br /></p>            </div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page morse-code">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Morse-Code</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/MorseCodeComponent.svg" class="diagram" />
+            <h2>Bezüglich Morse-Code</h2>
+		        <p class="flavour-text">Eine antiquierte Form nautischer Kommunikation? Was kommt als nächstes? Wenigstens ist es echter Morse-Code, also könnten Sie sogar etwas lernen, wenn Sie aufpassen.</p>
+				<ul>
+					<li>Interpretieren Sie das Signal des blinkenden Lichtes mithilfe der Morse-Code-Legende um eins der Wörter in der Tabelle zu erhalten.</li>
+					<li>Das Signal wird sich wiederholen, mit einer langen Pause zwischen Wiederholungen.</li>
+					<li>Sobald das Wort identifiziert wurde, stellen Sie die entsprechende Frequenz ein und drücken Sie den Senden-(TX)-Knopf.</li>
+				</ul>
 
+		    <img id="morseCodeChart" src="/assets/img/MorseCode/International_Morse_Code-DE.svg"/>
+
+		    <table>
+			    <tr><th>Wort:</th><th>Frequenz:</th></tr>
+			    <tr><td>shell</td><td>3.505 MHz</td></tr><tr><td>halls</td><td>3.515 MHz</td></tr><tr><td>slick</td><td>3.522 MHz</td></tr><tr><td>trick</td><td>3.532 MHz</td></tr><tr><td>boxes</td><td>3.535 MHz</td></tr><tr><td>leaks</td><td>3.542 MHz</td></tr><tr><td>strobe</td><td>3.545 MHz</td></tr><tr><td>bistro</td><td>3.552 MHz</td></tr><tr><td>flick</td><td>3.555 MHz</td></tr><tr><td>bombs</td><td>3.565 MHz</td></tr><tr><td>break</td><td>3.572 MHz</td></tr><tr><td>brick</td><td>3.575 MHz</td></tr><tr><td>steak</td><td>3.582 MHz</td></tr><tr><td>sting</td><td>3.592 MHz</td></tr><tr><td>vector</td><td>3.595 MHz</td></tr><tr><td>beats</td><td>3.600 MHz</td></tr>		    </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page venn-wires">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Komplizierte Kabel</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/VennWireComponent.svg" class="diagram" />
+            <h2>Bezüglich Komplizierter Kabel</h2>
+		        <p class="flavour-text">Diese Kabel sind nicht wie die anderen. Manche haben Streifen! Das macht sie total anders. Die gute Nachricht ist, dass wir eine prägnante Art gefunden haben, die Anleitung darzustellen. Vielleicht zu prägnant...</p>
+			    <ul>
+				    <li>Schauen Sie sich jedes Kabel an: Es gibt eine LED über dem Kabel und Platz für ein "★"-Symbol unter dem Kabel.</li>
+				    <li><b>Pro</b> Kabel/LED/Symbol-Kombination, ziehen Sie das Venn-Diagram zur Hilfe, um zu entscheiden, ob das Kabel durchgeschnitten werden soll.</li>
+                    <li>Ein Kabel kann mit mehreren Farben gestreift sein.</li>
+			    </ul>
+
+
+
+		    <div>
+			    <object id="venndiagram" width="100%" height="100%" data="/assets/img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
+		    </div>
+		    <div>
+			    <object width="100%" height="100%" id="vennlegend" data="/assets/img/gen/venn/legend-DE.svg" type="image/svg+xml"></object>
+			    <table id="venntable">
+				    <tr><th>Letter</th><th>Instruction</th></tr>
+				    <tr><td>D</td><td>Kabel durchschneiden</td></tr>
+				    <tr><td>N</td><td>Kabel nicht durchschneiden</td></tr>
+				    <tr><td>S</td><td>Kabel durchschneiden, wenn die letzte Ziffer der Seriennummer gerade ist.</td></tr>
+				    <tr><td>P</td><td>Kabel durchschneiden, wenn die Bombe einen Parallelport hat.</td></tr>
+				    <tr><td>B</td><td>Kabel durchschneiden, wenn die Bombe zwei oder mehr Batterien hat.</td></tr>
+			    </table>
+		    </div>
+		    <div style="clear:both;"/>
+            <p class="appendix-reference">Siehe Anhang B für die Referenz zum Identifizieren von Batterien.<br />Siehe Anhang C für die Referenz zum Identifizieren von Ports.</p>        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page wire-sequence">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Kabel-Sequenzen</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="/assets/img/WireSequenceComponent.svg" class="diagram" />
+            <h2>Bezüglich Kabel-Sequenzen</h2>
+            <p class="flavour-text">Es ist schwer zu sagen, wie dieser Mechanismus funktioniert. Die Konstruktion ist ziemlich beeindruckend, aber es muss einen einfacheren Weg geben, 9 Drähte zu verkabeln.</p>
+			<ul>
+			<li>Auf diesem Modul gibt es mehrere Paneele auf denen Kabeln sind, aber nur ein Paneel ist gleichzeitig sichtbar. Wechseln Sie zum nächsten Paneel, indem Sie den Pfeil-nach-unten-Knopf drücken, und zum vorigen mit dem Pfeil-nach-oben-Knopf.</li>
+			<li>Wechseln Sie nicht zum nächsten Paneel, wenn Sie nicht sicher sind, dass Sie alle notwendigen Kabel auf dem aktuellen Paneel durchgeschnitten haben.</li>
+			<li>Wählen Sie die durchzuschneidenden Kabel mithilfe der folgenden Tabelle aus. Kabelvorkommen sind kumulativ über die gesamten Paneele des Moduls.</li>
+			</ul>
+            <div style="clear:both"></div>
+
+            <table class='red-table'><tr><th colspan='2' class='header'>Vorkommen roter Kabel</th></tr><tr><th class='first-col'>Kabelvorkommen</th><th class='second-col'>Durchschneiden wenn verbunden mit:</th></tr><tr><td class='first-col'>Erstes&nbsp;rotes Vorkommen</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Zweites&nbsp;rotes Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Drittes&nbsp;rotes Vorkommen</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Viertes&nbsp;rotes Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Fünftes&nbsp;rotes Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sechstes&nbsp;rotes Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Siebtes&nbsp;rotes Vorkommen</td><td class='second-col'>A, B oder C</td></tr><tr><td class='first-col'>Achtes&nbsp;rotes Vorkommen</td><td class='second-col'>A oder B</td></tr><tr><td class='first-col'>Neuntes&nbsp;rotes Vorkommen</td><td class='second-col'>B</td></tr></table><table class='blue-table'><tr><th colspan='2' class='header'>Vorkommen blauer Kabel</th></tr><tr><th class='first-col'>Kabelvorkommen</th><th class='second-col'>Cut if connected to:</th></tr><tr><td class='first-col'>First&nbsp;blaues Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Second&nbsp;blaues Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Drittes&nbsp;blaues Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Viertes&nbsp;blaues Vorkommen</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Fünftes&nbsp;blaues Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sechstes&nbsp;blaues Vorkommen</td><td class='second-col'>B oder C</td></tr><tr><td class='first-col'>Siebtes&nbsp;blaues Vorkommen</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Achtes&nbsp;blaues Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Neuntes&nbsp;blaues Vorkommen</td><td class='second-col'>A</td></tr></table><table class='black-table'><tr><th colspan='2' class='header'>Vorkommen schwarzer Kabel</th></tr><tr><th class='first-col'>Kabelvorkommen</th><th class='second-col'>Cut if connected to:</th></tr><tr><td class='first-col'>First&nbsp;schwarzes Vorkommen</td><td class='second-col'>A, B oder C</td></tr><tr><td class='first-col'>Second&nbsp;schwarzes Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Drittes&nbsp;schwarzes Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Viertes&nbsp;schwarzes Vorkommen</td><td class='second-col'>A oder C</td></tr><tr><td class='first-col'>Fünftes&nbsp;schwarzes Vorkommen</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sechstes&nbsp;schwarzes Vorkommen</td><td class='second-col'>B oder C</td></tr><tr><td class='first-col'>Siebtes&nbsp;schwarzes Vorkommen</td><td class='second-col'>A oder B</td></tr><tr><td class='first-col'>Achtes&nbsp;schwarzes Vorkommen</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Neuntes&nbsp;schwarzes Vorkommen</td><td class='second-col'>C</td></tr></table>        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Labyrinthe</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/MazeComponent.svg" class="diagram" />
+            <h2>Bezüglich Labyrinthe</h2>
+            <p class="flavour-text">Dies scheint eine Art Labyrinth zu sein, wahrscheinlich von einem so einem Restaurant-Platzdeckchen gestohlen.</p>
+            <ul>
+                <li>Finden Sie das Labyrinth mit den passenden kreisrunden Markierungen.</li>
+                <li>Die entschärfende Person muss das weiße Licht mithilfe der Pfeilknöpfe zum rechten Dreieck navigieren.</li>
+                <li><strong>Warnung:</strong> Übertreten Sie nicht die Linien, die Sie im Labyrinth sehen können. Diese Linien sind auf der Bombe unsichtbar.</li>
+		    </ul>
+            <img class="maze" src="/assets/img/gen/maze/maze0.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze1.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze2.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze3.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze4.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze5.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze6.svg"/>
+            <img class="maze" src="/assets/img/gen/maze/maze7.svg"/>
+		    <img class="maze" src="/assets/img/gen/maze/maze8.svg"/>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Passwörter</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/PasswordComponent.svg" class="diagram" />
+            <h2>Bezüglich Passwörter</h2>
+            <p class="flavour-text">Glücklicherweise scheint dieses Passwort nicht den Sicherheitsstandards der Regierung zu genügen: 22 Zeichen, gemischte Groß-/Kleinschreibung, Zahlen in zufälliger Reihenfolge ohne Palindrome über der Länge 3.</p>
+			<ul>
+				<li>Die Knöpfe über und unter dem Buchstaben rotieren durch die Möglichkeiten für diese Position.</li>
+				<li>Nur eine Kombination der verfügbaren Buchstaben wird eins der unteren Passwörter ergeben.</li>
+				<li>Drücken Sie den "submit"-Knopf sobald das korrekte Wort eingestellt wurde.</li>
+			</ul>
+		    <table class="password-table">
+		    	<tr><tr><td>about</td><td>after</td><td>again</td><td>below</td><td>could</td></tr><tr><td>every</td><td>first</td><td>found</td><td>great</td><td>house</td></tr><tr><td>large</td><td>learn</td><td>never</td><td>other</td><td>place</td></tr><tr><td>plant</td><td>point</td><td>right</td><td>small</td><td>sound</td></tr><tr><td>spell</td><td>still</td><td>study</td><td>their</td><td>there</td></tr><tr><td>these</td><td>thing</td><td>think</td><td>three</td><td>water</td></tr><tr><td>where</td><td>which</td><td>world</td><td>would</td><td>write</td></tr>            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page section-title">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Abschnitt 2: Anhängliche Module</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <div class="vertical-spacer"></div>
+	        <img src="/assets/img/NeedyComponent.svg" class="diagram" />
+			<div class="new-block-formatting-context">
+				<h1>Abschnitt 2: Anhängliche Module</h1>
+				<p>Anhängliche Module können nicht entschärft werden und stellen eine wiederkehrende Gefahr dar.</p>
+				<p>Anhängliche Module können an ihrem kleinen zweistelligen Timer oben in der Mitte erkannt werden. Mit der Bombe zu interagieren kann sie aktivieren. Wenn sie aktiviert wurden, muss sich um sie gekümmert werden bevor der Timer abläuft, um einen Fehler zu vermeiden.</p>
+				<p>Bleiben Sie wachsam: Anhängliche Module können jederzeit reaktiviert werden.</p>
+			</div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Gas ablassen</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/NeedyVentComponent.svg" class="diagram" />
+            <h2>Bezüglich des Ablassens von Gas</h2>
+            <p class="flavour-text">Hacking ist harte Arbeit! Naja, normalerweise jedenfalls. Diese Aufgabe könnte wahrscheinlich auf von einem betrunkenen Vogel erledigt werden, der immer wieder die selbe Taste drückt.</p>
+			<ul>
+				<li>Beantworten Sie die Computer-Anfragen, indem Sie mit "Y" für "Ja" und "N" für "Nein" antworte.</li>
+			</ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Kondensator-Entladung</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/NeedyDischargeComponent.svg" class="diagram" />
+            <h2>Bezüglich des Entladens von Kondensatoren</h2>
+            <p class="flavour-text">Ich nehme mal an, dass das nur dafür da ist, Ihre Aufmerksamkeit zu stehlen, denn andernfalls ist das ziemlich schlampige Elektronik.</p>
+            <ul>
+				<li>Entladen Sie den Kondensator, indem Sie den Hebel runterdrücken, bevor er überläd.</li>
+			<ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page needy-knob">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Knubbel</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+    	    <img src="/assets/img/NeedyKnobComponent.svg" class="diagram" />
+            <h2>Bezüglich Knubbel</h2>
+            <p class="flavour-text">Unnötig kompliziert und unendlich anhänglich. Stellen Sie sich vor, solch Expertise würde für etwas anderes als diabolische Puzzle verwendet.</p>
+			<ul>
+				<li>Der Knubbel kann zu einer von vier Positionen gedreht werden.</li>
+				<li>Der Knubbel muss auf der richtigen Position sein, wenn der Timer des Moduls 0 erreicht.</li>
+				<li>Die korrekte Position kann mit der An/Aus-Konfiguration der zwölf LEDs bestimmt werden.</li>
+				<li>Knubbelpositionen sind relativ zur "UP"-Beschriftung, die rotiert sein kann.</li>
+			</ul>
+            <h3>LED-Konfigurationen</h3>
+
+            <h4>Up-Position:</h4><table style="display: inline-table"><tr><td> </td><td> </td><td>X</td><td> </td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr></table><h4>Down-Position:</h4><table style="display: inline-table"><tr><td> </td><td>X</td><td>X</td><td> </td><td> </td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td> </td><td> </td><td> </td><td>X</td></tr></table><h4>Left-Position:</h4><table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td>X</td><td> </td><td> </td><td>X</td><td>X</td><td>X</td></tr></table><table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td> </td><td> </td><td>X</td><td>X</td><td> </td></tr></table><h4>Right-Position:</h4><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td> </td><td> </td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table>            <br>
+            <br>
+            <p class="needy-diagram-label">X = LED ist an</p>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+<div class="section">
+    <div class="page appendix-indicators">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Anhang A</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Appendix A: Indikatoridentifizierungsreferenz</h2>
+            <p>Beschriftete Indikatorlichter können auf den Seiten des Bombemgehäuses gefunden werden.</p>
+            <img src="/assets/img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
+            <h3>Häufige Indikatoren</h3>
+			<ul>
+                <li>SND</li>
+                <li>CLR</li>
+                <li>CAR</li>
+                <li>IND</li>
+                <li>FRQ</li>
+                <li>SIG</li>
+                <li>NSA</li>
+                <li>MSA</li>
+                <li>TRN</li>
+                <li>BOB</li>
+                <li>FRK</li>
+			</ul>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page appendix-batteries">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Anhang B</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Anhang B: Batterieidentifizierungsreferenz</h2>
+            <p>Häufige Batterietypen können auf den Seiten des Bombemgehäuses gefunden werden.</p>
+			<table style="margin-top: 1em;">
+				<tr><th>Battery</th><th>Type</th></tr>
+				<tr><td><img src="/assets/img/appendix-batteries/Battery-AA.svg" style="width: 4.09375em; height: 6.18125em;"></td><td>AA</td></tr>
+				<tr><td><img src="/assets/img/appendix-batteries/Battery-D.svg" style="width: 4.09375em; height: 5.553125em;"></td><td>D</td></tr>
+			</table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page appendix-ports">
+        		<div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+			<span class="page-header-section-title">Anhang C</span>
+		</div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Anhang C: Portidentifizierungsreferenz</h2>
+            <p>Digitale und analoge Schnittstellen könenn auf den Seiten des Bombengehäuses gefunden werden.</p>
+			<table>
+				<tr><th>Port</th><th>Name</th></tr>
+
+				<tr><td><img src="/assets/img/appendix-ports/DVI.svg" style="width: 10.15em;"></td><td>DVI-D</td></tr>
+				<tr><td><img src="/assets/img/appendix-ports/Parallel.svg" style="width: 16.1em;"></td><td>Parallel</td></tr>
+				<tr><td><img src="/assets/img/appendix-ports/PS2.svg" style="width: 5.55em;"></td><td>PS/2</td></tr>
+				<tr><td><img src="/assets/img/appendix-ports/RJ45.svg" style="width: 5.2em;"></td><td>RJ-45</td></tr>
+				<tr><td><img src="/assets/img/appendix-ports/Serial.svg" style="width: 8.35em;"></td><td>Seriell</td></tr>
+				<tr><td><img src="/assets/img/appendix-ports/StereoRCA.svg" style="width: 5em;"></td><td>Stereo RCA</td></tr>
+			</table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>    </div>
+	    <script src="/assets/js/main.js"></script>
 </body>
-
 </html>

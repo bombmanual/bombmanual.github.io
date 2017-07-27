@@ -4,13 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Keep Talking and Nobody Explodes v. 1 rus</title>
-	<meta name="viewport" content="initial-scale=1"> 
+	<meta name="viewport" content="initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!-- <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'> -->
-	<link rel="icon" href="favicon.ico" type="image/png">
-	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+	<link rel="icon" href="/assets/favicon.ico" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="/assets/apple-touch-icon-precomposed.png">
+	<style>
+		@font-face {
+		    font-family: 'Special Elite';
+		    src: url('/assets/fonts/specialelite-cyrillic.eot');
+		    src: url('/assets/fonts/specialelite-cyrillic.eot?#iefix') format('embedded-opentype'),
+		         url('/assets/fonts/specialelite-cyrillic.woff2') format('woff2'),
+		         url('/assets/fonts/specialelite-cyrillic.woff') format('woff'),
+		         url('/assets/fonts/specialelite-cyrillic.ttf') format('truetype'),
+		         url('/assets/fonts/specialelite-cyrillic.svg#special_eliteregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+	</style>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,12 +36,12 @@
 <body>
 	<div id="ManualContent">
 		<div class="section">
-		
+
 			<div class="page section-title page-bg-01">
-				<div style="position:relative; height:0;">&nbsp;</div> 
+				<div style="position:relative; height:0;">&nbsp;</div>
 				<div class="page-footer absolute-footer no-auto-footer">Издание 2</div>
 				<div class="page-content">
-					<img src="img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
+					<img src="/assets/img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
 					<h1 style="font-size: 1em; font-weight: normal; margin: 2em auto 0;">
 						<span style="display: inline-block; font-size: 5.1em; margin-top: 50px;">РУКОВОДСТВО</span><br />
 						<span style="display: inline-block; font-size: 3.2em; position: relative; top: .1em; height: 0; font-weight: bold;">ПО ОБЕЗВРЕЖИВАНИЮ</span><br />
@@ -42,7 +54,7 @@
 				<div class="page-footer relative-footer no-auto-footer">Издание 2</div>
 			</div>
 		</div>
-	
+
 
 		<div class="section">
 			<div class="page section-title page-bg-02">
@@ -53,7 +65,7 @@
 				<div class="page-footer absolute-footer">Страница 2 из 23</div>
 				<div class="page-content">
 					<div class="vertical-spacer"></div>
-					
+
 					<p style="font-style:italic;">Добро пожаловать в опасный и трудный мир обезвреживания бомб.</p>
 					<p style="font-style:italic;">Внимательно изучите это руководство; <em style="font-style:italic;">вы эксперт</em>. На страницах руководства вы найдете всё, что необходимо знать о том, как обезвредить даже самые коварные бомбы.<br />И помните — одна оплошность, и всё может скверно закончиться!</p>
 				</div>
@@ -71,21 +83,21 @@
 				<div class="page-footer absolute-footer">Страница 3 из 23</div>
 				<div class="page-content">
 					<h1>Обезвреживание бомб</h1>
-					
+
 					<p>Бомба взрывается тогда, когда её обратный таймер доходит до 0:00, или когда было зафиксировано слишком много ошибок. Единственный способ обезвредить бомбу — это обезвредить все её модули, прежде чем на таймере кончится время.</p>
-					
+
 					<div class="bomb-diagram">
 						<span class="diagram-label">Пример  бомбы</span><br />
-						<table><tr><td><img src="img/Bomb.svg"/><br />Вид спереди</td><td><img src="img/BombSide.svg"/><br />Вид сбоку</td></tr></table>
+						<table><tr><td><img src="/assets/img/Bomb.svg"/><br />Вид спереди</td><td><img src="/assets/img/BombSide.svg"/><br />Вид сбоку</td></tr></table>
 					</div>
-					
+
 					<h3>Модули</h3>
 					<p>Каждая бомба включает в себя до 11 модулей, которые необходимо обезвредить. Каждый модуль автономен; их можно обезвреживать в любом порядке.</p>
 					<p>Инструкции по обезвреживанию модулей можно найти в 1 разделе. "Нестабильные" модули требуют особого подхода и описаны во 2 разделе.</p>
-					
-					
+
+
 					<h3>Ошибки</h3>
-					<div class="timer-diagram">Индикатор ошибок<br /><img src="img/TimerComponent.svg"/></div>
+					<div class="timer-diagram">Индикатор ошибок<br /><img src="/assets/img/TimerComponent.svg"/></div>
 					<p>Если Сапёр допускает ошибку, это будет отображено на индикаторе ошибок над обратным таймером. Бомбы с индикатором ошибок взрываются на третьей ошибке. С каждой новой допущенной ошибкой таймер будет идти быстрее.</p>
 					<p>Если над таймером нет индикатора, то бомба взорвется при первой же ошибке, не оставляя шансов на оплошности.</p>
 
@@ -106,7 +118,7 @@
 				<div class="page-footer absolute-footer">Страница 4 из 23</div>
 				<div class="page-content">
 					<div class="vertical-spacer"></div>
-					<img src="img/Component.svg" class="diagram" />
+					<img src="/assets/img/Component.svg" class="diagram" />
 					<div class="new-block-formatting-context">
 						<h1>Раздел 1: Модули</h1>
 						<p>Модули можно определить по светодиоду в правом верхнем углу. Горящий зеленым светодиод указывает, что модуль уже обезврежен.</p>
@@ -126,7 +138,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 5 из 23</div>
 				<div class="page-content">
-					<img src="img/WireComponent.svg" class="diagram" />
+					<img src="/assets/img/WireComponent.svg" class="diagram" />
 					<h2>Провода</h2>
 					<p class="flavour-text">
 						Провода - кровь электроники! Стоп, нет, кровь — это электричество. Провода, скорее, артерии. Вены? Не важно…</p>
@@ -180,7 +192,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 6 из 23</div>
 				<div class="page-content">
-					<img src="img/ButtonComponent.svg" class="diagram" />
+					<img src="/assets/img/ButtonComponent.svg" class="diagram" />
 					<h2>Кнопка</h2>
 					<p class="flavour-text">Кажется, что если на кнопке написано, что её нужно нажать, то тут и думать не о чем. Вот из-за такого люди и взрываются.</p>
 					<p class="appendix-reference">Смотрите Приложение А для определения индикатора.<br />Смотрите Приложение Б для определения батарейки.</p>		    <p>Следуйте следующим правилам в том порядке, в котором они указаны. Выполните первое подходящее действие:</p>
@@ -214,7 +226,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 7 из 23</div>
 				<div class="page-content">
-					<img src="img/KeypadComponent.svg" class="diagram" />
+					<img src="/assets/img/KeypadComponent.svg" class="diagram" />
 					<h2>Клавишные панели</h2>
 					<p class="flavour-text">
 						Непонятно, что это за закорючки, но подозреваю, что они какие-то оккультные.
@@ -230,7 +242,7 @@
 					<br/>
 					<br/>
 					<table class="keypad-table">
-						<tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/1-copyright.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/13-at.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/8-pumpkin.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/27-tracks.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/12-squigglyn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/22-rightc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/14-ae.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/15-meltedthree.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/19-dragon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/18-nwithhat.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/2-filledstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/6-omega.png"></img></td></tr>			</table>
+						<tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/1-copyright.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/13-at.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/8-pumpkin.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/27-tracks.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/12-squigglyn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/22-rightc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/14-ae.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/15-meltedthree.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/19-dragon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/18-nwithhat.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/2-filledstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/6-omega.png"></img></td></tr>			</table>
 				</div>
 				<div class="page-footer relative-footer">Страница 7 из 23</div>
 			</div>
@@ -245,17 +257,17 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 8 из 23</div>
 				<div class="page-content">
-					<img src="img/SimonComponent.svg" class="diagram" />
+					<img src="/assets/img/SimonComponent.svg" class="diagram" />
 					<h2>Саймон говорит</h2>
 					<p class="flavour-text">Это как та детская игрушка, где нужно было повторять то, что светится, только это какая-то подделка, которую наверняка купили в магазине "всё по тридцать".</p>
-					
+
 					<ol>
 						<li>Загорается одна из цветных кнопок.</li>
 						<li>Используя подходящую таблицу снизу, нажмите на кнопку соответствующего цвета.</li>
 						<li>Загорится та же кнопка, что и в начале, а за ней еще одна. Повторите эту последовательность в том же порядке, используя таблицу цветов.</li>
 						<li>Последовательность будет удлиняться после каждой успешно введенной последовательности, пока модуль не будет обезврежен.</li>
 					</ol>
-					<img src="img/SimonComponent_ColourLegend.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Top: Blue, Left: Red, Right: Yellow, Bottom: Green" />
+					<img src="/assets/img/SimonComponent_ColourLegend-RU.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Top: Blue, Left: Red, Right: Yellow, Bottom: Green" />
 
 					<p>Если в серийном номере содержится гласная:<p>
 					<table class="repeaters-table">
@@ -268,7 +280,7 @@
 						</tr>
 						<tr><th rowspan="3">Нажмите:</th><th>Нет&nbsp;ошибок</th><td>Синий</td><td>Красный</td><td>Желтый</td><td>Зеленый</td></tr><th>1&nbsp;ошибка</th><td>Желтый</td><td>Зеленый</td><td>Синий</td><td>Красный</td></tr><th>2&nbsp;ошибки</th><td>Зеленый</td><td>Красный</td><td>Желтый</td><td>Синий</td></tr>
 					</table>
-				
+
 					<p>Если в серийном номере гласных <em>нет</em>:<p>
 					<table class="repeaters-table">
 						<tr>
@@ -295,7 +307,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 9 из 23</div>
 				<div class="page-content">
-					<img src="img/WhosOnFirstComponent.svg" class="diagram" />
+					<img src="/assets/img/WhosOnFirstComponent.svg" class="diagram" />
 					<h2>А вас как зовут</h2>
 					<p class="flavour-text">Эта игра слов практически взята из одной известной репризы, и тут можно было бы посмеяться, если бы она не была привязана к бомбе. Буду краток, а то слова всё усложняют.</p>
 					<ol>
@@ -306,7 +318,7 @@
 					<h3>Шаг 1:</h3>
 					<p>В зависимости от слова на экране <u>прочитайте</u> слово на определяемой ниже кнопке и перейдите к шагу 2:</p>
 					<table class="whos-on-first-step1-table">
-					<tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YES</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">FIRST</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">OKAY</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SAYS</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NOTHING</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2"><br/></th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">BLANK</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NO</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEAD</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">READ</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">RED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">REED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOUR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">UR</th></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THERE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEIR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">C</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">CEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td>			</table>
+					<tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YES</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">FIRST</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">OKAY</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SAYS</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NOTHING</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2"><br/></th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">BLANK</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NO</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEAD</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">READ</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">RED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">REED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOUR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">UR</th></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THERE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEIR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">C</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">CEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td>			</table>
 				</div>
 				<div class="page-footer relative-footer">Страница 9 из 23</div>
 			</div>
@@ -339,7 +351,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 11 из 23</div>
 				<div class="page-content">
-					<img src="img/MemoryComponent.svg" class="diagram" />
+					<img src="/assets/img/MemoryComponent.svg" class="diagram" />
 					<h2>Память</h2>
 					<p class="flavour-text">Память — хрупкая штуковина, как и всё остальное, когда взрывается бомба, так что будьте внимательней!</p>
 					<ul>
@@ -393,7 +405,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 12 из 23</div>
 				<div class="page-content">
-					<img src="img/MorseCodeComponent.svg" class="diagram" />
+					<img src="/assets/img/MorseCodeComponent.svg" class="diagram" />
 					<h2>Азбука Морзе</h2>
 						<p class="flavour-text">Устаревшая форма морского сообщения? А дальше что? Ну, хотя бы это настоящая азбука Морзе, так что смотрите в оба, может, что-нибудь да запомните.</p>
 						<ul>
@@ -401,12 +413,12 @@
 							<li>Сигнал зациклен и имеет большой промежуток между повторениями.</li>
 							<li>После определения слова установите соответствующую частоту и нажмите кнопку передачи (TX).</li>
 						</ul>
-					
-					<img id="morseCodeChart" src="img/MorseCode/International_Morse_Code.svg"/>	
-							
+
+					<img id="morseCodeChart" src="/assets/img/MorseCode/International_Morse_Code-RU.svg"/>
+
 					<table>
 						<tr><th>Если слово:</th><th>Ответить&nbsp;на частоте:</th></tr>
-						<tr><td>shell</td><td>3.505 MHz</td></tr><tr><td>halls</td><td>3.515 MHz</td></tr><tr><td>slick</td><td>3.522 MHz</td></tr><tr><td>trick</td><td>3.532 MHz</td></tr><tr><td>boxes</td><td>3.535 MHz</td></tr><tr><td>leaks</td><td>3.542 MHz</td></tr><tr><td>strobe</td><td>3.545 MHz</td></tr><tr><td>bistro</td><td>3.552 MHz</td></tr><tr><td>flick</td><td>3.555 MHz</td></tr><tr><td>bombs</td><td>3.565 MHz</td></tr><tr><td>break</td><td>3.572 MHz</td></tr><tr><td>brick</td><td>3.575 MHz</td></tr><tr><td>steak</td><td>3.582 MHz</td></tr><tr><td>sting</td><td>3.592 MHz</td></tr><tr><td>vector</td><td>3.595 MHz</td></tr><tr><td>beats</td><td>3.600 MHz</td></tr>		    </table>	
+						<tr><td>shell</td><td>3.505 MHz</td></tr><tr><td>halls</td><td>3.515 MHz</td></tr><tr><td>slick</td><td>3.522 MHz</td></tr><tr><td>trick</td><td>3.532 MHz</td></tr><tr><td>boxes</td><td>3.535 MHz</td></tr><tr><td>leaks</td><td>3.542 MHz</td></tr><tr><td>strobe</td><td>3.545 MHz</td></tr><tr><td>bistro</td><td>3.552 MHz</td></tr><tr><td>flick</td><td>3.555 MHz</td></tr><tr><td>bombs</td><td>3.565 MHz</td></tr><tr><td>break</td><td>3.572 MHz</td></tr><tr><td>brick</td><td>3.575 MHz</td></tr><tr><td>steak</td><td>3.582 MHz</td></tr><tr><td>sting</td><td>3.592 MHz</td></tr><tr><td>vector</td><td>3.595 MHz</td></tr><tr><td>beats</td><td>3.600 MHz</td></tr>		    </table>
 				</div>
 				<div class="page-footer relative-footer">Страница 12 из 23</div>
 			</div>
@@ -421,7 +433,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 13 из 23</div>
 				<div class="page-content">
-					<img src="img/VennWireComponent.svg" class="diagram" />
+					<img src="/assets/img/VennWireComponent.svg" class="diagram" />
 					<h2>Усложненные провода</h2>
 					<p class="flavour-text">Эти провода не такие, как прежде. Некоторые из них полосатые! Так что они совершенно другие. Хорошо, что мы нашли краткий набор инструкций к ним! Правда, возможно, слишком краткий…</p>
 					<ul>
@@ -429,12 +441,12 @@
 						<li>Для <b>каждой</b> связки провод-светодиод-символ используйте приведенную ниже диаграмму Венна, чтобы понять, нужно ли резать провод или нет.</li>
 						<li>Провода бывают полосатыми.</li>
 					</ul>
-					
+
 					<div>
-						<object id="venndiagram" width="100%" height="100%" data="img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
+						<object id="venndiagram" width="100%" height="100%" data="/assets/img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
 					</div>
 					<div>
-						<object width="100%" height="100%" id="vennlegend" data="img/gen/venn/legend.svg" type="image/svg+xml"></object>
+						<object width="100%" height="100%" id="vennlegend" data="/assets/img/gen/venn/legend-RU.svg" type="image/svg+xml"></object>
 						<table id="venntable">
 							<tr><th>Буква</th><th>Инструкции</th></tr>
 							<tr><td>C</td><td>Режьте провод</td></tr>
@@ -459,7 +471,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 14 из 23</div>
 				<div class="page-content">
-					<img src="img/WireSequenceComponent.svg" class="diagram" />
+					<img src="/assets/img/WireSequenceComponent.svg" class="diagram" />
 					<h2>Последовательности проводов</h2>
 					<p class="flavour-text">Сложно сказать, как работает этот механизм. Впечатляющая проводка, но девять проводов явно можно расположить как-то проще.</p>
 					<ul>
@@ -468,7 +480,7 @@
 					<li>Перережьте провода, следуя приведенной ниже таблице. Появления проводов суммируются между всеми панелями в рамках одного модуля.</li>
 					</ul>
 					<div style="clear:both"></div>
-					
+
 					<table class='red-table'>
 					<tr><th colspan='2' class='header'>Появление красного провода</th></tr>
 					<tr><th class='first-col'>Появление<br>провода</th><th class='second-col'>Резать, если подключен к:</th></tr>
@@ -516,7 +528,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 15 из 23</div>
 				<div class="page-content">
-					<img src="img/MazeComponent.svg" class="diagram" />
+					<img src="/assets/img/MazeComponent.svg" class="diagram" />
 					<h2>Лабиринт</h2>
 					<p class="flavour-text">Похоже на какой-то лабиринт, наверняка украденный с подноса забегаловки.</p>
 					<ul>
@@ -524,15 +536,15 @@
 						<li>Сапер должен провести белый кружок до красного треугольника при помощи кнопок со стрелками.</li>
 						<li><strong>Осторожно:</strong> не пересекайте отмеченные в лабиринте линии. Эти линии не видно на бомбе.</li>
 					</ul>
-					<img class="maze" src="img/gen/maze/maze0.svg"/>
-					<img class="maze" src="img/gen/maze/maze1.svg"/>
-					<img class="maze" src="img/gen/maze/maze2.svg"/>
-					<img class="maze" src="img/gen/maze/maze3.svg"/>
-					<img class="maze" src="img/gen/maze/maze4.svg"/>
-					<img class="maze" src="img/gen/maze/maze5.svg"/>
-					<img class="maze" src="img/gen/maze/maze6.svg"/>
-					<img class="maze" src="img/gen/maze/maze7.svg"/>
-					<img class="maze" src="img/gen/maze/maze8.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze0.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze1.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze2.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze3.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze4.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze5.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze6.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze7.svg"/>
+					<img class="maze" src="/assets/img/gen/maze/maze8.svg"/>
 				</div>
 				<div class="page-footer relative-footer">Страница 15 из 23</div>
 			</div>
@@ -547,7 +559,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 16 из 23</div>
 				<div class="page-content">
-					<img src="img/PasswordComponent.svg" class="diagram" />
+					<img src="/assets/img/PasswordComponent.svg" class="diagram" />
 					<h2>Пароль</h2>
 					<p class="flavour-text">К счастью, пароль, кажется, не соответствует требованиям стандартов государственной безопасности: 22 символа, прописные и строчные, случайные числа без палиндромов размером больше 3.</p>
 					<ul>
@@ -572,7 +584,7 @@
 				<div class="page-footer absolute-footer">Страница 17 из 23</div>
 				<div class="page-content">
 					<div class="vertical-spacer"></div>
-					<img src="img/NeedyComponent.svg" class="diagram" />
+					<img src="/assets/img/NeedyComponent.svg" class="diagram" />
 					<div class="new-block-formatting-context">
 						<h1>Раздел 2: Нестабильные модули</h1>
 						<p>Нестабильные модули нельзя обезвредить, но они влекут за собой периодическую угрозу.</p>
@@ -593,7 +605,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 18 из 23</div>
 				<div class="page-content">
-					<img src="img/NeedyVentComponent.svg" class="diagram" />
+					<img src="/assets/img/NeedyVentComponent.svg" class="diagram" />
 					<h2>Выпуск пара</h2>
 					<p class="flavour-text">Взлом компьютеров крайне сложен! Ну, обычно. А это смогла бы сделать даже механическая пьющая птичка, клюющая одну и ту же кнопку раз за разом.</p>
 					<ul>
@@ -613,7 +625,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 19 из 23</div>
 				<div class="page-content">
-					<img src="img/NeedyDischargeComponent.svg" class="diagram" />
+					<img src="/assets/img/NeedyDischargeComponent.svg" class="diagram" />
 					<h2>Разрядка конденсатора</h2>
 					<p class="flavour-text">Мне кажется, что это здесь только для того, чтобы отвлечь вас, потому что эта инсталляция сделана крайне отвратно.</p>
 					<ul>
@@ -633,7 +645,7 @@
 				</div>
 				<div class="page-footer absolute-footer">Страница 20 из 23</div>
 				<div class="page-content">
-					<img src="img/NeedyKnobComponent.svg" class="diagram" />
+					<img src="/assets/img/NeedyKnobComponent.svg" class="diagram" />
 					<h2>Поворотная ручка</h2>
 					<p class="flavour-text">Излишне сложно и вечно требовательно. Представьте, если бы все эти умения вложили во что-нибудь другое, а не в дьявольские головоломки.</p>
 					<ul>
@@ -643,8 +655,8 @@
 						<li>Позиция ручки устанавливается относительно надписи "UP" [верх], которая может быть повернута.</li>
 					</ul>
 					<h3>Варианты конфигураций светодиодов</h3>
-					
-					
+
+
 					<h4>Возиция вверх:</h4>
 					<table style="display: inline-table"><tr><td> </td><td> </td><td>X</td><td> </td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr></table>
 					<h4>Позиция вниз:</h4>
@@ -671,7 +683,7 @@
 				<div class="page-content">
 					<h2>Приложение А: Определение индикатора</h2>
 					<p>По бокам корпуса бомбы можно обнаружить подписанные световые индикаторы.</p>
-					<img src="img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
+					<img src="/assets/img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
 					<h3>Примеры индикаторов</h3>
 					<ul>
 						<li>SND</li>
@@ -704,8 +716,8 @@
 					<p>По бокам корпуса бомбы можно обнаружить стандартные батарейки.</p>
 					<table style="margin-top: 1em;">
 						<tr><th>Батарейка</th><th>Тип</th></tr>
-						<tr><td><img src="img/appendix-batteries/Battery-AA.svg"></td><td>AA</td></tr>	
-						<tr><td><img src="img/appendix-batteries/Battery-D.svg"></td><td>D</td></tr>
+						<tr><td><img src="/assets/img/appendix-batteries/Battery-AA.svg"></td><td>AA</td></tr>
+						<tr><td><img src="/assets/img/appendix-batteries/Battery-D.svg"></td><td>D</td></tr>
 					</table>
 				</div>
 				<div class="page-footer relative-footer">Страница 22 из 23</div>
@@ -725,12 +737,12 @@
 					<p>По бокам корпуса бомбы можно обнаружить цифровые и аналоговые порты.</p>
 					<table>
 						<tr><th>Порт</th><th>Название</th></tr>
-						<tr><td><img src="img/appendix-ports/DVI.svg"></td><td>DVI-D</td></tr>	
-						<tr><td><img src="img/appendix-ports/Parallel.svg"></td><td>Parallel</td></tr>
-						<tr><td><img src="img/appendix-ports/PS2.svg"></td><td>PS/2</td></tr>
-						<tr><td><img src="img/appendix-ports/RJ45.svg"></td><td>RJ-45</td></tr>
-						<tr><td><img src="img/appendix-ports/Serial.svg"></td><td>Serial</td></tr>
-						<tr><td><img src="img/appendix-ports/StereoRCA.svg"></td><td>Stereo RCA</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/DVI.svg"></td><td>DVI-D</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/Parallel.svg"></td><td>Parallel</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/PS2.svg"></td><td>PS/2</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/RJ45.svg"></td><td>RJ-45</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/Serial.svg"></td><td>Serial</td></tr>
+						<tr><td><img src="/assets/img/appendix-ports/StereoRCA.svg"></td><td>Stereo RCA</td></tr>
 					</table>
 				</div>
 				<div class="page-footer relative-footer">Страница 23 из 23</div>
