@@ -21,6 +21,13 @@ Unofficial BombManual.com Translations
   * [soemone](http://steamcommunity.com/id/Weather_Wizard/)
 
 ### Spanish
+  * [Alfango](https://steamcommunity.com/id/alfango)
+  * [born.romantic](https://steamcommunity.com/profiles/76561198295605847)
+  * [Hacha Dorada](https://steamcommunity.com/id/lea_hd)
+  * [[Sexy] Jacob Hargreave](https://steamcommunity.com/id/ajuanjojjj)
+  * [pancomido](https://steamcommunity.com/profiles/76561198098758727)
+  * [PsychoSpaniard](https://steamcommunity.com/profiles/76561198017007556)
+  * [Silithur](https://steamcommunity.com/id/Silicosa)
   * [yeuk0](https://steamcommunity.com/id/yeuk0)
 
 ### Swedish
