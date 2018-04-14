@@ -3,6 +3,9 @@ Unofficial BombManual.com Translations
 
 ## Contributors:
 
+### Catalan
+  * [DeXteRrBDN](https://steamcommunity.com/id/dexterrbdn)
+
 ### Czech
   * Bee_Boo
   * C04Le
