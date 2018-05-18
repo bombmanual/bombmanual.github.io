@@ -139,12 +139,12 @@ em {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0 0;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.5em;
-    margin: 0.83em 0 0;
+    margin: 0;
 }
 
 h3 {
@@ -290,7 +290,8 @@ td, th {
 }
 
 .page-content {
-    margin: 4.5em 6.83% 0; /* = 0.75in ~0.75in 0 at 12pt (1em) */
+    margin: 0 6.83%; /* = 0 ~0.75in at 12pt (1em) */
+    padding-top: 4.5em; /* = 0.75in at 12pt (1em) */
     min-height: 60em; /* Leaving 3em at the bottom for footer (0.75in) */
 }
 
@@ -328,7 +329,7 @@ td, th {
 .absolute-footer {
     position: relative;
     height: 0;
-    top: 66em; /* = 10.5in at 12pt (1em) */
+    top: 67em; /* = 10.5in at 12pt (1em) */
     display: none;
 }
 
