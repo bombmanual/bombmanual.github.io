@@ -11,6 +11,7 @@ Unofficial BombManual.com Translations
   * C04Le
   * Caken
   * Jan Baier
+  * marians
 
 ### Italian
   * BrightSoul
