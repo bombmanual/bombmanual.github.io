@@ -1,7 +1,10 @@
 Unofficial BombManual.com Translations
 ==============================
 
-## Contributors:
+This project was made possible by the support of many people we all should thank for.
+
+## Contributors
+> In alphabetical order
 
 ### Catalan
   * [DeXteRrBDN](https://steamcommunity.com/id/dexterrbdn)
@@ -11,10 +14,18 @@ Unofficial BombManual.com Translations
   * C04Le
   * Caken
   * Jan Baier
-  * marians
+  * [marians](https://github.com/mariansam)
+  
+### German
+  * [FroznMine](https://github.com/FroznMine)
+  * [Intruder66](https://github.com/Intruder66)
+  * [Mave213](https://github.com/Mave213)
+  * [PeterRed4091](https://github.com/PeterRed4091)
+  * [reneroth](https://github.com/reneroth)
+  * [schoenwaldnils](https://github.com/schoenwaldnils)
 
 ### Italian
-  * BrightSoul
+  * [BrightSoul](https://github.com/BrightSoul)
   * [brugnara](https://www.brugnara.me)
   * jaramir
 
