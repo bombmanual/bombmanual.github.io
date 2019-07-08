@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keep Talking and Nobody Explodes v. 1</title>
+    <base href="http://www.bombmanual.com/manual/1/html/">
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+</head>
+<body>
+<div id="ManualContent">
+    <div class="section">
+
+        <div class="page section-title">
+            <div style="position:relative; height:0;">&nbsp;</div>
+            <div class="page-footer absolute-footer no-auto-footer">
+                Revisjon 3 (Norsk oversettelse: Revisjon 1)
+            </div>
+            <div class="page-content">
+                <img src="img/ktane-logo.png" alt="Keep Talking and Nobody Explodes" style="margin: 1em auto .2em; width: 42em;" />
+                <h1 style="font-size: 1em; font-weight: normal; margin: 3.85em auto 0;"><span style="font-size: 8.7em; line-height: 1em;">BOMBE-</span><br /><span style="font-size: 9.2em; line-height: 1em;">MANUAL</span></h1>
+                <h2 style="margin: 1.2em auto; text-decoration: none; line-height: 1em; font-size: 2.8em;">Versjon 1<br />
+                    <span style="font-size: 0.57em; font-weight: normal;">Verifiseringskode: 241</span>
+                </h2>
+            </div>
+            <div class="page-footer relative-footer no-auto-footer">
+                Revisjon 3 (Norsk oversettelse: Revisjon 1)
+            </div>
+        </div>
+    </div><div class="section">
+    <div class="section">
+        <div class="page section-title">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Introduksjon</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <div class="vertical-spacer"></div>
+
+                <p style="font-style:italic;">Velkommen til det farlige og utfordrende yrket som bombetekniker.</p>
+
+                <p style="font-style:italic;">Les denne manualen nøye; <em style="font-style:italic;">du er eksperten</em>. På disse sidene vil du finne alt du trenger for å desarmere de mest innviklede bombene verden har sett.<br>Og husk — en liten feil, og det hele kan være over!</p>
+
+                <br><br>
+
+                <p style="font-style:italic;">Oversatt av Ole Martin Handeland (ktne@olemartin.org), med hjelp fra Stig Andreassen (stig@ikt-huset.no, GameIT prosjektet). Opprett gjerne en sak på https://github.com/olemartinorg/ktne-norwegian om du finner en skriveleif.</p>
+
+                <p style="font-style:italic;">This is an <strong>unofficial</strong> translation, it is not endorsed or supported by the developers of Keep Talking and Nobody Explodes.</p>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Desarmering av bomber</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <h1>Desarmering av bomber</h1>
+
+                <p>En bombe eksploderer når tidtakeren når 0:00, eller når du har gjort for mange tabber ("strikes"). Den eneste måten å stoppe bomben på er å desarmere alle modulene før tiden renner ut.</p>
+
+                <div class="bomb-diagram">
+                    <span class="diagram-label">Eksempelbombe</span><br />
+                    <table><tr><td><img src="img/Bomb.svg" class="bomb-diagram-front" /><br />Sett fra fronten</td><td><img src="img/BombSide.svg" class="bomb-diagram-side" /><br />Sett fra siden</td></tr></table>
+                </div>
+
+                <h3>Moduler</h3>
+                <p>Hver bombe har opp til 11 moduler som må dearmeres. Hver moduler er uavhengig av de andre, og de kan dearmeres i vilkårlig rekkefølge.</p>
+                <p>Instruksjoner for å uskadeliggjøre moduler finner du i seksjon 1. "Kravstore" moduler er noe for seg selv, og beskrives i seksjon 2.</p>
+
+                <h3>Tabber</h3>
+                <div class="timer-diagram">Tabbeindikator<br /><img src="img/TimerComponent.svg"/></div>
+                <p>Når bombeteknikeren gjør en feil vil tabbeindikatoren (som vises over tidtakeren) fylles opp. Bomber som har tabbeindikatorer eksploderer når du gjør en tredje tabbe, og tidtakeren teller ned raskere om du først har gjort en tabbe.</p>
+                <p>Hvis det ikke er noen tabbeindikator på bomben, betyr det at bomben vil eksplodere første gang du gjør en feil. Vær forsiktig!</p>
+
+                <h3>Innhenting av informasjon</h3>
+                <p>Noen ganger trenger ekspertene spesifikk informasjon om bomben for å kunne gi instruksjoner om hvordan den skal desarmeres — for eksempel bombens serienummer. Denne informasjonen finner du vanligvis på bunnen, toppen eller sidene av bombedekselet. Se appendiks A, B eller C for detaljer om hvordan du kan identifisere disse.</p>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page section-title">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Seksjon 1: Moduler</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <div class="vertical-spacer"></div>
+                <img src="img/Component.svg" class="diagram" />
+                <div class="new-block-formatting-context">
+                    <h1>Seksjon 1: Moduler</h1>
+                    <p>Alle moduler har et lys øverst i høyre hjørne. Når dette lyset er grønt, er modulen desarmert.</p>
+                    <p>Alle moduler må desarmeres for å uskadeliggjøre bomben.</p>
+                </div>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Ledninger</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/WireComponent.svg" class="diagram" />
+                <h2>Ledninger</h2>
+                <p class="flavour-text">
+                    Ledninger er blodet til all elektronikk! Nei, vent. Det er vel elektrisitet som er blodet? Ledninger er vel som blodårer? Eller er det elektronene som er blodet? Samma det…</p>
+
+                <ul>
+                    <li>En ledningsmodul har 3 til 6 ledninger.</li>
+                    <li>Du skal bare kutte <em>en</em> ledning for å desarmere modulen.</li>
+                    <li>Rekkefølgen starter fra toppen.</li>
+                </ul>
+
+                <table>
+                    <tr>
+                        <td>
+                            <strong><em>3 ledninger:</em></strong><br />
+                            Hvis det ikke er noen røde ledninger, kutt den andre ledningen.<br>
+                            Ellers, om den siste ledningen er hvit, kutt den siste ledningen.<br>
+                            Ellers, om det er mer enn en blå ledning, kutt den siste blå ledningen.<br>
+                            Ellers, kutt den siste ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>4 ledninger:</em></strong><br />
+                            Hvis det er mer enn en rød ledning og det siste tallet i serienummeret er et oddetall, kutt den siste røde ledningen.<br />
+                            Ellers, hvis den siste ledningen er gul og det ikke er noen røde ledninger, kutt den første ledningen.<br />
+                            Ellers, hvis det er nøytaktig en blå ledning, kutt den første ledningen.<br />
+                            Ellers, hvis det er mer enn en gul ledning, kutt den siste ledningen.<br />
+                            Ellers, kutt den andre ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>5 ledninger:</em></strong><br />
+                            Hvis den siste ledningen er svart, og det siste tallet i serienummeret er et oddetall, kutt den fjerde ledningen.<br />
+                            Ellers, om det er nøyaktig en rød ledning og det er mer enn en gul ledning, kutt den første ledningen.<br />
+                            Ellers, hvis det ikke er noen svarte ledninger, kutt den andre ledningen.<br />
+                            Ellers, kutt den første ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>6 ledninger:</em></strong><br />
+                            Hvis det ikke er noen gule ledninger, og det siste tallet i serienummeret er et oddetall, kutt den tredje ledningen.<br />
+                            Ellers, hvis det er nøyaktig en gul ledning og det er mer enn en hvit ledning, kutt den fjerde ledningen.<br />
+                            Ellers, hvis det ikke er noen røde ledninger, kutt den siste ledningen.<br />
+                            Ellers, kutt den fjerde ledningen.
+                    </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Knappen</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/ButtonComponent.svg" class="diagram" />
+                <h2>Den store knappen</h2>
+                <p class="flavour-text">Du tror kanskje at det å trykke på en knapp som forteller deg at du skal trykke på den er ganske så rett frem, men det er denslags som fører til uheldige eksplosjoner.</p>
+                <p class="appendix-reference">
+                    Se i appendiks A for oversikt over de ulike indikatorene.<br />
+                    Se i appendiks B for oversikt over de ulike typene batterier.
+                </p>
+                <p>Følg disse reglene i den rekkefølgen de står. Utfør den første handlingen som passer til situasjonen:</p>
+                <ol>
+                    <li>
+                        Hvis knappen er blå og det står "Abort" på den, hold inne knappen og følg oppskriften under "slippe en trykket knapp".
+                    </li>
+                    <li>
+                        Hvis det er mer enn 1 batteri på bomben, og det står "Detonate" på knappen, trykk inn knappen og slipp den umiddelbart.
+                    </li>
+                    <li>
+                        Hvis knappen er hvit og det er finnes en opplyst indikator med påskriften "CAR", hold inne knappen og følg oppskriften under "slippe en trykket knapp".
+                    </li>
+                    <li>
+                        Hvis det er flere enn 2 batterier på bomben, og det er en opplyst indikator med påskriften "FRK", trykk inn knappen og slipp den umiddelbart.
+                    </li>
+                    <li>
+                        Hvis knappen er gul, hold den inne og følg oppskriften under "slippe en trykket knapp".
+                    </li>
+                    <li>
+                        Hvis knappen er rød og det står "Hold" på den, trykk den inn og slipp den umiddelbart.
+                    </li>
+                    <li>
+                        Hvis ingen av reglene over passet, hold inne knappen og følg oppskriften under "slippe en trykket knapp".
+                    </li>
+                </ol>
+                <h3>Slippe en trykket knapp</h3>
+                <p>
+                    Når du holder inne knappen, vises det en farget stripe på høyre side av knappen. Se på tidtakeren, og slipp knappen på et spesifikt tidspunkt:
+                </p>
+                <ul>
+                    <li>
+                        <em>Blå stripe:</em> slipp knappen når tidtakeren har et 4-tall i hvilken som helst posisjon.
+                    </li>
+                    <li>
+                        <em>Hvit stripe:</em> slipp knappen når tidtakeren har et 1-tall i hvilken som helst posisjon.
+                    </li>
+                    <li>
+                        <em>Gul stripe:</em> slipp knappen når tidtakeren har et 5-tall i hvilken som helst posisjon.
+                    </li>
+                    <li>
+                        <em>Alle andre farger:</em> slipp knappen når tidtakeren har et 1-tall i hvilken som helst posisjon.
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Symboler</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/KeypadComponent.svg" class="diagram" />
+            <h2>Symboler</h2>
+            <p class="flavour-text">
+                Jeg er ikke sikker på hva disse symbolene betyr, men jeg mistenker at de har noe med det okkulte å gjøre.
+            </p>
+            <ul>
+                <li>
+                    Bare en av kolonnene har alle de fire symbolene vist i modulen.
+                </li>
+                <li>
+                    Trykk på de fire knappene i den rekkefølgen symbolene vises under — fra topp til bunn.
+                </li>
+            </ul>
+            <br/>
+            <br/>
+            <table class="keypad-table">
+                <tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/1-copyright.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/11-six.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/13-at.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/28-balloon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/8-pumpkin.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/16-euro.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/31-bt.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/27-tracks.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/12-squigglyn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/26-cursive.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/22-rightc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/14-ae.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/7-squidknife.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/15-meltedthree.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/5-doublek.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/21-paragraph.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/24-pitchfork.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/9-hookn.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/30-upsidedowny.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/19-dragon.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/18-nwithhat.png"></img></td></tr><tr><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/23-leftc.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/20-questionmark.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/3-hollowstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/4-smileyface.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/2-filledstar.png"></img></td><td class="keypad-table-spacer"></td><td class="keypad-table-column"><img class="keypad-symbol-image" src="img/symbols/6-omega.png"></img></td></tr>			</table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Gjenta etter meg</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/SimonComponent.svg" class="diagram" />
+            <h2>Gjenta etter meg</h2>
+            <p class="flavour-text">
+                Dette er som en av de lekene du lekte med som barn der du måtte gjenta mønsteret som ble vist, men dette er nok en billig kopi fra kina.
+            </p>
+
+            <ol>
+                <li>En av de fire fargede knappene vil blinke.</li>
+                <li>Bruk den riktige tabellen under, og trykk på knappen med den tilsvarende fargen.</li>
+                <li>Den opprinnelige knappen vil blinke igjen, fulgt av en annen. Gjenta denne sekvensen med oversettingstabellen..</li>
+                <li>Sekvensen blir lengre for hver gang du treffer riktig, helt til modulen er dearmert.</li>
+            </ol>
+            <img src="img/SimonComponent_ColourLegend.svg" style="height: 9em; margin: 1em auto; display: block;" alt="Toppen: Blå, Venster: Rød, Høyre: Gul, Bunnen: Grønn" />
+
+            <p>Hvis serienummeret inneholder en vokal (utenom Y, den er ikke en vokal på engelsk):<p>
+            <table class="repeaters-table">
+                <tr>
+                    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Rødt blink</th>
+                    <th>Blått blink</th>
+                    <th>Grønt blink</th>
+                    <th>Gult blink</th>
+                </tr>
+                <tr style="white-space: nowrap;"><th rowspan="3">Trykk på:</th><th>Ingen tabber</th><td>Blå</td><td>Rød</td><td>Gul</td><td>Grønn</td></tr><th>1 tabbe</th><td>Gul</td><td>Grønn</td><td>Blå</td><td>Rød</td></tr><th>2 tabber</th><td>Grønn</td><td>Rød</td><td>Gul</td><td>Blå</td></tr>            </table>
+
+            <p>Hvis serienummeret <em>ikke</em> inneholder en vokal:<p>
+            <table class="repeaters-table">
+                <tr>
+                    <th colspan="2" class="repeaters-spacer"></th>
+                    <th>Rødt blink</th>
+                    <th>Blått blink</th>
+                    <th>Grønt blink</th>
+                    <th>Gult blink</th>
+                </tr>
+                <tr style="white-space: nowrap;"><th rowspan="3">Trykk på:</th><th>Ingen tabber</th><td>Blå</td><td>Gul</td><td>Grønn</td><td>Rød</td></tr><th>1 tabbe</th><td>Rød</td><td>Blå</td><td>Gul</td><td>Grønn</td></tr><th>2 tabber</th><td>Gul</td><td>Grønn</td><td>Blå</td><td>Rød</td></tr>            </table>
+
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Hvem er på første?</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/WhosOnFirstComponent.svg" class="diagram" />
+                <h2>Hvem er på første?</h2>
+                <p class="flavour-text">
+                    Denne modulen ser ut som noe fra en sketsj fra Abbott &amp; Costello, som kunne vært morsomt om det ikke var koblet til en bombe. Jeg skal holde dette kort, siden flere ord bare gjør dette værre.
+                </p>
+                <ol>
+                    <li>Les ordet på toppen og bruk "steg 1" for å finne ut hvilken av knappene du vil at bombeteknikeren skal <u>lese</u>.</li>
+                    <li>Bruk ordet som står på knappen, og slå det opp i "steg 2" (på neste side) for å finne ut hvilken knapp bombeteknikeren skal <u>trykke</u> på.</li>
+                    <li>Gjenta dette helt til modulen er desarmert.</li>
+                </ol>
+                <h3>Steg 1:</h3>
+                <p>Basert på displayet på toppen, <u>les</u> ordet som står på knappen i en gitt posisjon, og fortsett til "steg 2":</p>
+                <table class="whos-on-first-step1-table">
+                    <tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YES</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">FIRST</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">OKAY</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SAYS</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NOTHING</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2"><br/></th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">BLANK</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">NO</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEAD</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">READ</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">RED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">REED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">LEED</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td></tr><tr><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOUR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">UR</th></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THERE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEIR</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td></tr><tr><td></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">SEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">C</th></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr></table></td><td><table><tr><th class="whos-on-first-look-at-display" colspan="2">CEE</th></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td></tr><tr><td><br /></td><td class="whos-on-first-look-at"><img src="img/eye-icon.png" alt="Look At" style="height: 1em;" /></td></tr></table></td>			</table>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Hvem er på første?</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <h3>Steg 2:</h3>
+                <p>Bruk ordet du fikk opplest fra "steg 1", <u>trykk på den første knappen</u> som vises i denne listen:</p>
+                <table class="whos-on-first-step2-table">
+                    <tr><th>"READY":</th><td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY, NO, FIRST, UHHH, NOTHING, WAIT</td></tr><tr><th>"FIRST":</th><td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td></tr><tr><th>"NO":</th><td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO, MIDDLE</td></tr><tr><th>"BLANK":</th><td>WAIT, RIGHT, OKAY, MIDDLE, BLANK, PRESS, READY, NOTHING, NO, WHAT, LEFT, UHHH, YES, FIRST</td></tr><tr><th>"NOTHING":</th><td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING, READY</td></tr><tr><th>"YES":</th><td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES, LEFT, BLANK, NO, WAIT</td></tr><tr><th>"WHAT":</th><td>UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT</td></tr><tr><th>"UHHH":</th><td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST</td></tr><tr><th>"LEFT":</th><td>RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING</td></tr><tr><th>"RIGHT":</th><td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST</td></tr><tr><th>"MIDDLE":</th><td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE, RIGHT, FIRST, UHHH, YES</td></tr><tr><th>"OKAY":</th><td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY, LEFT, READY, BLANK, PRESS, WHAT, RIGHT</td></tr><tr><th>"WAIT":</th><td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT, NOTHING, READY, RIGHT, MIDDLE</td></tr><tr><th>"PRESS":</th><td>RIGHT, MIDDLE, YES, READY, PRESS, OKAY, NOTHING, UHHH, BLANK, LEFT, FIRST, WHAT, NO, WAIT</td></tr><tr><th>"YOU":</th><td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU, UH UH, LIKE, DONE, U</td></tr><tr><th>"YOU ARE":</th><td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, UH UH, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td></tr><tr><th>"YOUR":</th><td>UH UH, YOU ARE, UH HUH, YOUR, NEXT, UR, SURE, U, YOU'RE, YOU, WHAT?, HOLD, LIKE, DONE</td></tr><tr><th>"YOU'RE":</th><td>YOU, YOU'RE, UR, NEXT, UH UH, YOU ARE, U, YOUR, WHAT?, UH HUH, SURE, DONE, LIKE, HOLD</td></tr><tr><th>"UR":</th><td>DONE, U, UR, UH HUH, WHAT?, SURE, YOUR, HOLD, YOU'RE, LIKE, NEXT, UH UH, YOU ARE, YOU</td></tr><tr><th>"U":</th><td>UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U, YOU, LIKE, HOLD, YOU ARE, YOUR</td></tr><tr><th>"UH HUH":</th><td>UH HUH, YOUR, YOU ARE, YOU, DONE, HOLD, UH UH, NEXT, SURE, LIKE, YOU'RE, UR, U, WHAT?</td></tr><tr><th>"UH UH":</th><td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH, DONE, YOU, UH HUH, LIKE, YOUR, SURE, HOLD, WHAT?</td></tr><tr><th>"WHAT?":</th><td>YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?, SURE</td></tr><tr><th>"DONE":</th><td>SURE, UH HUH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, UH UH, DONE</td></tr><tr><th>"NEXT":</th><td>WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT, LIKE, DONE, YOU ARE, UR, YOU'RE, U, YOU</td></tr><tr><th>"HOLD":</th><td>YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD, UH HUH, YOUR, LIKE</td></tr><tr><th>"SURE":</th><td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE, U, WHAT?, NEXT, YOUR, UH UH</td></tr><tr><th>"LIKE":</th><td>YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE, SURE, YOU ARE, YOUR</td></tr>            </table>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Hukommelse</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/MemoryComponent.svg" class="diagram" />
+            <h2>Hukommelse</h2>
+            <p class="flavour-text">Hukommelsen er en skjør greie, men så er alt skjørt når det kommer til en eksploderende bombe, så følg nøye med!</p>
+            <ul>
+                <li>Trykk på riktig knapp (en av de 4 på bunnen) for å gå videre til neste steg. Gå gjennom alle stegene for å desarmere modulen.</li>
+                <li>Hvis du trykker feil, resettes modulen tilbake til steg 1.</li>
+                <li>Knappene-posisjoner er fra venstre til høyre.</li>
+            </ul>
+            <div class="memory-rules">
+                <h4>Steg 1:</h4>
+                <p>
+                    Om displayet viser 1, trykk på den andre knappen.<br />
+                    Om displayet viser 2, trykk på den andre knappen.<br />
+                    Om displayet viser 3, trykk på den tredje knappen.<br />
+                    Om displayet viser 4, trykk på den fjerde knappen.<br />
+                </p>
+                <h4>Steg 2:</h4>
+                <p>
+                    Om displayet viser 1, trykk på den knappen det står "4" på.<br />
+                    Om displayet viser 2, trykk på knappen med samme posisjon som du trykket på i steg 1.<br />
+                    Om displayet viser 3, trykk på den første knappen.<br />
+                    Om displayet viser 4, trykk på knappen med samme posisjon som du trykket på i steg 1.<br />
+                </p>
+                <h4>Steg 3:</h4>
+                <p>
+                    Om displayet viser 1, trykk på knappen med det samme tallet som du trykket på i steg 2.<br />
+                    Om displayet viser 2, trykk på knappen med det samme tallet som du trykket på i steg 1.<br />
+                    Om displayet viser 3, trykk på den tredje knappen.<br />
+                    Om displayet viser 4, trykk på den knappen det står "4" på.<br />
+                </p>
+                <h4>Steg 4:</h4>
+                <p>
+                    Om displayet viser 1, trykk på knappen med samme posisjon som du trykket på i steg 1.<br />
+                    Om displayet viser 2, trykk på den første knappen.<br />
+                    Om displayet viser 3, trykk på knappen med samme posisjon som du trykket på i steg 2.<br />
+                    Om displayet viser 4, trykk på knappen med samme posisjon som du trykket på i steg 2.<br />
+                </p>
+                <h4>Steg 5:</h4>
+                <p>
+                    Om displayet viser 1, trykk på knappen med det samme tallet som du trykket på i steg 1.<br />
+                    Om displayet viser 2, trykk på knappen med det samme tallet som du trykket på i steg 2.<br />
+                    Om displayet viser 3, trykk på knappen med det samme tallet som du trykket på i steg 4.<br />
+                    Om displayet viser 4, trykk på knappen med det samme tallet som du trykket på i steg 3.<br />
+                </p>
+            </div>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+    <div class="section">
+        <div class="page morse-code">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Morsekode</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/MorseCodeComponent.svg" class="diagram" />
+                <h2>Morsekode</h2>
+                <p class="flavour-text">
+                    En urgammel maritim kommunikasjons-metode? Hva blir det neste? Det er i hvert fall ekte morsekode, så følg med — kanskje lærer du noe!
+                </p>
+                <ul>
+                    <li>Tolk signalet fra det blinkende lyset ved hjelp av morse-alfabetet under. Resultatet skal bli et av ordene i tabellen til høyre.</li>
+                    <li>Signalet vil gjentas, med en lang pause mellom hver gang.</li>
+                    <li>Når du har funnet ut hvilket ord det er, sett tilsvarende frekvens på senderen, og trykk på "TX"-knappen.</li>
+                </ul>
+
+                <svg style="float: left; margin-right: 1em; height: 32em; width: 24.8270625em; border: 1px solid #021a40; background-color: #ffffff;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" width="450" height="580" viewBox="0 0 414.772 500.994" id="Layer_2" xml:space="preserve" inkscape:version="0.48.2 r9819" sodipodi:docname="International_Morse_Code.svg"><metadata id="metadata3375"><rdf:RDF><cc:Work     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="929" inkscape:window-height="866" id="namedview3373" showgrid="false" inkscape:zoom="1" inkscape:cx="234.2161" inkscape:cy="302.09746" inkscape:window-x="341" inkscape:window-y="94" inkscape:window-maximized="0" inkscape:current-layer="g2643" />
+<defs id="defs3017" />
+<g id="g2643">
+<text x="68" y="10.537716" id="text2872" style="font-size:22px;">Hvordan tolke morsekode</text>
+<text x="54.051781" y="38.502422" style="font-size:10px;" id="text3411"><tspan   x="54.051781"   y="38.502422"   id="tspan3413"> </tspan><tspan   x="54.051781"   y="38.502422"   id="tspan3405" /><tspan   x="54.051781"   y="38.502422"   id="tspan3407" /><tspan   x="54.051781"   y="38.502422"   id="tspan3409" /></text>
+<text x="54.051781" y="38.502422" style="font-size:10px;" id="text3401"><tspan   x="54.051781"   y="38.502422"   id="tspan3403" /></text>
+<text xml:space="preserve" style="font-size:15px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;" x="40.91169" y="55.326767" id="text3464" sodipodi:linespacing="125%" transform="matrix(0.92171556,0,0,0.92171556,0,-16.800511)"><tspan   sodipodi:role="line"   id="tspan3466"   x="40.91169"   y="55.326767">1. Et kort blink representerer en prikk.</tspan><tspan   sodipodi:role="line"   x="40.91169"   y="75.076767"   id="tspan3468">2. Et langt blink representerer en strek.</tspan><tspan   sodipodi:role="line"   x="40.91169"   y="95.826767"   id="tspan3470">3. Det er en kort pause mellom hver bokstav.</tspan><tspan   sodipodi:role="line"   x="40.91169"   y="115.576767"   id="tspan3472">4. Det er en lengre pause før ordet gjentas.</tspan></text>
+</g>
+<g transform="translate(-3.8164787,0)" id="g3272">
+<g transform="translate(-18.434315,0)" id="g3132">
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,202.38592,-57.340438)" id="circle3554" />
+<rect width="27.651466" height="9.217145" x="285.73181" y="121.45683" id="rect3556" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,220.82023,-57.340438)" id="circle3558" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,202.38592,-38.906127)" id="circle3560" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,220.82023,-38.906126)" id="circle3562" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,239.25454,-38.906126)" id="circle3564" />
+<rect width="27.651466" height="9.217145" x="304.16614" y="139.89114" id="rect3566" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,202.38592,-20.471816)" id="circle3568" />
+<rect width="27.651466" height="9.217145" x="267.29752" y="158.32545" id="rect3570" />
+<rect width="27.651466" height="9.217145" x="304.16614" y="158.32544" id="rect3572" />
+<rect width="27.651466" height="9.217145" x="248.8632" y="176.75975" id="rect3574" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,239.25454,-2.0375037)" id="circle3576" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,257.68885,-2.0375037)" id="circle3578" />
+<rect width="27.651466" height="9.217145" x="322.60043" y="176.75977" id="rect3580" />
+<rect width="27.651466" height="9.217145" x="248.8632" y="195.19408" id="rect3588" />
+<rect width="27.651466" height="9.217145" x="304.16614" y="195.19408" id="rect3590" />
+<rect width="27.651466" height="9.217145" x="341.03476" y="195.19408" id="rect3592" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,239.25454,16.396807)" id="circle3594" />
+<rect width="27.651466" height="9.217145" x="248.8632" y="213.62837" id="rect3596" />
+<rect width="27.651466" height="9.217145" x="285.73181" y="213.62839" id="rect3598" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,276.12316,34.831118)" id="circle3600" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,294.55748,34.831118)" id="circle3602" />
+<g transform="translate(-1.8497366,0)" id="g2615">
+<text x="231.22548" y="130.67398" id="text3604" xml:space="preserve" style="font-size:18px;">U</text>
+<text x="231.74756" y="149.10829" id="text3608" xml:space="preserve" style="font-size:18px;">V</text>
+<text x="229.15523" y="167.31757" id="text3612" xml:space="preserve" style="font-size:18px;">W</text>
+<text x="231.73405" y="185.97691" id="text3616" xml:space="preserve" style="font-size:18px;">X</text>
+<text x="231.76105" y="204.41122" id="text3620" xml:space="preserve" style="font-size:18px;">Y</text>
+<text x="232.27863" y="222.84554" id="text3624" xml:space="preserve" style="font-size:18px;">Z</text>
+</g>
+</g>
+<g id="g3169">
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,-57.340437)" id="circle2870" />
+<rect width="27.651466" height="9.217145" x="55.302933" y="121.45683" id="rect3010" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.496285,-38.906126)" id="circle3324" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,45.694276,-38.611276)" id="circle3326" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,64.122679,-38.906126)" id="circle3328" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="158.32544" id="rect3330" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.23125,-20.471815)" id="circle3332" />
+<rect width="27.651466" height="9.217145" x="92.171555" y="158.32544" id="rect3334" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,82.623628,-20.471815)" id="circle3336" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="176.75977" id="rect3338" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.17162,-2.0375044)" id="circle3340" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,45.694276,-1.8597136)" id="circle3342" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,16.396807)" id="circle3412" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086574,34.831118)" id="circle3414" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,8.8256537,34.831118)" id="circle3416" />
+<rect width="27.651466" height="9.217145" x="73.737244" y="213.62837" id="rect3420" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,64.128587,34.831118)" id="circle3422" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="232.06268" id="rect3424" />
+<rect width="27.651466" height="9.217145" x="73.737244" y="232.06268" id="rect3426" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,64.128587,53.265429)" id="circle3428" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,71.69974)" id="circle3458" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,8.8256535,71.69974)" id="circle3460" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.259965,71.69974)" id="circle3462" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,45.694276,71.69974)" id="circle3464" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,90.134051)" id="circle3466" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,8.8256537,90.134051)" id="circle3468" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,108.56836)" id="circle3470" />
+<rect width="27.651466" height="9.217145" x="55.302933" y="287.36563" id="rect3472" />
+<rect width="27.651466" height="9.217145" x="92.171555" y="287.36563" id="rect3474" />
+<rect width="27.651466" height="9.217145" x="129.04018" y="287.36563" id="rect3476" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="305.79993" id="rect3478" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.259965,127.00267)" id="circle3480" />
+<rect width="27.651466" height="9.217145" x="92.171555" y="305.79996" id="rect3482" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,145.43698)" id="circle3484" />
+<rect width="27.651466" height="9.217145" x="55.302933" y="324.23425" id="rect3486" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,45.694276,145.43698)" id="circle3488" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,64.128587,145.43698)" id="circle3490" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="342.66858" id="rect3492" />
+<rect width="27.651466" height="9.217145" x="73.737244" y="342.66858" id="rect3494" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="361.10287" id="rect3496" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.259965,182.30561)" id="circle3498" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="379.5372" id="rect3500" />
+<rect width="27.651466" height="9.217145" x="73.737244" y="379.5372" id="rect3502" />
+<rect width="27.651466" height="9.217145" x="110.60587" y="379.5372" id="rect3504" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086576,219.17423)" id="circle3506" />
+<rect width="27.651466" height="9.217145" x="55.302933" y="397.9715" id="rect3508" />
+<rect width="27.651466" height="9.217145" x="92.171555" y="397.9715" id="rect3510" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,82.562898,219.17423)" id="circle3512" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="416.40579" id="rect3514" />
+<rect width="27.651466" height="9.217145" x="73.737244" y="416.40582" id="rect3516" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,64.128587,237.60854)" id="circle3518" />
+<rect width="27.651466" height="9.217145" x="129.04018" y="416.40582" id="rect3520" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086574,256.04285)" id="circle3522" />
+<rect width="27.651466" height="9.217145" x="55.302933" y="434.84012" id="rect3524" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,45.694276,256.04285)" id="circle3526" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,27.259965,274.47716)" id="circle3528" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,8.8256537,274.47716)" id="circle3530" />
+<circle cx="39.4" cy="141.48" r="3.555" transform="matrix(1.296365,0,0,1.296365,-9.6086574,274.47716)" id="circle3532" />
+<rect width="27.651466" height="9.217145" x="36.868622" y="471.70874" id="rect3534" />
+<g id="g2573">
+<text x="17.138149" y="130.67398" id="text3309" xml:space="preserve" style="font-size:18px;">A</text>
+<text x="16.953625" y="149.10829" id="text3344" xml:space="preserve" style="font-size:18px;">B</text>
+<text x="16.535072" y="167.31757" id="text3350" xml:space="preserve" style="font-size:18px;">C</text>
+<text x="16.409058" y="185.97691" id="text3356" xml:space="preserve" style="font-size:18px;">D</text>
+<text x="16.904119" y="204.41122" id="text3360" xml:space="preserve" style="font-size:18px;">E</text>
+<text x="17.322672" y="222.84554" id="text3364" xml:space="preserve" style="font-size:18px;">F</text>
+<text x="16.202032" y="241.05481" id="text3368" xml:space="preserve" style="font-size:18px;">G</text>
+<text x="16.634085" y="259.71414" id="text3372" xml:space="preserve" style="font-size:18px;">H</text>
+<text x="20.693594" y="278.14847" id="text3376" xml:space="preserve" style="font-size:18px;">I</text>
+<text x="19.145401" y="296.58276" id="text3380" xml:space="preserve" style="font-size:18px;">J</text>
+<text x="16.481066" y="315.01709" id="text3384" xml:space="preserve" style="font-size:18px;">K</text>
+<text x="17.813232" y="333.45139" id="text3388" xml:space="preserve" style="font-size:18px;">L</text>
+<text x="15.621459" y="351.88571" id="text3392" xml:space="preserve" style="font-size:18px;">M</text>
+<text x="16.683592" y="370.32001" id="text3396" xml:space="preserve" style="font-size:18px;">N</text>
+<text x="16.085016" y="388.75433" id="text3400" xml:space="preserve" style="font-size:18px;">O</text>
+<text x="16.058014" y="425.62296" id="text3404" xml:space="preserve" style="font-size:18px;">Q</text>
+<text x="16.82761" y="407.18866" id="text3408" xml:space="preserve" style="font-size:18px;">P</text>
+<text x="16.022009" y="444.05728" id="text3536" xml:space="preserve" style="font-size:18px;">R</text>
+<text x="17.205658" y="462.49158" id="text3540" xml:space="preserve" style="font-size:18px;">S</text>
+<text x="17.62421" y="480.9259" id="text3544" xml:space="preserve" style="font-size:18px;">T</text>
+</g>
+<use transform="translate(-18.43431,18.434311)" id="use2703" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+</g>
+<g transform="translate(-18.434314,64.295099)" id="g3051">
+<use transform="translate(211.99458,119.82302)" id="use2707" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(248.8632,119.82301)" id="use2709" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use id="use2711" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2709" />
+<use transform="translate(285.73182,119.82301)" id="use2713" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(322.60045,119.82301)" id="use2715" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(211.99458,119.82302)" id="use2717" x="0" y="0" width="414.772" height="500.99399" xlink:href="#circle2870" />
+<use transform="translate(211.99458,138.25733)" id="use2719" x="0" y="0" width="414.772" height="500.99399" xlink:href="#circle2870" />
+<use transform="translate(230.42889,138.25733)" id="use2721" x="0" y="0" width="414.772" height="500.99399" xlink:href="#circle2870" />
+<use transform="translate(230.42889,138.25733)" id="use2723" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(267.29751,138.25733)" id="use2725" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(304.16613,138.25732)" id="use2727" x="0" y="0" width="414.772" height="500.99399" xlink:href="#rect3010" />
+<use transform="translate(211.99458,156.69164)" id="use2779" x="0" y="0" width="414.772" height="500.99399" xlink:href="#circle2870" />
+<use transform="translate(18.434309,4.0522843e-6)" id="use2781" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2779" />
+<use transform="translate(18.434311,0)" id="use2783" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2781" />
+<use transform="translate(18.434309,18.434308)" id="use2785" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2723" />
+<use transform="translate(36.868622,9.8155382e-8)" id="use2787" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2785" />
+<use transform="translate(2.324722e-7,18.434311)" id="use2789" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2779" />
+<use transform="translate(18.434311,7.8636818e-8)" id="use2791" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2789" />
+<use transform="translate(18.434311,0)" id="use2793" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2791" />
+<use transform="translate(18.434311,0)" id="use2795" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2793" />
+<use transform="translate(18.434313,18.434307)" id="use2797" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2785" />
+<use transform="translate(-2.3247221e-7,18.434311)" id="use2799" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2789" />
+<use transform="translate(18.434311,-4.2724257e-8)" id="use2801" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2799" />
+<use transform="translate(18.434311,0)" id="use2803" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2801" />
+<use transform="translate(18.434312,0)" id="use2805" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2803" />
+<use transform="translate(18.434311,0)" id="use2807" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2805" />
+<use transform="translate(36.868622,36.868622)" id="use2809" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2789" />
+<use transform="translate(36.868622,36.868622)" id="use2811" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2791" />
+<use transform="translate(36.868622,36.868622)" id="use2813" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2793" />
+<use transform="translate(36.868622,36.868622)" id="use2815" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2795" />
+<use transform="translate(-73.737245,36.868622)" id="use2817" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2797" />
+<use id="use2819" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2779" />
+<use id="use2821" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2781" />
+<use id="use2823" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2783" />
+<use id="use2825" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2785" />
+<use id="use2827" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2787" />
+<use transform="translate(73.737242,73.737248)" id="use2829" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2779" />
+<use transform="translate(73.737244,73.737244)" id="use2831" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2781" />
+<use transform="translate(73.737244,73.737244)" id="use2833" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2783" />
+<use transform="translate(-55.302932,73.73724)" id="use2845" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2825" />
+<use transform="translate(-55.302931,73.737251)" id="use2847" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2827" />
+<use transform="translate(36.868622,18.434311)" id="use2849" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2829" />
+<use transform="translate(36.868622,18.434311)" id="use2851" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2831" />
+<use transform="translate(36.868622,18.434311)" id="use2855" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2845" />
+<use transform="translate(36.868622,18.434311)" id="use2857" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2847" />
+<use transform="translate(-36.868622,3.3648014e-7)" id="use2859" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2855" />
+<use transform="translate(-18.434316,147.4745)" id="use2861" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2707" />
+<use transform="translate(-18.434316,147.4745)" id="use2863" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2709" />
+<use transform="translate(-18.434316,147.4745)" id="use2865" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2711" />
+<use transform="translate(-18.434316,147.4745)" id="use2867" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2713" />
+<use transform="translate(-18.434316,147.4745)" id="use2869" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2715" />
+<use transform="translate(-110.60587,18.434302)" id="use2873" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2869" />
+<use transform="translate(18.434312,18.434312)" id="use2875" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2851" />
+<use transform="translate(36.868625,18.434302)" id="use2877" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2861" />
+<use transform="translate(36.868625,18.434302)" id="use2879" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2863" />
+<use transform="translate(36.868625,18.434302)" id="use2881" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2865" />
+<use transform="translate(36.868625,18.434302)" id="use2883" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2867" />
+<use transform="translate(36.868625,18.434302)" id="use2885" x="0" y="0" width="414.772" height="500.99399" xlink:href="#use2869" />
+<g id="g3029">
+<text x="231.75656" y="250.49699" id="text2889" xml:space="preserve" style="font-size:18px;">1</text>
+<text x="231.284" y="268.9313" id="text2893" xml:space="preserve" style="font-size:18px;">2</text>
+<text x="231.09947" y="287.14056" id="text2897" xml:space="preserve" style="font-size:18px;">3</text>
+<text x="231.39651" y="305.79993" id="text2901" xml:space="preserve" style="font-size:18px;">4</text>
+<text x="231.05447" y="324.23422" id="text2905" xml:space="preserve" style="font-size:18px;">5</text>
+<text x="231.14449" y="342.66855" id="text2909" xml:space="preserve" style="font-size:18px;">6</text>
+<text x="231.04997" y="360.87781" id="text2913" xml:space="preserve" style="font-size:18px;">7</text>
+<text x="231.09947" y="379.53714" id="text2917" xml:space="preserve" style="font-size:18px;">8</text>
+<text x="231.09048" y="397.97147" id="text2921" xml:space="preserve" style="font-size:18px;">9</text>
+<text x="231.12648" y="416.40576" id="text2925" xml:space="preserve" style="font-size:18px;">0</text>
+</g>
+</g>
+</g>
+</svg>
+
+                <table>
+                    <tr><th>Ord:</th><th>Svar på frekvens:</th></tr>
+                    <tr><td>shell</td><td>3.505 MHz</td></tr><tr><td>halls</td><td>3.515 MHz</td></tr><tr><td>slick</td><td>3.522 MHz</td></tr><tr><td>trick</td><td>3.532 MHz</td></tr><tr><td>boxes</td><td>3.535 MHz</td></tr><tr><td>leaks</td><td>3.542 MHz</td></tr><tr><td>strobe</td><td>3.545 MHz</td></tr><tr><td>bistro</td><td>3.552 MHz</td></tr><tr><td>flick</td><td>3.555 MHz</td></tr><tr><td>bombs</td><td>3.565 MHz</td></tr><tr><td>break</td><td>3.572 MHz</td></tr><tr><td>brick</td><td>3.575 MHz</td></tr><tr><td>steak</td><td>3.582 MHz</td></tr><tr><td>sting</td><td>3.592 MHz</td></tr><tr><td>vector</td><td>3.595 MHz</td></tr><tr><td>beats</td><td>3.600 MHz</td></tr>		    </table>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page venn-wires">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Kompliserte ledninger</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/VennWireComponent.svg" class="diagram" />
+                <h2>Kompliserte ledninger</h2>
+                <p class="flavour-text">
+                    Disse ledningene er ikke som de andre. Noen har striper! Det gjør de helt forskjellige! De gode nyhetene er at vi har funnet noen helt tydelige regler på hvilke ledninger som skal kuttes. Kanskje litt for tydelige...</p>
+                <ul>
+                    <li>Se på hver ledning: det er en lampe over ledningen og plass til et "★"-symbol under ledningen.</li>
+                    <li>For <b>hver</b> kombinasjon av ledningsfarge/lampe/symbol, bruk venn-diagrammet under for å avgjøre om ledniningen skal kuttes eller ikke.</li>
+                    <li>Hver ledning kan ha striper med flere farger.</li>
+                </ul>
+
+                <div>
+                    <object id="venndiagram" width="100%" height="100%" data="img/gen/venn/venndiagram.svg" type="image/svg+xml"></object>
+                </div>
+                <div>
+                    <svg style="width: 20em; float: left; position: relative; top: -0.7em;background:white;" width="100%" height="100%" viewBox="0 0 275 200" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="250" height="180" stroke="black" fill="none" stroke-width="2" stroke-dasharray="" /><line x1="20" x2="130" y1="30" y2="30" stroke="black" stroke-width="3" stroke-dasharray="15,10,4,10" fill="none" /><line x1="20" x2="130" y1="70" y2="70" stroke="black" stroke-width="3" stroke-dasharray="" fill="none" /><line x1="20" x2="130" y1="110" y2="110" stroke="black" stroke-width="3" stroke-dasharray="3" fill="none" /><line x1="20" x2="130" y1="150" y2="150" stroke="black" stroke-width="8" stroke-dasharray="8" fill="none" /><text font-family="Special Elite, sans-serif" text-anchor="left-middle" x="150" y="27" font-size="0.75em"><tspan>Ledningen har</tspan><tspan x="150" dy="1.2em">rød farge</tspan></text><text font-family="Special Elite, sans-serif" text-anchor="left-middle" x="150" y="67" font-size="0.75em"><tspan>Ledningen har</tspan><tspan x="150" dy="1.2em">blå farge</tspan></text><text font-family="Special Elite, sans-serif" text-anchor="left-middle" x="150" y="113" font-size="0.75em"><tspan>Har ★-symbol</tspan></text><text font-family="Special Elite, sans-serif" text-anchor="left-middle" x="150" y="154" font-size="0.75em"><tspan>Lampen er på</tspan></text></svg>
+
+                    <table id="venntable">
+                        <tr><th>Bokstav</th><th>Instruksjon</th></tr>
+                        <tr><td>C</td><td>Kutt ledningen</td></tr>
+                        <tr><td>D</td><td>Ikke kutt ledningen</td></tr>
+                        <tr><td>S</td><td>Kutt ledningen hvis det siste tallet i serienummeret er et partall</td></tr>
+                        <tr><td>P</td><td>Kutt ledningen hvis bomben har en parallellport.</td></tr>
+                        <tr><td>B</td><td>Kutt ledningen hvis bomben har to eller flere batterier.</td></tr>
+                    </table>
+                </div>
+                <div style="clear:both;"/>
+                <p class="appendix-reference">
+                    Se i appendiks B for oversikt over de ulike typene batterier.<br />
+                    Se i appendiks C for oversikt over de ulike portene.
+                </p>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div><div class="section">
+    <div class="page wire-sequence">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Ledningssekvenser</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/WireSequenceComponent.svg" class="diagram" />
+            <h2>Ledningssekvenser</h2>
+            <p class="flavour-text">Det er litt vanskelig å forklare hvordan denne mekanismen fungerer. Ingeniørkunsten er ganske imponerende, men det må da være en lettere måte å håndtere ni ledninger på?</p>
+            <ul>
+                <li>
+                    I denne modulen er det flere paneler med ledninger, men bare et panel er synlig om gangen. Bytt til neste panel ved å bruke ned-knappen, og til forrige panel ved å bruke opp-knappen.
+                </li>
+                <li>
+                    Ikke gå til neste panel før du er sikker på at du har kuttet alle de riktige ledningene på panelet du står på..</li>
+                <li>
+                    Kutt ledningene som beskrevet i tabellen under. Forekomstene er kumulative over alle panelene innen modulen.</li>
+            </ul>
+            <div style="clear:both"></div>
+
+            <table class='red-table'><tr><th colspan='2' class='header'>Røde ledninger</th></tr><tr><th class='first-col'>Forekomst</th><th class='second-col'>Kutt om tilkoblet:</th></tr><tr><td class='first-col'>Første forekomst</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Andre forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Tredje røde forekomst</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Fjerde røde forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Femte forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sjette forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Syvende forekomst</td><td class='second-col'>A, B or C</td></tr><tr><td class='first-col'>Åttende forekomst</td><td class='second-col'>A or B</td></tr><tr><td class='first-col'>Niende forekomst</td><td class='second-col'>B</td></tr></table><table class='blue-table'><tr><th colspan='2' class='header'>Blå ledninger</th></tr><tr><th class='first-col'>Forekomst</th><th class='second-col'>Kutt om tilkoblet:</th></tr><tr><td class='first-col'>Første forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Andre forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Tredje forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Fjerde forekomst</td><td class='second-col'>A</td></tr><tr><td class='first-col'>Femte forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sjette forekomst</td><td class='second-col'>B or C</td></tr><tr><td class='first-col'>Syvende forekomst</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Åttende forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Niende forekomst</td><td class='second-col'>A</td></tr></table><table class='black-table'><tr><th colspan='2' class='header'>Svarte ledningner</th></tr><tr><th class='first-col'>Forekomst</th><th class='second-col'>Kutt om tilkoblet:</th></tr><tr><td class='first-col'>Første forekomst</td><td class='second-col'>A, B or C</td></tr><tr><td class='first-col'>Andre forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Tredje forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Fjerde forekomst</td><td class='second-col'>A or C</td></tr><tr><td class='first-col'>Femte forekomst</td><td class='second-col'>B</td></tr><tr><td class='first-col'>Sjette forekomst</td><td class='second-col'>B or C</td></tr><tr><td class='first-col'>Syvende forekomst</td><td class='second-col'>A or B</td></tr><tr><td class='first-col'>Åttende forekomst</td><td class='second-col'>C</td></tr><tr><td class='first-col'>Niende forekomst</td><td class='second-col'>C</td></tr></table>        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Labyrinter</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <img src="img/MazeComponent.svg" class="diagram" />
+            <h2>Labyrinter</h2>
+            <p class="flavour-text">
+                Dette ser ut som en eller annen slags labyrint. Muligens stjålet fra et barnerom.
+            </p>
+            <ul>
+                <li>Finn labyrinten med matchende sirkelmarkeringer.</li>
+                <li>Bombeteknikeren må navigere den hvite firkanten til den røde trekanten ved bruk av pil-knappene.</li>
+                <li><strong>Advarsel:</strong> Ikke kryss linjene i labyrinten — de er usynlige på bomben.</li>
+            </ul>
+            <img class="maze" src="img/gen/maze/maze0.svg"/>
+            <img class="maze" src="img/gen/maze/maze1.svg"/>
+            <img class="maze" src="img/gen/maze/maze2.svg"/>
+            <img class="maze" src="img/gen/maze/maze3.svg"/>
+            <img class="maze" src="img/gen/maze/maze4.svg"/>
+            <img class="maze" src="img/gen/maze/maze5.svg"/>
+            <img class="maze" src="img/gen/maze/maze6.svg"/>
+            <img class="maze" src="img/gen/maze/maze7.svg"/>
+            <img class="maze" src="img/gen/maze/maze8.svg"/>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Passord</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/PasswordComponent.svg" class="diagram" />
+                <h2>Passord</h2>
+                <p class="flavour-text">
+                    Heldigvis følger ikke disse passordene det samme sikkerhetsreglementet som på jobben. Minimum 22 tegn, små og store bokstaver, minst fem tall, og sikkert tre spesialtegn som ikke finnes på ditt tastatur.
+                </p>
+                <ul>
+                    <li>Pil-knappene over og under hvert felt brukes for å gå gjennom de mulige bokstavene for hvert felt.</li>
+                    <li>Bare en kombinasjon av av de tilgjengelige bokstavene matcher ett av passordene under. </li>
+                    <li>Trykk på "submit"-knappen når du har lagt inn riktig passord.</li>
+                </ul>
+                <table class="password-table">
+                    <tr><tr><td>about</td><td>after</td><td>again</td><td>below</td><td>could</td></tr><tr><td>every</td><td>first</td><td>found</td><td>great</td><td>house</td></tr><tr><td>large</td><td>learn</td><td>never</td><td>other</td><td>place</td></tr><tr><td>plant</td><td>point</td><td>right</td><td>small</td><td>sound</td></tr><tr><td>spell</td><td>still</td><td>study</td><td>their</td><td>there</td></tr><tr><td>these</td><td>thing</td><td>think</td><td>three</td><td>water</td></tr><tr><td>where</td><td>which</td><td>world</td><td>would</td><td>write</td></tr>            </table>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page section-title">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Seksjon 2: Kravstore moduler</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <div class="vertical-spacer"></div>
+                <img src="img/NeedyComponent.svg" class="diagram" />
+                <div class="new-block-formatting-context">
+                    <h1>Seksjon 2: Kravstore moduler</h1>
+                    <p>Kravstore moduler kan ikke desarmeres, men utgjør en tilbakevendende trussel.</p>
+                    <p>Kravstore moduler gjenkjennes ved at de har en egen tosifret tidtaker på toppen. Når du rører bomben kan disse bli aktivert. Når de er aktivert må disse håndteres jevnlig for å unngå en ubehagelig overraskelse.</p>
+                    <p>Følg med! Kravstore moduler kan bli re-aktivert når som helst.</p>
+                </div>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Gassventilering</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/NeedyVentComponent.svg" class="diagram" />
+                <h2>Gassventilering</h2>
+                <p class="flavour-text">Bombedesarmering er innviklet! Vel, noen ganger er i hvert fall det. Denne jobben kunne vel blitt utført av en vippefugl som trykker den samme knappen om og om igjen.</p>
+                <ul>
+                    <li>
+                        Svar på spørsmålet ved å trykke "Y" for ja, eller "N" for nei. Det er alltid bedre å lette litt på trykket enn å vente til det revner.
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Kondensatorutladning</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/NeedyDischargeComponent.svg" class="diagram" />
+                <h2>Kondensatorutladning</h2>
+                <p class="flavour-text">
+                    Jeg tipper at dette bare er ment å distrahere deg, hvis ikke ville det bare vært dårlig kretsdesign.
+                </p>
+                <ul>
+                    <li>Lad ut kondensatoren før den blir overbelastet ved å holde ned spaken på høyre side.</li>
+                    <ul>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page needy-knob">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Skruknapper</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <img src="img/NeedyKnobComponent.svg" class="diagram" />
+                <h2>Skruknapper</h2>
+                <p class="flavour-text">
+                    Unødvendig kompliserte og veldig kravstore. Hvis koketoppen min var så innviklet, ville jeg nok sultet ihjel.
+                </p>
+                <ul>
+                    <li>Skruknappen kan vris til en av fire posisjoner.</li>
+                    <li>Knappen må stå i riktig posisjon når nedtelleren treffer null.</li>
+                    <li>Riktig posisjon finner du ved å slå opp tilstanden til de 12 lampene.</li>
+                    <li>Skruknappens posisjon er relative til "UP"-merket, som kan bli rotert.</li>
+                </ul>
+                <h3>Lampetilstander</h3>
+
+                <h4>Skru oppover (mot "UP"):</h4><table style="display: inline-table"><tr><td> </td><td> </td><td>X</td><td> </td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr></table><h4>Skru nedover:</h4><table style="display: inline-table"><tr><td> </td><td>X</td><td>X</td><td> </td><td> </td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td>X</td><td> </td><td> </td><td> </td><td>X</td></tr></table><h4>Skru til venstre:</h4><table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td>X</td><td> </td><td> </td><td>X</td><td>X</td><td>X</td></tr></table><table style="display: inline-table"><tr><td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td></tr><tr><td> </td><td> </td><td> </td><td>X</td><td>X</td><td> </td></tr></table><h4>Skru til høyre:</h4><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td>X</td><td>X</td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table><table style="display: inline-table"><tr><td>X</td><td> </td><td>X</td><td>X</td><td> </td><td> </td></tr><tr><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td> </td></tr></table>            <br>
+                <br>
+                <p class="needy-diagram-label">X = lysende lampe</p>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="page appendix-indicators">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+                <span class="page-header-section-title">Appendiks A</span>
+            </div>
+            <div class="page-footer absolute-footer"></div>
+            <div class="page-content">
+                <h2>Appendiks A: Indikatorliste</h2>
+                <p>
+                    Merkede indikatorlys finner du på sidene av bombedekselet.</p>
+                <img src="img/IndicatorWidget.svg" style="height: 5em; display:block; margin: .6em 0 0;" />
+                <h3>Vanlige indikatorer</h3>
+                <ul>
+                    <li>SND</li>
+                    <li>CLR</li>
+                    <li>CAR</li>
+                    <li>IND</li>
+                    <li>FRQ</li>
+                    <li>SIG</li>
+                    <li>NSA</li>
+                    <li>MSA</li>
+                    <li>TRN</li>
+                    <li>BOB</li>
+                    <li>FRK</li>
+                </ul>
+            </div>
+            <div class="page-footer relative-footer"></div>
+        </div>
+    </div><div class="section">
+    <div class="page appendix-batteries">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Appendiks B</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Appendiks B: Batterityper</h2>
+            <p>Du kan finne noen vanlige batterityper på sidene av bombedekselet.</p>
+            <table style="margin-top: 1em;">
+                <tr><th>Batteri</th><th>Type</th></tr>
+                <tr><td><img src="img/appendix-batteries/Battery-AA.svg" style="width: 4.09375em; height: 6.18125em;"></td><td>AA</td></tr>
+                <tr><td><img src="img/appendix-batteries/Battery-D.svg" style="width: 4.09375em; height: 5.553125em;"></td><td>D</td></tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div><div class="section">
+    <div class="page appendix-ports">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+            <span class="page-header-section-title">Appendiks C</span>
+        </div>
+        <div class="page-footer absolute-footer"></div>
+        <div class="page-content">
+            <h2>Appendiks C: Porter</h2>
+            <p>Du kan finne noen digitale og analoge porter på sidene av bombedekselet.</p>
+            <table>
+                <tr><th>Port</th><th>Navn</th></tr>
+
+                <tr><td><img src="img/appendix-ports/DVI.svg" style="width: 10.15em;"></td><td>DVI-D</td></tr>
+                <tr><td><img src="img/appendix-ports/Parallel.svg" style="width: 16.1em;"></td><td>Parallell</td></tr>
+                <tr><td><img src="img/appendix-ports/PS2.svg" style="width: 5.55em;"></td><td>PS/2</td></tr>
+                <tr><td><img src="img/appendix-ports/RJ45.svg" style="width: 5.2em;"></td><td>RJ-45</td></tr>
+                <tr><td><img src="img/appendix-ports/Serial.svg" style="width: 8.35em;"></td><td>Seriell</td></tr>
+                <tr><td><img src="img/appendix-ports/StereoRCA.svg" style="width: 5em;"></td><td>Stereo RCA</td></tr>
+            </table>
+        </div>
+        <div class="page-footer relative-footer"></div>
+    </div>
+</div>    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            var re = /Page (\d+) of (\d+)/;
+            $('.page-footer').each(function(idx, elm) {
+                if ($(elm).text().match(re)) {
+                    $(elm).text($(elm).text().replace(re, 'Side $1 av $2'));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
