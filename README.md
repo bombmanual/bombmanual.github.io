@@ -31,6 +31,9 @@ This project was made possible by the support of many people we all should thank
   * [BrightSoul](https://github.com/BrightSoul)
   * [brugnara](https://www.brugnara.me)
   * jaramir
+  
+### Norwegian
+  * [olemartinorg](https://github.com/olemartinorg)
 
 ### Russian
   * [BTGDelta](http://steamcommunity.com/id/btgdelta/)
