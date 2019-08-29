@@ -54,3 +54,6 @@ This project was made possible by the support of many people we all should thank
 ### Swedish
   * Stefan [’FappaR’](http://steamcommunity.com/id/FappaR) Engdahl
   * Eric [’eric1894’](http://steamcommunity.com/id/eric1894) Odmyr
+  
+  ### Hebrew
+  * Erel [’Erelephant’](https://steamcommunity.com/id/ErelA) E-RELevant
