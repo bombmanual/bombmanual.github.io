@@ -28,7 +28,7 @@ This project was made possible by the support of many people we all should thank
   * [schoenwaldnils](https://github.com/schoenwaldnils)
 
 ### Hebrew
-  * Erel [Erelephant](https://steamcommunity.com/id/ErelA) E-RELevant
+  * [E-RELevant](https://github.com/E-RELevant)
 
 ### Italian
   * [BrightSoul](https://github.com/BrightSoul)
