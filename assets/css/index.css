@@ -21,11 +21,19 @@ p {
 	margin: 14px 0px;
 }
 
-a:link {
+a:link,
+footer a,
+footer a:visited {
 	color: white;
 }
 
-a:hover {
+.english-version {
+	color: #222326;
+}
+
+a:hover,
+footer a:hover,
+.english-version a:hover {
 	color: #ba4423;
 }
 
