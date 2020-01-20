@@ -19,6 +19,9 @@ This project was made possible by the support of many people we all should thank
 ### Finnish
   * [MeitziQ](https://github.com/MeitziQ)
 
+### French
+  * [SebCorbin](https://github.com/SebCorbin)
+
 ### German
   * [FroznMine](https://github.com/FroznMine)
   * [Intruder66](https://github.com/Intruder66)
@@ -58,3 +61,5 @@ This project was made possible by the support of many people we all should thank
   * Stefan [’FappaR’](http://steamcommunity.com/id/FappaR) Engdahl
   * Eric [’eric1894’](http://steamcommunity.com/id/eric1894) Odmyr
 
+### Turkish
+  * [AhmedSelim13](https://github.com/AhmedSelim13)
