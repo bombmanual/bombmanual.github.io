@@ -1,0 +1,2055 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Bomb Defusal Manual for the video game Keep Talking and Nobody Explodes" />
+	<title>Keep Talking and Nobody Explodes - Bomb Defusal Manual - uk - v1</title>
+	<meta name="viewport" content="initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/newmain.css" />
+	<link rel="icon" href="/favicon.ico" type="image/png" />
+	<link rel="apple-touch-icon-precomposed" href="/assets/apple-touch-icon-precomposed.png" />
+	<style>
+		@font-face {
+		    font-family: 'Special Elite';
+		    src: url('/assets/fonts/specialelite-cyrillic.eot');
+		    src: url('/assets/fonts/specialelite-cyrillic.eot?#iefix') format('embedded-opentype'),
+		         url('/assets/fonts/specialelite-cyrillic.woff2') format('woff2'),
+		         url('/assets/fonts/specialelite-cyrillic.woff') format('woff'),
+		         url('/assets/fonts/specialelite-cyrillic.ttf') format('truetype'),
+		         url('/assets/fonts/specialelite-cyrillic.svg#special_eliteregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+	</style>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-48421906-2', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+	</script>
+</head>
+<body dir="ltr">
+	<div id="ManualContent">
+		<div class="section">
+			<div id="TitlePage" class="page section-title page-bg-01">
+				<div class="page-footer absolute-footer" data-args="pageNum=1;pageCount=23"><span class="gamedisclaimer">Супутня інструкція до відеогри. Більше за адресою www.keeptalkinggame.com</span></div>
+				<div class="page-content">
+					<img src="/assets/img/ktane-logo.png" class="logo" alt="Keep Talking and Nobody Explodes" />
+					<div class="title">
+						<h1>
+							<span>Інструкція зі знешкодження бомби</span>
+						</h1>
+					</div>
+					<h2 class="website">www.keeptalkinggame.com</h2>
+					<h2 class="versioning">
+						<span>Версія 1</span>
+						<br /><span class="verification-code">Код перевірки: 241</span>
+					</h2>
+				</div>
+				<div class="page-footer relative-footer" data-args="pageNum=1;pageCount=23"><span class="gamedisclaimer">Супутня інструкція до відеогри. Більше за адресою www.keeptalkinggame.com</span></div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="page section-title page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Вступ</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 2 з 23</div>
+				<div class="page-content">
+					<div class="vertical-spacer"></div>
+					<div class="intro">
+						<p>Ласкаво просимо в небезпечний і складний світ знешкодження бомб.</p>
+						<p>Уважно вивчіть цю інструкцію &mdash; <em>ви експерт</em>. На цих сторінках ви знайдете все, що необхідно знати про те, як знешкодити навіть найпідступніші бомби.<br />І пам’ятайте &mdash; одна маленька помилка, і все може закінчитися жахливо!</p>
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 2 з 23</div>
+			</div>
+			<div id="DefusingBombs" class="page page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Знешкодження бомб</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 3 з 23</div>
+				<div class="page-content">
+					<h1>Знешкодження бомб</h1>
+					<p>Бомба вибухає тоді, коли її таймер зворотнього відліку доходить до 0:00, або коли було зафіксовано занадто багато помилок. Єдиним способом знешкодження бомби є знешкодження всіх її модулів до того, як на таймері закінчиться час.</p>
+					<div class="bomb-diagram">
+						<span class="diagram-label">Приклад бомби</span><br />
+						<table>
+							<tr>
+								<td><img src="/assets/img/Bomb.svg" class="bomb-diagram-front" /><br /><span>Лицьова сторона</span></td>
+								<td><img src="/assets/img/BombSide.svg" class="bomb-diagram-side" /><br /><span>Бічна сторона</span></td>
+							</tr>
+						</table>
+					</div>
+					<h3>Модулі</h3>
+					<p>Кожна бомба містить до 11 модулів, які необхідно знешкодити. Кожен модуль цілком незалежний, їх можна знешкоджувати в будь-якому порядку.</p>
+					<p>Інструкції по знешкодженню модулів можна знайти в 1 розділі. "Вимогливі" модулі становлять окремий випадок і описані в 2 розділі.</p>
+					<h3>Помилки</h3>
+					<div class="timer-diagram"><span>Індикатор помилок</span><br /><img src="/assets/img/TimerComponent.svg" /></div>
+					<p>Якщо Сапер допускає помилку, це буде відображено на індикаторі помилок над таймером зворотнього відліку. Бомби з індикатором помилок підриваються після третьої помилки. З кожною новою допущеною помилкою таймер пришвидшуватиметься.</p>
+					<p>Якщо над таймером немає індикатора, то бомба вибухне з першою ж помилкою.</p>
+					<h3>Збір інформації</h3>
+					<p>Деякі інструкції по знешкодженню бомб потребують певної інформації про бомбу, наприклад, її серійного номера. Подібна інформація зазвичай знаходиться зверху, знизу або по боках бомби. Дивіться Додатки А, Б і В за інструкціями, які вам знадобляться при знешкодженні певних модулів.</p>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 3 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Section1" class="page section-title page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Розділ 1: Модулі</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 4 з 23</div>
+				<div class="page-content">
+					<div class="vertical-spacer"></div>
+					<img src="/assets/img/Component.svg" class="diagram" />
+					<div class="new-block-formatting-context">
+						<h1>Розділ 1: Модулі</h1>
+						<p>Модулі можно ідентифікувати по світлодіоду в правому верхньому куті. Світлодіод, що світиться зеленим, показує що модуль уже знешкоджений.</p>
+						<p>Для знешкодження бомби необхідно знешкодити всі модулі.</p>
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 4 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Wires" class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Дроти</span>
+				</div>
+				<div class="page-footer absolute-footer">Page 5 of 23</div>
+				<div class="page-content">
+					<img src="/assets/img/WireComponent.svg" class="diagram" />
+					<h2>На тему дротів</h2>
+					<p class="flavour-text">Дроти &mdash; кров електроніки! Стоп, ні, кров &mdash; це електрика. Дроти, швидше, артерії. Чи вени? Не важливо&hellip;</p>
+					<ul>
+						<li>Модуль з дротами може мати від 3 до 6 дротів.</li>
+						<li>Тільки <em>один</em> правильний дріт необхідно перерізати для того, щоб знешкодити модуль.</li>
+						<li>Дроти нумеруються від першого згори вниз.</li>
+					</ul>
+					<table>
+						<tr>
+							<td>
+								<span class="wire-header">3 дроти:</span>
+								<br /><span>Якщо немає червоних дротів, ріжте другий.</span>
+								<br /><span>Інакше, якщо останній дріт білий, ріжте останній.</span>
+								<br /><span>Інакше, якщо синіх дротів більше, ніж один, ріжте останній синій.</span>
+								<br /><span>Інакше ріжте останній.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">4 дроти:</span>
+								<br /><span>Якщо червоних дротів більше, ніж один, і остання цифра серійного номера непарна, ріжте останній червоний.</span>
+								<br /><span>Інакше, якщо останній дріт жовтий, а червоних дротів немає, ріжте перший.</span>
+								<br /><span>Інакше, якщо є тільки один синій дріт, ріжте перший.</span>
+								<br /><span>Інакше, якщо жовтих дротів більше, ніж один, ріжте останній.</span>
+								<br /><span>Інакше, ріжте другий.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">5 дротів:</span>
+								<br /><span>Якщо останній дріт чорний, і остання цифра серійного номера непарна, ріжте четвертий.</span>
+								<br /><span>Інакше, якщо є тільки один червоний дріт лише, а жовтих дротів більше, ніж один, ріжте перший.</span>
+								<br /><span>Інакше, якщо чорних дротів немає, ріжте другий.</span>
+								<br /><span>Інакше ріжте перший.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">6 дротів:</span>
+								<br /><span>Якщо жовтих дротів немає, і остання цифра серійного номера непарна, ріжте третій.</span>
+								<br /><span>Інакше, якщо є тільки один жовтий дріт, а білих дротів більше, ніж один, ріжте четвертий.</span>
+								<br /><span>Інакше, якщо червоних дротів немає, ріжте останній.</span>
+								<br /><span>Інакше, ріжте четвертий.</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 5 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="TheButton" class="page page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Кнопка</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 6 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/ButtonComponent.svg" class="diagram" />
+					<h2>На тему кнопок</h2>
+					<p class="flavour-text">Вам може здатись, що кнопка, яка просить її натиснути &mdash; самоочевидна. Саме так люди і підриваються.</p>
+					<p class="appendix-reference"><span>Дивіться Додаток А для визначення індикатора.</span><br /><span>Дивіться Додаток Б для визначення батарейки.</span></p>
+					<p>Слідуйте наступним правилам в тому порядку, в якому вони вказані. Виконайте дію яка задовольняє вимоги:</p>
+					<ol>
+						<li>Якщо кнопка синя, і з надписом "Abort", затисніть кнопку і дивіться пункт "Відпускання натиснутої кнопки".</li>
+						<li>Якщо на бомбі більше, ніж одна батарейка, а на кнопці написано "Detonate", натисніть і негайно відпустіть кнопку.</li>
+						<li>Якщо кнопка біла, а на корпусі бомби горить індикатор "CAR", затисніть кнопку і дивіться пункт "Відпускання натиснутої кнопки".</li>
+						<li>Якщо на бомбі більше 2 батарейок, а на корпусі бомбі світиться індикатор "FRK", натисніть і одразу відпустіть кнопку.</li>
+						<li>Якщо кнопка жовта, затисніть кнопку і дивіться пункт "Відпускання натиснутої кнопки".</li>
+						<li>Якщо кнопка червона, а на кнопці написано "Hold", натисніть і одразу відпустіть кнопку.</li>
+						<li>Якщо не підходить жоден із вище вказаних пунктів, затисніть кнопку і дивіться пункт "Відпускання натиснутої кнопки".</li>
+					</ol>
+					<h3>Відпускання натиснутої кнопки</h3>
+					<p>Якщо ви затиснули кнопку, на правій стороні модуля засвітиться кольорова смужка. В залежності від її кольору вам потрібно буде відпустити кнопку в певний момент часу:</p>
+					<ul>
+						<li><em><span>Синя смужка:</span></em> <span>відпустіть, коли будь-яка цифра на таймері буде рівна 4.</span></li>
+						<li><em><span>Біла смужка:</span></em> <span>відпустіть, коли будь-яка цифра на таймері буде рівна 1.</span></li>
+						<li><em><span>Жовта смужка:</span></em> <span>відпустіть, коли будь-яка цифра на таймері буде рівна 5.</span></li>
+						<li><em><span>Смужка іншого кольору:</span></em> <span>відпустіть, коли будь-яка цифра на таймері буде рівна 1.</span></li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 6 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Keypads" class="page page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Клавіатура</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 7 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/KeypadComponent.svg" class="diagram" />
+					<h2>На тему клавіатур</h2>
+					<p class="flavour-text">Незрозуміло, що це за символи, але підозрюю, що це щось пов’язане з окультизмом.</p>
+					<ul>
+						<li>Лише один із стовпчиків нижче містить всі чотири символи з клавіатури.</li>
+						<li>Натисніть чотири клавіші в тому порядку, в якому ці символи зустрічаються в стовпчику зверху до низу.</li>
+					</ul>
+					<br /><br />
+					<table class="keypad-table">
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/1-copyright.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/11-six.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/13-at.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/28-balloon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/8-pumpkin.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/16-euro.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/31-bt.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/27-tracks.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/12-squigglyn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/26-cursive.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/22-rightc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/14-ae.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/7-squidknife.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/15-meltedthree.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/5-doublek.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/21-paragraph.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/24-pitchfork.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/9-hookn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/30-upsidedowny.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/19-dragon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/18-nwithhat.png" /></td>
+						</tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/23-leftc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/20-questionmark.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/3-hollowstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/4-smileyface.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/2-filledstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="/assets/img/symbols/6-omega.png" /></td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 7 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="SimonSays" class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Саймон Каже</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 8 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/SimonComponent.svg" class="diagram" />
+					<h2>На тему "Саймон каже"</h2>
+					<p class="flavour-text">Це схоже на одну з тих іграшок якими ти грався в дитинстві, де треба було повторити послідовність, хіба що оце найімовірніше підробка з магазину "Все по гривні".</p>
+					<ol>
+						<li>Засвітиться одна із кольорових кнопок.</li>
+						<li>Використовуючи відповідну таблицю нижче, натисніть на кнопку потрібного кольору.</li>
+						<li>Засвітиться та ж кнопка, що і на початку, а за нею ще одна. Повторіть цю послідовність в тому ж порядку, використовуючи таблицю кольорів.</li>
+						<li>Послідовність буде збільшуватися після кожної успішно введеної послідовності, аж поки модуль не буде знешкоджений.</li>
+					</ol>
+					<?xml version="1.0" standalone="yes" ?>
+					<svg id="simon-legend" version="1.1" viewbox="0.0 0.0 1004.0 348.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<clippath id="p.0">
+							<path d="m0 0l604.0 0l0 348.0l-604.0 0l0 -348.0z" clip-rule="nonzero"></path>
+						</clippath>
+						<g transform="translate(200, 0)" clip-path="url(#p.0)">
+							<path fill="#ffffff" d="m114.35958 0l357.29132 0l0 347.9685l-357.29132 0z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m125.438324 5.7758217l336.9134 0l0 337.66928l-336.9134 0z" fill-rule="nonzero"></path>
+							<path fill="#ffffff" d="m403.09402 40.553925l0 0c0 -8.375591 6.9660034 -15.165352 15.5590515 -15.165352l0 0c4.126526 0 8.084015 1.5977726 11.001923 4.441828c2.9178772 2.844057 4.557129 6.7014256 4.557129 10.723524l0 0c0 8.375595 -6.966034 15.165356 -15.5590515 15.165356l0 0c-8.593048 0 -15.5590515 -6.7897606 -15.5590515 -15.165356z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m403.09402 40.553925l0 0c0 -8.375591 6.9660034 -15.165352 15.5590515 -15.165352l0 0c4.126526 0 8.084015 1.5977726 11.001923 4.441828c2.9178772 2.844057 4.557129 6.7014256 4.557129 10.723524l0 0c0 8.375595 -6.966034 15.165356 -15.5590515 15.165356l0 0c-8.593048 0 -15.5590515 -6.7897606 -15.5590515 -15.165356z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m241.62204 122.04462l52.566925 -52.566925l52.566956 52.566925l-52.566956 52.566925z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m188.76115 175.06561l52.566925 -52.566925l52.56694 52.566925l-52.56694 52.56694z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m241.62204 227.17848l52.566925 -52.56694l52.566956 52.56694l-52.566956 52.56691z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt" d="m293.89502 175.06561l52.566925 -52.566925l52.566925 52.566925l-52.566925 52.56694z" fill-rule="nonzero"></path>
+							<path stroke="#000000" stroke-width="5.0" stroke-linejoin="round" stroke-linecap="butt" d="m108.35433 256.32547l131.64566 0" fill-rule="evenodd"></path>
+							<path fill="#000000" stroke="#000000" stroke-width="10.0" stroke-linecap="butt" d="m231.0 259.62894l9.076202 -3.3034668l-9.076202 -3.303482z" fill-rule="evenodd"></path>
+							<path stroke="#000000" stroke-width="5.0" stroke-linejoin="round" stroke-linecap="butt" d="m478.6509 91.69554l-114.4252 0" fill-rule="evenodd"></path>
+							<path fill="#000000" stroke="#000000" stroke-width="10.0" stroke-linecap="butt" d="m364.2257 88.392075l-9.076172 3.3034668l9.076172 3.3034592z" fill-rule="evenodd"></path>
+							<path stroke="#000000" stroke-width="5.0" stroke-linejoin="round" stroke-linecap="butt" d="m478.6509 174.61154l-56.472443 0" fill-rule="evenodd"></path>
+							<path fill="#000000" stroke="#000000" stroke-width="10.0" stroke-linecap="butt" d="m432.17847 171.30809l-9.076172 3.3034515l9.076172 3.3034668z" fill-rule="evenodd"></path>
+							<path stroke="#000000" stroke-width="5.0" stroke-linejoin="round" stroke-linecap="butt" d="m107.35958 175.06561l60.188972 0" fill-rule="evenodd"></path>
+							<path fill="#000000" stroke="#000000" stroke-width="10.0" stroke-linecap="butt" d="m157.54855 178.36908l9.076202 -3.3034668l-9.076202 -3.3034668z" fill-rule="evenodd"></path>
+						</g>
+						<text fill="#000000" font-family="Special Elite; courier" text-anchor="start" x="688" y="103" font-size="64px">
+							<tspan>Синій</tspan>
+						</text>
+						<text fill="#000000" font-family="Special Elite; courier" text-anchor="start" x="688" y="186" font-size="64px">
+							<tspan>Жовтий</tspan>
+						</text>
+						<text fill="#000000" font-family="Special Elite; courier" text-anchor="end" x="299" y="185" font-size="64px">
+							<tspan>Червоний</tspan>
+						</text>
+						<text fill="#000000" font-family="Special Elite; courier" text-anchor="end" x="299" y="266" font-size="64px">
+							<tspan>Зелений</tspan>
+						</text>
+					</svg>
+					<p>Якщо в серійному номері є голосна:</p>
+					<table class="repeaters-table">
+						<tr>
+							<th colspan="2" class="repeaters-spacer"></th>
+							<th>Червоний спалах</th>
+							<th>Синій спалах</th>
+							<th>Зелений спалах</th>
+							<th>Жовтий спалах</th>
+						</tr>
+						<tr>
+							<th rowspan="3">Натисніть&nbsp;кнопку:</th>
+							<th>Без&nbsp;Помилок</th>
+							<td>Синя</td>
+							<td>Червона</td>
+							<td>Жовта</td>
+							<td>Зелена</td>
+						</tr>
+						<tr>
+							<th>1&nbsp;Помилка</th>
+							<td>Жовта</td>
+							<td>Зелена</td>
+							<td>Синя</td>
+							<td>Червона</td>
+						</tr>
+						<tr>
+							<th>2&nbsp;Помилки</th>
+							<td>Зелена</td>
+							<td>Червона</td>
+							<td>Жовта</td>
+							<td>Синя</td>
+						</tr>
+					</table>
+					<p>Якщо в серійному номері <em>немає</em> голосних:</p>
+					<table class="repeaters-table">
+						<tr>
+							<th colspan="2" class="repeaters-spacer"></th>
+							<th>Червоний спалах</th>
+							<th>Синій спалах</th>
+							<th>Зелений спалах</th>
+							<th>Жовтий спалах</th>
+						</tr>
+						<tr>
+							<th rowspan="3">Натисніть&nbsp;кнопку:</th>
+							<th>Без&nbsp;Помилок</th>
+							<td>Синя</td>
+							<td>Жовта</td>
+							<td>Зелена</td>
+							<td>Червона</td>
+						</tr>
+						<tr>
+							<th>1&nbsp;Помилка</th>
+							<td>Червона</td>
+							<td>Синя</td>
+							<td>Жовта</td>
+							<td>Зелена</td>
+						</tr>
+						<tr>
+							<th>2&nbsp;Помилки</th>
+							<td>Жовта</td>
+							<td>Зелена</td>
+							<td>Синя</td>
+							<td>Червона</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 8 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="WhosOnFirst" class="page page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">&mdash; А вас як звати? &mdash; Авас.</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 9 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/WhosOnFirstComponent-UK.svg" class="diagram" />
+					<h2>На тему "&mdash; А вас як звати? &mdash; Авас."</h2>
+					<p class="flavour-text">Ця констркуція схожа на щось з комедійної репризи, що могло б бути смішно, якби вона не була причеплена до бомби. Буду лаконічним, бо слова все ускладнюють.</p>
+					<ol>
+						<li>Прочитайте екран, і викорситайте крок 1, щоб визначити, надпис на якій кнопці <u>прочитати</u>.</li>
+						<li>Використовуючи надпис з кнопки, використайте крок 2 щоб визначити, яку кнопку <u>натиснути</u>.</li>
+						<li>Повторяйте, поки не знешкодите модуль.</li>
+					</ol>
+					<h3>Крок 1:</h3>
+					<p>В залежності від слова на екрані, <u>прочитайте</u> надпис на відповідній кнопці і переходьте до кроку 2:</p>
+					<table class="whos-on-first-step1-table">
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">YES</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">FIRST</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">DISPLAY</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">OKAY</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">SAYS</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">NOTHING</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2"></th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">BLANK</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">NO</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">LED</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">LEAD</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">READ</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">RED</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">REED</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">LEED</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">HOLD ON</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">YOU</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">YOU ARE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">YOUR</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">YOU'RE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">UR</th>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">THERE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">THEY'RE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">THEIR</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">THEY ARE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">SEE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">C</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<th class="whos-on-first-look-at-display" colspan="2">CEE</th>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td><br /></td>
+									</tr>
+									<tr>
+										<td><br /></td>
+										<td class="whos-on-first-look-at"><img src="/assets/img/eye-icon.png" alt="Look At" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 9 з 23</div>
+			</div>
+			<div class="page page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">&mdash; А вас як звати? &mdash; Авас.</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 10 з 23</div>
+				<div class="page-content">
+					<h3>Крок 2:</h3>
+					<p>Використовуючи слово із 1 кроку, <u>натисніть на першу кнопку</u>, яка з’явиться в відповідному списку:</p>
+					<table class="whos-on-first-step2-table">
+						<tr>
+							<th><q><span>READY</span></q>:</th>
+							<td><span>YES</span>, <span>OKAY</span>, <span>WHAT</span>, <span>MIDDLE</span>, <span>LEFT</span>, <span>PRESS</span>, <span>RIGHT</span>, <span>BLANK</span>, <span>READY</span>, <span>NO</span>, <span>FIRST</span>, <span>UHHH</span>, <span>NOTHING</span>, <span>WAIT</span></td>
+						</tr>
+						<tr>
+							<th><q><span>FIRST</span></q>:</th>
+							<td><span>LEFT</span>, <span>OKAY</span>, <span>YES</span>, <span>MIDDLE</span>, <span>NO</span>, <span>RIGHT</span>, <span>NOTHING</span>, <span>UHHH</span>, <span>WAIT</span>, <span>READY</span>, <span>BLANK</span>, <span>WHAT</span>, <span>PRESS</span>, <span>FIRST</span></td>
+						</tr>
+						<tr>
+							<th><q><span>NO</span></q>:</th>
+							<td><span>BLANK</span>, <span>UHHH</span>, <span>WAIT</span>, <span>FIRST</span>, <span>WHAT</span>, <span>READY</span>, <span>RIGHT</span>, <span>YES</span>, <span>NOTHING</span>, <span>LEFT</span>, <span>PRESS</span>, <span>OKAY</span>, <span>NO</span>, <span>MIDDLE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>BLANK</span></q>:</th>
+							<td><span>WAIT</span>, <span>RIGHT</span>, <span>OKAY</span>, <span>MIDDLE</span>, <span>BLANK</span>, <span>PRESS</span>, <span>READY</span>, <span>NOTHING</span>, <span>NO</span>, <span>WHAT</span>, <span>LEFT</span>, <span>UHHH</span>, <span>YES</span>, <span>FIRST</span></td>
+						</tr>
+						<tr>
+							<th><q><span>NOTHING</span></q>:</th>
+							<td><span>UHHH</span>, <span>RIGHT</span>, <span>OKAY</span>, <span>MIDDLE</span>, <span>YES</span>, <span>BLANK</span>, <span>NO</span>, <span>PRESS</span>, <span>LEFT</span>, <span>WHAT</span>, <span>WAIT</span>, <span>FIRST</span>, <span>NOTHING</span>, <span>READY</span></td>
+						</tr>
+						<tr>
+							<th><q><span>YES</span></q>:</th>
+							<td><span>OKAY</span>, <span>RIGHT</span>, <span>UHHH</span>, <span>MIDDLE</span>, <span>FIRST</span>, <span>WHAT</span>, <span>PRESS</span>, <span>READY</span>, <span>NOTHING</span>, <span>YES</span>, <span>LEFT</span>, <span>BLANK</span>, <span>NO</span>, <span>WAIT</span></td>
+						</tr>
+						<tr>
+							<th><q><span>WHAT</span></q>:</th>
+							<td><span>UHHH</span>, <span>WHAT</span>, <span>LEFT</span>, <span>NOTHING</span>, <span>READY</span>, <span>BLANK</span>, <span>MIDDLE</span>, <span>NO</span>, <span>OKAY</span>, <span>FIRST</span>, <span>WAIT</span>, <span>YES</span>, <span>PRESS</span>, <span>RIGHT</span></td>
+						</tr>
+						<tr>
+							<th><q><span>UHHH</span></q>:</th>
+							<td><span>READY</span>, <span>NOTHING</span>, <span>LEFT</span>, <span>WHAT</span>, <span>OKAY</span>, <span>YES</span>, <span>RIGHT</span>, <span>NO</span>, <span>PRESS</span>, <span>BLANK</span>, <span>UHHH</span>, <span>MIDDLE</span>, <span>WAIT</span>, <span>FIRST</span></td>
+						</tr>
+						<tr>
+							<th><q><span>LEFT</span></q>:</th>
+							<td><span>RIGHT</span>, <span>LEFT</span>, <span>FIRST</span>, <span>NO</span>, <span>MIDDLE</span>, <span>YES</span>, <span>BLANK</span>, <span>WHAT</span>, <span>UHHH</span>, <span>WAIT</span>, <span>PRESS</span>, <span>READY</span>, <span>OKAY</span>, <span>NOTHING</span></td>
+						</tr>
+						<tr>
+							<th><q><span>RIGHT</span></q>:</th>
+							<td><span>YES</span>, <span>NOTHING</span>, <span>READY</span>, <span>PRESS</span>, <span>NO</span>, <span>WAIT</span>, <span>WHAT</span>, <span>RIGHT</span>, <span>MIDDLE</span>, <span>LEFT</span>, <span>UHHH</span>, <span>BLANK</span>, <span>OKAY</span>, <span>FIRST</span></td>
+						</tr>
+						<tr>
+							<th><q><span>MIDDLE</span></q>:</th>
+							<td><span>BLANK</span>, <span>READY</span>, <span>OKAY</span>, <span>WHAT</span>, <span>NOTHING</span>, <span>PRESS</span>, <span>NO</span>, <span>WAIT</span>, <span>LEFT</span>, <span>MIDDLE</span>, <span>RIGHT</span>, <span>FIRST</span>, <span>UHHH</span>, <span>YES</span></td>
+						</tr>
+						<tr>
+							<th><q><span>OKAY</span></q>:</th>
+							<td><span>MIDDLE</span>, <span>NO</span>, <span>FIRST</span>, <span>YES</span>, <span>UHHH</span>, <span>NOTHING</span>, <span>WAIT</span>, <span>OKAY</span>, <span>LEFT</span>, <span>READY</span>, <span>BLANK</span>, <span>PRESS</span>, <span>WHAT</span>, <span>RIGHT</span></td>
+						</tr>
+						<tr>
+							<th><q><span>WAIT</span></q>:</th>
+							<td><span>UHHH</span>, <span>NO</span>, <span>BLANK</span>, <span>OKAY</span>, <span>YES</span>, <span>LEFT</span>, <span>FIRST</span>, <span>PRESS</span>, <span>WHAT</span>, <span>WAIT</span>, <span>NOTHING</span>, <span>READY</span>, <span>RIGHT</span>, <span>MIDDLE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>PRESS</span></q>:</th>
+							<td><span>RIGHT</span>, <span>MIDDLE</span>, <span>YES</span>, <span>READY</span>, <span>PRESS</span>, <span>OKAY</span>, <span>NOTHING</span>, <span>UHHH</span>, <span>BLANK</span>, <span>LEFT</span>, <span>FIRST</span>, <span>WHAT</span>, <span>NO</span>, <span>WAIT</span></td>
+						</tr>
+						<tr>
+							<th><q><span>YOU</span></q>:</th>
+							<td><span>SURE</span>, <span>YOU ARE</span>, <span>YOUR</span>, <span>YOU'RE</span>, <span>NEXT</span>, <span>UH HUH</span>, <span>UR</span>, <span>HOLD</span>, <span>WHAT?</span>, <span>YOU</span>, <span>UH UH</span>, <span>LIKE</span>, <span>DONE</span>, <span>U</span></td>
+						</tr>
+						<tr>
+							<th><q><span>YOU ARE</span></q>:</th>
+							<td><span>YOUR</span>, <span>NEXT</span>, <span>LIKE</span>, <span>UH HUH</span>, <span>WHAT?</span>, <span>DONE</span>, <span>UH UH</span>, <span>HOLD</span>, <span>YOU</span>, <span>U</span>, <span>YOU'RE</span>, <span>SURE</span>, <span>UR</span>, <span>YOU ARE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>YOUR</span></q>:</th>
+							<td><span>UH UH</span>, <span>YOU ARE</span>, <span>UH HUH</span>, <span>YOUR</span>, <span>NEXT</span>, <span>UR</span>, <span>SURE</span>, <span>U</span>, <span>YOU'RE</span>, <span>YOU</span>, <span>WHAT?</span>, <span>HOLD</span>, <span>LIKE</span>, <span>DONE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>YOU'RE</span></q>:</th>
+							<td><span>YOU</span>, <span>YOU'RE</span>, <span>UR</span>, <span>NEXT</span>, <span>UH UH</span>, <span>YOU ARE</span>, <span>U</span>, <span>YOUR</span>, <span>WHAT?</span>, <span>UH HUH</span>, <span>SURE</span>, <span>DONE</span>, <span>LIKE</span>, <span>HOLD</span></td>
+						</tr>
+						<tr>
+							<th><q><span>UR</span></q>:</th>
+							<td><span>DONE</span>, <span>U</span>, <span>UR</span>, <span>UH HUH</span>, <span>WHAT?</span>, <span>SURE</span>, <span>YOUR</span>, <span>HOLD</span>, <span>YOU'RE</span>, <span>LIKE</span>, <span>NEXT</span>, <span>UH UH</span>, <span>YOU ARE</span>, <span>YOU</span></td>
+						</tr>
+						<tr>
+							<th><q><span>U</span></q>:</th>
+							<td><span>UH HUH</span>, <span>SURE</span>, <span>NEXT</span>, <span>WHAT?</span>, <span>YOU'RE</span>, <span>UR</span>, <span>UH UH</span>, <span>DONE</span>, <span>U</span>, <span>YOU</span>, <span>LIKE</span>, <span>HOLD</span>, <span>YOU ARE</span>, <span>YOUR</span></td>
+						</tr>
+						<tr>
+							<th><q><span>UH HUH</span></q>:</th>
+							<td><span>UH HUH</span>, <span>YOUR</span>, <span>YOU ARE</span>, <span>YOU</span>, <span>DONE</span>, <span>HOLD</span>, <span>UH UH</span>, <span>NEXT</span>, <span>SURE</span>, <span>LIKE</span>, <span>YOU'RE</span>, <span>UR</span>, <span>U</span>, <span>WHAT?</span></td>
+						</tr>
+						<tr>
+							<th><q><span>UH UH</span></q>:</th>
+							<td><span>UR</span>, <span>U</span>, <span>YOU ARE</span>, <span>YOU'RE</span>, <span>NEXT</span>, <span>UH UH</span>, <span>DONE</span>, <span>YOU</span>, <span>UH HUH</span>, <span>LIKE</span>, <span>YOUR</span>, <span>SURE</span>, <span>HOLD</span>, <span>WHAT?</span></td>
+						</tr>
+						<tr>
+							<th><q><span>WHAT?</span></q>:</th>
+							<td><span>YOU</span>, <span>HOLD</span>, <span>YOU'RE</span>, <span>YOUR</span>, <span>U</span>, <span>DONE</span>, <span>UH UH</span>, <span>LIKE</span>, <span>YOU ARE</span>, <span>UH HUH</span>, <span>UR</span>, <span>NEXT</span>, <span>WHAT?</span>, <span>SURE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>DONE</span></q>:</th>
+							<td><span>SURE</span>, <span>UH HUH</span>, <span>NEXT</span>, <span>WHAT?</span>, <span>YOUR</span>, <span>UR</span>, <span>YOU'RE</span>, <span>HOLD</span>, <span>LIKE</span>, <span>YOU</span>, <span>U</span>, <span>YOU ARE</span>, <span>UH UH</span>, <span>DONE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>NEXT</span></q>:</th>
+							<td><span>WHAT?</span>, <span>UH HUH</span>, <span>UH UH</span>, <span>YOUR</span>, <span>HOLD</span>, <span>SURE</span>, <span>NEXT</span>, <span>LIKE</span>, <span>DONE</span>, <span>YOU ARE</span>, <span>UR</span>, <span>YOU'RE</span>, <span>U</span>, <span>YOU</span></td>
+						</tr>
+						<tr>
+							<th><q><span>HOLD</span></q>:</th>
+							<td><span>YOU ARE</span>, <span>U</span>, <span>DONE</span>, <span>UH UH</span>, <span>YOU</span>, <span>UR</span>, <span>SURE</span>, <span>WHAT?</span>, <span>YOU'RE</span>, <span>NEXT</span>, <span>HOLD</span>, <span>UH HUH</span>, <span>YOUR</span>, <span>LIKE</span></td>
+						</tr>
+						<tr>
+							<th><q><span>SURE</span></q>:</th>
+							<td><span>YOU ARE</span>, <span>DONE</span>, <span>LIKE</span>, <span>YOU'RE</span>, <span>YOU</span>, <span>HOLD</span>, <span>UH HUH</span>, <span>UR</span>, <span>SURE</span>, <span>U</span>, <span>WHAT?</span>, <span>NEXT</span>, <span>YOUR</span>, <span>UH UH</span></td>
+						</tr>
+						<tr>
+							<th><q><span>LIKE</span></q>:</th>
+							<td><span>YOU'RE</span>, <span>NEXT</span>, <span>U</span>, <span>UR</span>, <span>HOLD</span>, <span>DONE</span>, <span>UH UH</span>, <span>WHAT?</span>, <span>UH HUH</span>, <span>YOU</span>, <span>LIKE</span>, <span>SURE</span>, <span>YOU ARE</span>, <span>YOUR</span></td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 10 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Memory" class="page page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Пам'ять</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 11 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/MemoryComponent.svg" class="diagram" />
+					<h2>На тему пам'яті</h2>
+					<p class="flavour-text">Пам'ять &mdash; крихка штуковина, як і все інше, коли вибухає бомба, так що будьте обережні!</p>
+					<ul>
+						<li>Натисніть правильну кнопку, щоб перевести модуль на наступний етап. Пройдіть всі етапи, щоб знешкодити модуль.</li>
+						<li>Натискання неправильної кнопки поверне модуль на перший етап.</li>
+						<li>Позиції кнопок рахуються зліва направо.</li>
+					</ul>
+					<div class="memory-rules">
+						<h4>Етап 1:</h4>
+						<p>
+							<span>Якщо на екрані 1, натисніть кнопку на другій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 2, натисніть кнопку на другій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 3, натисніть кнопку на третій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 4, натисніть кнопку на четвертій позиції.</span>
+							<br/>
+						</p>
+						<h4>Етап 2:</h4>
+						<p>
+							<span>Якщо на екрані 1, натисніть кнопку з цифрою "4".</span>
+							<br/>
+							<span>Якщо на екрані 2, натисніть кнопку на тій позиції, яку ви натиснули на 1 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 3, натисніть кнопку на першій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 4, натисніть кнопку на тій позиції, яку ви натиснули на 1 етапі.</span>
+							<br/>
+						</p>
+						<h4>Етап 3:</h4>
+						<p>
+							<span>Якщо на екрані 1, натисніть кнопку з тою цифрою, яку ви натиснули на 2 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 2, натисніть кнопку з тою цифрою, яку ви натиснули на 1 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 3, натисніть кнопку на третій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 4, натисніть кнопку з цифрою "4".</span>
+							<br/>
+						</p>
+						<h4>Етап 4:</h4>
+						<p>
+							<span>Якщо на екрані 1, натисніть кнопку на тій позиції, яку ви натиснули на 1 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 2, натисніть кнопку на першій позиції.</span>
+							<br/>
+							<span>Якщо на екрані 3, натисніть кнопку на тій позиції, яку ви натиснули на 2 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 4, натисніть кнопку на тій позиції, яку ви натиснули на 2 етапі.</span>
+							<br/>
+						</p>
+						<h4>Етап 5:</h4>
+						<p>
+							<span>Якщо на екрані 1, натисніть кнопку з тою цифрою, яку ви натиснули на 1 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 2, натисніть кнопку з тою цифрою, яку ви натиснули на 2 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 3, натисніть кнопку з тою цифрою, яку ви натиснули на 4 етапі.</span>
+							<br/>
+							<span>Якщо на екрані 4, натисніть кнопку з тою цифрою, яку ви натиснули на 3 етапі.</span>
+							<br/>
+						</p>
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 11 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="MorseCode" class="page morse-code page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Азбука Морзе</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 12 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/MorseCodeComponent.svg" class="diagram" />
+					<h2>На тему азбуки Морзе</h2>
+					<p class="flavour-text">Застарілі морські комунікації? І що далі? Ну, добре що це хоч справжня азбука Морзе, так що дивіться уважно, може, щось і вивчите.</p>
+					<ul>
+						<li>Прочитайте повідомлення з мигаючої лампочки використовуючи таблицю азбуки Морзе. Ви отримаєте одне зі слів у таблиці зліва.</li>
+						<li>Сигнал буде повторюватись з великими проміжками між повторами.</li>
+						<li>Після визначення слова встановіть відповідну частоту і натисніть кнопку передачі (TX).</li>
+					</ul>
+					<table class="morse-signal-table">
+						<thead>
+							<tr class="morse-interpret">
+								<th>Як читати</th>
+							</tr>
+							<tr class="morse-interpret">
+								<td>
+									<p>1. Короткий спалах означає крапку.</p>
+									<p>2. Довгий спалах означає тире.</p>
+									<p>3. Між літерами &mdash; довгий проміжок.</p>
+									<p>4. Між повторами слова &mdash; дуже довгий проміжок.</p>
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><img id="morseSignalImg" src="/assets/img/MorseCode/International_Morse_Code-EN.svg" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="morse-frequency-table">
+						<tr>
+							<th>Якщо слово:</th>
+							<th>Відповідати на частоті:</th>
+						</tr>
+						<tr>
+							<td>shell</td>
+							<td class="morse-frequency-response">3.505 МГц</td>
+						</tr>
+						<tr>
+							<td>halls</td>
+							<td class="morse-frequency-response">3.515 МГц</td>
+						</tr>
+						<tr>
+							<td>slick</td>
+							<td class="morse-frequency-response">3.522 МГц</td>
+						</tr>
+						<tr>
+							<td>trick</td>
+							<td class="morse-frequency-response">3.532 МГц</td>
+						</tr>
+						<tr>
+							<td>boxes</td>
+							<td class="morse-frequency-response">3.535 МГц</td>
+						</tr>
+						<tr>
+							<td>leaks</td>
+							<td class="morse-frequency-response">3.542 МГц</td>
+						</tr>
+						<tr>
+							<td>strobe</td>
+							<td class="morse-frequency-response">3.545 МГц</td>
+						</tr>
+						<tr>
+							<td>bistro</td>
+							<td class="morse-frequency-response">3.552 МГц</td>
+						</tr>
+						<tr>
+							<td>flick</td>
+							<td class="morse-frequency-response">3.555 МГц</td>
+						</tr>
+						<tr>
+							<td>bombs</td>
+							<td class="morse-frequency-response">3.565 МГц</td>
+						</tr>
+						<tr>
+							<td>break</td>
+							<td class="morse-frequency-response">3.572 МГц</td>
+						</tr>
+						<tr>
+							<td>brick</td>
+							<td class="morse-frequency-response">3.575 МГц</td>
+						</tr>
+						<tr>
+							<td>steak</td>
+							<td class="morse-frequency-response">3.582 МГц</td>
+						</tr>
+						<tr>
+							<td>sting</td>
+							<td class="morse-frequency-response">3.592 МГц</td>
+						</tr>
+						<tr>
+							<td>vector</td>
+							<td class="morse-frequency-response">3.595 МГц</td>
+						</tr>
+						<tr>
+							<td>beats</td>
+							<td class="morse-frequency-response">3.600 МГц</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 12 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="ComplicatedWires" class="page venn-wires page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Ускладнені дроти</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 13 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/VennWireComponent.svg" class="diagram" />
+					<h2>На тему ускладнених дротів</h2>
+					<p class="flavour-text">Ці дроти не такі, як раніше. Деякі із них смугасті! Це робить їх зовсім іншими. Добре, що ми знайшли коротку інструкцію до них! Можливо, аж занадто коротку…</p>
+					<ul>
+						<li>Подивіться на кожен дріт: над дротом є діод, а під дротом є місце для символа "&#9733;".</li>
+						<li>Для <b>кожної</b> комбінації дріт-діод-символ використовуйте наведену нижче діаграму Венна, щоб зрозуміти, різати дріт, чи ні.</li>
+						<li>Дроти можуть мати смужки декількох кольорів.</li>
+					</ul>
+					<div id="venndiagram">
+						<?xml version="1.0" encoding="utf-8" ?>
+						<svg width="100%" height="100%" viewbox="0 0 800 650" preserveaspectratio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<ellipse cx="0" cy="0" rx="300" ry="160" stroke="black" fill="none" stroke-width="5" stroke-dasharray="20,10,5,10" transform="translate(350, 300) rotate(45)"></ellipse>
+							<ellipse cx="0" cy="0" rx="300" ry="160" stroke="black" fill="none" stroke-width="6" stroke-dasharray="" transform="translate(450, 300) rotate(-45)"></ellipse>
+							<ellipse cx="0" cy="0" rx="300" ry="160" stroke="black" fill="none" stroke-width="4" stroke-dasharray="4,7" transform="translate(250, 400) rotate(45)"></ellipse>
+							<ellipse cx="0" cy="0" rx="300" ry="160" stroke="black" fill="none" stroke-width="10" stroke-dasharray="10,4" transform="translate(550, 400) rotate(-45)"></ellipse>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="225" y="150" font-size="48px">
+								<tspan>С</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="575" y="150" font-size="48px">
+								<tspan>С</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="100" y="350" font-size="48px">
+								<tspan>Р</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="700" y="350" font-size="48px">
+								<tspan>Н</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="185" y="250" font-size="32px">
+								<tspan>Р</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="400" y="225" font-size="32px">
+								<tspan>С</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="615" y="250" font-size="32px">
+								<tspan>П</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="400" y="590" font-size="32px">
+								<tspan>Б</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="260" y="495" font-size="32px">
+								<tspan>Н</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="530" y="495" font-size="32px">
+								<tspan>Б</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="305" y="350" font-size="32px">
+								<tspan>П</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="500" y="350" font-size="32px">
+								<tspan>С</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="335" y="530" font-size="32px">
+								<tspan>П</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="465" y="530" font-size="32px">
+								<tspan>Б</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="400" y="450" font-size="32px">
+								<tspan>Н</tspan>
+							</text>
+							<text font-family="Special Elite, courier, sans-serif" text-anchor="middle" x="400" y="80" font-size="48px">
+								<tspan>Р</tspan>
+							</text>
+						</svg>
+					</div>
+					<div class="clearfix">
+						<table id="vennlegendtable">
+							<tr>
+								<td><img class="venn-legend-line" src="/assets/img/modules/venn/venn_red.svg" /></td>
+								<td class="venn-legend-text">Дріт має червоний колір</td>
+							</tr>
+							<tr>
+								<td><img class="venn-legend-line" src="/assets/img/modules/venn/venn_blue.svg" /></td>
+								<td class="venn-legend-text">Дріт має синій колір</td>
+							</tr>
+							<tr>
+								<td><img class="venn-legend-line" src="/assets/img/modules/venn/venn_symbol.svg" /></td>
+								<td class="venn-legend-text">Має символ &#9733;</td>
+							</tr>
+							<tr>
+								<td><img class="venn-legend-line" src="/assets/img/modules/venn/venn_led.svg" /></td>
+								<td class="venn-legend-text">Діод горить</td>
+							</tr>
+						</table>
+						<table id="venninstructiontable">
+							<tr>
+								<th>Буква</th>
+								<th>Інструкція</th>
+							</tr>
+							<tr>
+								<td>Р</td>
+								<td>Ріжте дріт</td>
+							</tr>
+							<tr>
+								<td>Н</td>
+								<td>Не ріжте дріт</td>
+							</tr>
+							<tr>
+								<td>С</td>
+								<td>Ріжте дріт, якщо остання цифра серійного номеру парна</td>
+							</tr>
+							<tr>
+								<td>П</td>
+								<td>Ріжте дріт, якщо у бомби є паралельний порт</td>
+							</tr>
+							<tr>
+								<td>Б</td>
+								<td>Ріжте дріт, якщо у бомби дві чи більше батарейок</td>
+							</tr>
+						</table>
+					</div>
+					<p class="appendix-reference"><span>Дивіться додаток Б для довідки з ідентифікації батареї.</span><br /><span>Дивіться додаток В для довідки з ідентифікації портів.</span></p>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 13 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="WireSequences" class="page wire-sequence page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Послідовність дротів</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 14 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/WireSequenceComponent.svg" class="diagram" />
+					<h2>На тему послідовності дротів</h2>
+					<p class="flavour-text">Важко сказати, як працює цей механізм. Проектування вражає, але дев'ять дротів напевне можна було розмістити якось простіше.</p>
+					<ul>
+						<li>В цьому модулі декілька панелей з дротами, але видно лише одну за раз. Ви можете переключатися на наступну панель, використовуючи кнопку вниз, або на попередню, використовуючи кнопку вверх.</li>
+						<li>Не переходьте до наступної панелі, поки не впевнені, що перерізали всі необхідні дроти на поточній панелі.</li>
+						<li>Перерізайте дроти за наведеною нижче таблицею. Появи дротів враховуються наскрізно по всіх панелях в межах одного модуля.</li>
+					</ul>
+					<div class="table-container">
+						<table class="red-table">
+							<tr>
+								<th colspan="2" class="header">Поява червоного дроту</th>
+							</tr>
+							<tr>
+								<th class="first-col">Поява дроту</th>
+								<th class="second-col">Різати, якщо підключений до:</th>
+							</tr>
+							<tr>
+								<td class="first-col">Перший червоний</td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Другий червоний</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Третій червоний</td>
+								<td class="second-col">A</td>
+							</tr>
+							<tr>
+								<td class="first-col">Четвертий червоний</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">П'ятий червоний</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Шостий червоний</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Сьомий червоний</td>
+								<td class="second-col">A, B або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Восьмий червоний</td>
+								<td class="second-col">A або B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Дев'ятий червоний</td>
+								<td class="second-col">B</td>
+							</tr>
+						</table>
+						<table class="blue-table">
+							<tr>
+								<th colspan="2" class="header">Поява синього дроту</th>
+							</tr>
+							<tr>
+								<th class="first-col">Поява дроту</th>
+								<th class="second-col">Різати, якщо підключений до:</th>
+							</tr>
+							<tr>
+								<td class="first-col">Перший синій</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Другий синій</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Третій синій</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Четвертий синій</td>
+								<td class="second-col">A</td>
+							</tr>
+							<tr>
+								<td class="first-col">П'ятий<br/>синій</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Шостий синій</td>
+								<td class="second-col">B або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Сьомий синій</td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Восьмий синій</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Дев'ятий синій</td>
+								<td class="second-col">A</td>
+							</tr>
+						</table>
+						<table class="black-table">
+							<tr>
+								<th colspan="2" class="header">Поява чорного дроту</th>
+							</tr>
+							<tr>
+								<th class="first-col">Поява дроту</th>
+								<th class="second-col">Різати, якщо підключений до:</th>
+							</tr>
+							<tr>
+								<td class="first-col">Перший чорний</td>
+								<td class="second-col">A, B або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Другий чорний</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Третій чорний</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Четвертий чорний</td>
+								<td class="second-col">A або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">П'ятий чорний</td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Шостий чорний</td>
+								<td class="second-col">B або C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Сьомий чорний</td>
+								<td class="second-col">A або B</td>
+							</tr>
+							<tr>
+								<td class="first-col">Восьмий чорний</td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">Дев'ятий чорний</td>
+								<td class="second-col">C</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 14 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Mazes" class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Лабіринт</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 15 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/MazeComponent.svg" class="diagram" />
+					<h2>На тему лабіринтів</h2>
+					<p class="flavour-text">Схоже на якийсь лабіринт, мабуть передертий з ресторанної серветки.</p>
+					<ul>
+						<li>Знайдіть лабіринт, у якому співпадають круглі мітки.</li>
+						<li>Сапер мусить провести білий вогник до червоного трикутника за допомогою кнопок зі стрілками.</li>
+						<li><strong>Обережно:</strong> не перетинайте накреслені в лабіринті лінії. Ці лінії не видно на бомбі.</li>
+					</ul>
+					<div class="maze-grid">
+						<img class="maze" src="/assets/img/gen/maze/maze0.svg" /><img class="maze" src="/assets/img/gen/maze/maze1.svg" /><img class="maze" src="/assets/img/gen/maze/maze2.svg" /><img class="maze" src="/assets/img/gen/maze/maze3.svg" /><img class="maze" src="/assets/img/gen/maze/maze4.svg" /><img class="maze" src="/assets/img/gen/maze/maze5.svg" /><img class="maze" src="/assets/img/gen/maze/maze6.svg" /><img class="maze" src="/assets/img/gen/maze/maze7.svg" /><img class="maze" src="/assets/img/gen/maze/maze8.svg" />
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 15 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Passwords" class="page page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Паролі</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 16 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/PasswordComponent.svg" class="diagram" />
+					<h2>На тему паролів</h2>
+					<p class="flavour-text">На щастя, пароль, здається, не відповідає стандартам державної безпеки: 22 символи, великі і малі, числа у випадковому порядку без паліндромів розміром більше 3.
+					</p>
+					<ul>
+						<li>Кнопки над і під кожною буквою переключають можливі букви в одній позиції.</li>
+						<li>Тільки одна комбінація доступних букв відповідатиме  паролю із таблиці наведеної нижче.</li>
+						<li>Натисніть кнопку "SUBMIT" після набору правильного слова.</li>
+					</ul>
+					<table class="password-table">
+						<tr>
+							<td>about</td>
+							<td>after</td>
+							<td>again</td>
+							<td>below</td>
+							<td>could</td>
+						</tr>
+						<tr>
+							<td>every</td>
+							<td>first</td>
+							<td>found</td>
+							<td>great</td>
+							<td>house</td>
+						</tr>
+						<tr>
+							<td>large</td>
+							<td>learn</td>
+							<td>never</td>
+							<td>other</td>
+							<td>place</td>
+						</tr>
+						<tr>
+							<td>plant</td>
+							<td>point</td>
+							<td>right</td>
+							<td>small</td>
+							<td>sound</td>
+						</tr>
+						<tr>
+							<td>spell</td>
+							<td>still</td>
+							<td>study</td>
+							<td>their</td>
+							<td>there</td>
+						</tr>
+						<tr>
+							<td>these</td>
+							<td>thing</td>
+							<td>think</td>
+							<td>three</td>
+							<td>water</td>
+						</tr>
+						<tr>
+							<td>where</td>
+							<td>which</td>
+							<td>world</td>
+							<td>would</td>
+							<td>write</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 16 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Section2" class="page section-title page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Розділ 2: Вимогливі модулі</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 17 з 23</div>
+				<div class="page-content">
+					<div class="vertical-spacer"></div>
+					<img src="/assets/img/NeedyComponent.svg" class="diagram" />
+					<div class="new-block-formatting-context">
+						<h1>Розділ 2: Вимогливі модулі</h1>
+						<p>Вимогливі модулі не можна знешкодити, вони несуть в собі періодичну загрозу.</p>
+						<p>Вимогливі модулі можна ідентифікувати за двоцифровим таймером зверху. Взаємодія з бомбою може активувати їх. Після активації цим модулям необхідно регулярно приділяти увагу до того, як час на їхньому таймері вийде, щоб уникнути помилок.</p>
+						<p>Будьте уважні: вимогливі модулі можуть в будь який момент активуватися повторно.</p>
+					</div>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 17 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="VentingGas" class="page page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Випускання пари</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 18 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/NeedyVentComponent.svg" class="diagram" />
+					<h2>На тему випускання пари</h2>
+					<p class="flavour-text">Злам комп'ютерів &mdash; складна штука! Ну, зазвичай. Але цей могла б ламанути навіть проста механічна пташечка, що клює одну і ту ж кнопку раз за разомю.</p>
+					<ul>
+						<li>Відповідайте на запити комп'ютера кнопкою "Y", якщо "Yes", або "N", якщо "No".</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 18 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="CapacitorDischarge" class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Розряд конденсатора</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 19 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/NeedyDischargeComponent.svg" class="diagram" />
+					<h2>На тему розряду конденсаторів</h2>
+					<p class="flavour-text">Мені здається, що ця штука тут тільки для того, щоб відволікти вас, бо в іншому випадку це просто дуже халтурно зроблена електроніка.</p>
+					<ul>
+						<li>Розрядіть конденсатор до того, як його проб'є, потягнувши важіль донизу.</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 19 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Knobs" class="page needy-knob page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Ручки</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 20 з 23</div>
+				<div class="page-content">
+					<img src="/assets/img/NeedyKnobComponent.svg" class="diagram" />
+					<h2>На тему ручок</h2>
+					<p class="flavour-text">Занадто складний і безмежно вимогливий. Уявіть, якби всі ці вміння спрямували на щось інше ніж диявольські головоломки.</p>
+					<ul>
+						<li>Ручку можна встановлювати в одну із чотирьох позицій.</li>
+						<li>Ручка повинна стояти в потрібній позиції, коли таймер модуля дійде до нуля.</li>
+						<li>Правильну позицію можна визначити за станом увімк/вимк дванадцяти світлодіодів.</li>
+						<li>Позиція ручки встановлюється відносно того де написано "UP" [вгору], напис може бути повернутим.</li>
+					</ul>
+					<h3>Конфігурації діодів</h3>
+					<h4><span>Позиція вверх</span>:</h4>
+					<table dir="ltr">
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+					</table>
+					<table dir="ltr">
+						<tr>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+					</table>
+					<h4><span>Позиція вниз</span>:</h4>
+					<table dir="ltr">
+						<tr>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+					</table>
+					<table dir="ltr">
+						<tr>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+						</tr>
+					</table>
+					<h4><span>Позиція вліво</span>:</h4>
+					<table dir="ltr">
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+					</table>
+					<table dir="ltr">
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+					</table>
+					<h4><span>Позиція вправо</span>:</h4>
+					<table dir="ltr">
+						<tr>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+					</table>
+					<table dir="ltr">
+						<tr>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td> </td>
+							<td>X</td>
+							<td> </td>
+						</tr>
+					</table>
+					<br /><br />
+					<p class="needy-diagram-label">X = Запалений діод</p>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 20 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixA" class="page appendix-indicators page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Додаток А</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 21 з 23</div>
+				<div class="page-content">
+					<h2>Додаток А: довідка з визначення індикаторів</h2>
+					<p>По боках корпусу бомби можна знайти підписані індикаторні лампи.</p>
+					<img src="/assets/img/IndicatorWidget.svg" id="appendix-indicator-img" />
+					<h3>Типові індикатори</h3>
+					<ul>
+						<li>SND</li>
+						<li>CLR</li>
+						<li>CAR</li>
+						<li>IND</li>
+						<li>FRQ</li>
+						<li>SIG</li>
+						<li>NSA</li>
+						<li>MSA</li>
+						<li>TRN</li>
+						<li>BOB</li>
+						<li>FRK</li>
+					</ul>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 21 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixB" class="page appendix-batteries page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Додаток Б</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 22 з 23</div>
+				<div class="page-content">
+					<h2>Додаток В: довідка з визначення батарей</h2>
+					<p>У гніздах по боках корпусу бомби можна знайти стандартні батарейки.</p>
+					<table>
+						<tr>
+							<th>Батарея</th>
+							<th>Тип</th>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-batteries/Battery-AA.svg" id="appendix-battery-AA-img" /></td>
+							<td>AA</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-batteries/Battery-D.svg" id="appendix-battery-D-img" /></td>
+							<td>D</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 22 з 23</div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixC" class="page appendix-ports page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
+					<span class="page-header-section-title">Додаток В</span>
+				</div>
+				<div class="page-footer absolute-footer">Сторінка 23 з 23</div>
+				<div class="page-content">
+					<h2>Додаток В: довідка з визначення портів</h2>
+					<p>По боках корпусу бомби можна знайти цифрові й аналогові порти.</p>
+					<table>
+						<tr>
+							<th>Порт</th>
+							<th>Назва</th>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/DVI.svg" id="appendix-ports-dvi-img" /></td>
+							<td>DVI-D</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/Parallel.svg" id="appendix-ports-parallel-img" /></td>
+							<td>Паралельний</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/PS2.svg" id="appendix-ports-ps2-img" /></td>
+							<td>PS/2</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/RJ45.svg" id="appendix-ports-rj45-img" /></td>
+							<td>RJ-45</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/Serial.svg" id="appendix-ports-serial-img" /></td>
+							<td>Послідовний</td>
+						</tr>
+						<tr>
+							<td><img src="/assets/img/appendix-ports/StereoRCA.svg" id="appendix-ports-rca-img" /></td>
+							<td>Стерео RCA<br/>("тюльпан")</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Сторінка 23 з 23</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
