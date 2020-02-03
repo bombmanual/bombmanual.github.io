@@ -15,6 +15,7 @@ This project was made possible by the support of many people we all should thank
   * Caken
   * Jan Baier
   * [marians](https://github.com/mariansam)
+  * [mirroj](https://github.com/mirroj)
 
 ### Finnish
   * [MeitziQ](https://github.com/MeitziQ)
