@@ -1,0 +1,1182 @@
+
+/* 
+ *  Some useful numbers...
+ *
+ *  When font-size is 1em/12pt/16px/100%:
+ *  1px = 0.0625em (when PPI is 96)
+ *  1in = 6em
+ *  1pt = 0.0833333em (1/12em)
+ *
+ */
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+@media print {
+    html,
+    button,
+    input,
+    select,
+    textarea {
+        color: #000;
+    }
+}
+
+html {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: 1em;
+    line-height: 1.4;
+	font-variant-ligatures: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/web-background.jpg');
+    background-attachment: fixed;
+}
+@media print {
+    body {
+        background: none;
+    }
+}
+
+p,
+pre {
+    margin: .5em 0 1em; /* bring top of paragraphs closer to headers */
+}
+
+em {
+    font-style:normal;
+    text-decoration:underline;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0 0;
+}
+
+h2, h3, h4 {
+    text-decoration:underline;
+}
+
+li ul {
+    margin: 0;
+}
+
+[dir='rtl'] menu,
+[dir='rtl'] ol,
+[dir='rtl'] ul {
+    padding: 0 2.5em 0 0;
+    padding-left: 0px;
+    padding-right: 2.5em;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+table, th, td {
+    border: 1px solid #222;
+}
+@media print {
+    table, th, td {
+        border-color: black;
+    }
+}
+
+td, th {
+    padding: .3em .6em .2em;
+}
+
+q::before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+q {
+	quotes: '"' '"' "'" "'";
+}
+
+
+.new-block-formatting-context {
+     /* Starts a new block formatting context which will prevent text from wrapping tightly around
+        an image, etc.
+        http://colinaarts.com/articles/the-magic-of-overflow-hidden/
+      */
+    overflow: hidden;
+}
+
+.no-border, .no-border tr, .no-border tr th, .no-border tr td {
+    border: none;
+}
+
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diagram {
+    width: 9em;
+    margin-bottom: 1em;
+}
+
+[dir='ltr'] .diagram {
+    float: right;
+    margin-left: 1em;
+}
+
+[dir='rtl'] .diagram {
+    float: left;
+    margin-right: 1em;
+}
+
+.diagram-label {
+	text-align:center;
+}
+
+.page {
+    margin: 1em auto;
+    padding: 0;
+    border: 1px solid #222; /* Safely using px because exists outside layout of page content */
+    box-shadow: #222 0.0em 0em 0.6em;
+    clear: both;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+    width: 51em; /* = 8.5in at 12pt (1em) */
+    min-height: 66em; /* = 11in at 12pt (1em) */
+    max-height: 66em;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+        max-width: none;
+        min-height: initial;
+
+        width: 51em; /* = 8.5in at 12pt (1em) */
+        height: 66em; /* = 11in at 12pt (1em) */
+        page-break-before: always;
+    }
+}
+
+.page-bg-01 {
+    background-image: url("../img/page-bg-noise-01.png");
+}
+
+.page-bg-02 {
+    background-image: url("../img/page-bg-noise-02.png");
+}
+
+.page-bg-03 {
+    background-image: url("../img/page-bg-noise-03.png");
+}
+
+.page-bg-04 {
+    background-image: url("../img/page-bg-noise-04.png");
+}
+
+.page-bg-05 {
+    background-image: url("../img/page-bg-noise-05.png");
+}
+
+.page-bg-06 {
+    background-image: url("../img/page-bg-noise-06.png");
+}
+
+.page-bg-07 {
+    background-image: url("../img/page-bg-noise-07.png");
+}
+
+@media print {
+    .page-first {
+        page-break-before: auto;
+    }
+}
+
+.page-content {
+    margin: 0 8.82% 0; /* = 0.75in ~0.75in 0 at 12pt (1em) */
+	padding-top: 4.5em;
+    min-height: 57em; /* Leaving 3em at the bottom for footer (0.75in) */
+}
+
+.page-header {
+    display: block;
+    position: relative;
+    height: 0;
+    top: 1.5em; /* = 0.25in at 12pt (1em) */
+    margin: 0 5.88%; /* = ~0.5in at 12pt (1em) */
+}
+
+.page-header-section-title {
+    position: relative;
+    height: 0;
+    top: 0;
+}
+
+[dir='ltr'] .page-header-section-title {
+    float: right;
+}
+
+[dir='rtl'] .page-header-section-title {
+    float: left;
+}
+
+.page-header-doc-title {
+    position: relative;
+    height: 0;
+    top: 0;
+}
+
+.page-footer {
+    text-align: center;
+}
+
+.relative-footer {
+    margin-top: 1.5em; /* = 0.25in */
+    height: 3em /* = 0.5in */
+}
+
+.absolute-footer {
+    position: relative;
+    height: 0;
+    top: 63em; /* = 10.5in at 12pt (1em) */
+    display: none;
+}
+
+.gamedisclaimer {
+	font-size: 0.9167em; /* 11pt */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@media print {
+    .relative-footer {
+        display: none;
+    }
+
+    .absolute-footer {
+        display: block;
+    }
+}
+
+.appendix-reference {
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Section-specific
+   ========================================================================== */
+
+/* === Front Matter === */
+.logo {
+	margin: 1em auto .2em; 
+	width: 42em;
+}
+
+.title {
+	font-size: 1em; 
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.title h1 {
+	border-style: solid;
+	border-color: #000;
+	border-width: 0.03em 0;
+	font-size: 4.39em;
+	font-weight: normal;
+	margin: 1.6em 0.7em 0.5em;
+	padding: 0.5em 0 0.2em;
+	line-height: 1.1;
+}
+
+#TitlePage h2 {
+	text-decoration: none; 
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.website {
+	margin: -0.5em auto 0;
+}
+
+.versioning {
+	margin: 3.8em auto 0;
+}
+   
+.verification-code {
+}
+
+.intro p,
+.intro em {
+	font-style: italic;
+}
+
+.bomb-diagram {
+    text-align: center;
+    margin: 0 auto;
+    display:block;
+}
+
+.bomb-diagram-front {
+	width: 18.0020625em; /* Hardcoding for IE */
+}
+
+.bomb-diagram-side {
+	width: 5.3895625em; /* Hardcoding for IE */
+}
+
+.bomb-diagram img {
+    height: 11.7em; /* just barely gives enough room for all the other text */
+    vertical-align: middle;
+    padding: .5em 1em;
+}
+
+.bomb-diagram table, .bomb-diagram tr, .bomb-diagram td {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.bomb-diagram table {
+    margin: 0 auto;
+}
+
+.timer-diagram {
+    text-align: center;
+    display: block;
+    width: 5em;
+    padding: 0;
+    margin: 0 0 2em 2em;
+}
+
+[dir='ltr'] .timer-diagram {
+    float: right;
+}
+
+[dir='rtl'] .timer-diagram {
+    float: left;
+}
+
+.timer-diagram img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title .page-content {
+    text-align: center;
+}
+
+.section-title .vertical-spacer
+{
+    height: 20.5em;
+}
+
+.flavour-text
+{
+	font-style: italic;
+	font-size:75%;
+    margin-top: .5em;
+}
+
+
+/* === MODULES === */
+
+/* WIRES */
+.wire-header {
+	font-weight: bold;
+	font-style:normal;
+    text-decoration:underline;
+}
+
+
+/* KEYPAD */
+.keypad-table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    font-size: 2.2em;
+    border-style: none;
+    text-align: center;
+}
+
+.keypad-table-column {
+    background-color: #FFF; /*For ensuring photocopy noise doesn't affect symbols*/
+	padding: .1em;
+}
+
+.keypad-table-spacer {
+	border-style: none;
+}
+
+.keypad-symbol-image {
+	height:1.9em;
+}
+
+
+/* SIMON */
+#simon-legend {
+	height: 9em; 
+	margin: 1em auto; 
+	display: block;
+}
+
+.repeaters-spacer {
+	border:none;
+}
+
+.repeaters-table {
+    width: 98%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.repeaters-table tbody > tr:nth-child(2) > th:nth-child(2),
+.repeaters-table tbody > tr:nth-child(3) > th,
+.repeaters-table tbody > tr:nth-child(4) > th {
+	white-space: nowrap;
+}
+
+
+/* WHO'S ON FIRST */
+.whos-on-first-step1-table, .whos-on-first-step1-table td  {
+    margin-left: auto;
+    margin-right: auto;
+	border:none;
+}
+
+.whos-on-first-step1-table th, .whos-on-first-step1-table td {
+	font-size: 0.9em;
+    width: 6.5em;
+    padding: 0.45em 0.45em .7em .7em;
+}
+
+.whos-on-first-step1-table th table, .whos-on-first-step1-table td table {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+		
+}            
+
+.whos-on-first-look-at-display  {
+	background-color: black;
+	color: white;
+}
+
+.whos-on-first-look-at img {
+	height: 1em;
+}
+                            
+.whos-on-first-step1-table td table td
+{
+	font-size: 1em;
+    height: 1.5em;
+	width: 50%;
+    padding: 0;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.whos-on-first-step1-table td table th
+{
+	font-size: 1em;
+	height: 1.5em;
+	padding: 0.1em 0.1em;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.whos-on-first-step1-table th {
+	border: 1px solid black;
+}
+
+.whos-on-first-step2-table {
+	width: 105%;
+}
+
+.whos-on-first-step2-table th {
+    padding-left: .2em;
+	padding-right: .2em;
+	padding-top: .15em;
+	padding-bottom: .15em;
+}
+
+.whos-on-first-step2-table td {
+    font-size: .78em;
+}
+
+
+/* MEMORY */
+.memory-rules p {
+    margin-top: .3em;
+    font-size: 0.95em; /* TODO: Remove this, it's a quick hack to get printing looking nicer with our placeholder graphic design. */
+}
+
+/* MORSE CODE */
+.morse-signal-table {
+    height: 32em;
+	width: 24.8270625em; /* Hardcode for IE */
+	border:1px solid #021a40;
+	background-color:#ffffff;
+}
+
+[dir='ltr'] .morse-signal-table {
+	float: left;
+	margin-right: 1em;
+}
+
+[dir='rtl'] .morse-signal-table {
+	float: right;
+	margin-left: 1em;
+}
+
+.morse-signal-table td, .morse-signal-table th {
+	border: none;
+}
+
+#morseSignalImg {
+	width: 100%;
+}
+
+.morse-interpret th, .morse-interpret td {
+	padding: 0.4em 0.3em;
+}
+
+.morse-interpret th {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.morse-interpret p {
+	margin: 0 1em;
+	font-size: 0.8em;
+}
+
+.morse-frequency-table th {
+	font-size: 1.2em;
+	font-weight: bold;
+	width: 5.5em;
+}
+
+.morse-frequency-table td {
+	text-align: center;
+}
+
+.morse-frequency-response {
+	direction: ltr; /* even RTL languages seem to use "3.505 MHz" for this column, so treat it as LTR */
+}
+
+/* VENN WIRES */
+.venn-wires table {
+	border-width: 0.2em;
+}
+
+.venn-wires table th {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.venn-wires table td {
+	text-align: center;
+	font-size: 0.85em;
+}
+
+#venndiagram {
+	display: block;
+	width: 70%;
+    position:relative;
+    top: -2em;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#vennlegendtable {
+	width: 18em;
+    position:relative;
+    top: -0.7em;
+}
+
+[dir='ltr'] #vennlegendtable {
+	float: left;
+	margin-right: 1em;
+}
+
+[dir='rtl'] #vennlegendtable {
+	float: right;
+	margin-left: 1em;
+}
+
+#vennlegendtable td {
+	border: none;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+}
+
+#vennlegendtable td img {
+	text-align: center;
+}
+
+.venn-legend-line {
+	margin: 1em 0;
+	width: 10em;
+}
+
+[dir='ltr'] .venn-wires table td.venn-legend-text {
+	text-align: left;
+}
+
+[dir='rtl'] .venn-wires table td.venn-legend-text {
+	text-align: right;
+}
+
+#venninstructiontable {
+    position:relative;
+    top: -0.7em;
+}
+
+.venn-wires .appendix-reference {
+    margin-top: 0;
+    position:relative;
+}
+
+
+/* WIRE SEQUENCE */
+.wire-sequence .table-container {
+	text-align: center; /* center the inline tables */
+}
+
+.wire-sequence table {
+    display: inline-table;
+	margin: 1em auto;
+    width: 15.2em;
+    font-size: 0.9em;
+}
+
+.wire-sequence td, .wire-sequence th {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+[dir='ltr'] .wire-sequence td {
+	text-align: left;
+}
+
+[dir='rtl'] .wire-sequence td {
+	text-align: right;
+}
+
+.wire-sequence table .header {
+    background-color: #222;
+    color: #FFF;
+}
+
+.wire-sequence .blue-table {
+    /* Because it's the middle table... */
+    margin-left: .3em;
+    margin-right: .3em;
+}
+
+.wire-sequence .second-col {
+    width: 5em;
+}
+
+
+/* MAZE */
+.maze {
+	width: 12em;
+	height: 12em;
+	margin: 0.4em;
+}
+
+.maze-grid {
+	text-align: center;
+	margin-top: 3em;
+}
+
+/* PASSWORD */
+.password-table {
+	margin: 3em auto 0 auto;
+	font-size: 1.2em;
+}
+
+.password-table td {
+	padding: 0.75em 1em;
+}
+
+
+/* === NEEDY MODULES === */
+
+[dir='ltr'] .needy-diagram-label {
+	text-align:left;
+}
+
+[dir='rtl'] .needy-diagram-label {
+	text-align:right;
+}
+
+/* NEEDY KNOB */
+.needy-knob table {
+	display: inline-table;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+}
+
+.needy-knob table td, .needy-knob table th {
+    width: 1.5em;
+    text-align:center;
+}
+
+
+
+/* === APPENDIX === */
+
+/* INDICATORS */
+#appendix-indicator-img {
+	height: 5em; 
+	display:block; 
+	margin: .6em 0 0;
+}
+
+/* BATTERIES */
+.appendix-batteries table {
+	margin-top: 1em;
+}
+
+/* Hardcoded width/height for IE */
+#appendix-battery-AA-img {
+	width: 4.09375em; 
+	height: 6.18125em;
+}
+
+/* Hardcoded width/height for IE */
+#appendix-battery-D-img {
+	width: 4.09375em; 
+	height: 5.553125em;
+}
+
+/* PORTS */
+.appendix-ports table {
+    margin-top: 1em;
+}
+
+.appendix-ports img {
+	height: 5em;
+}
+
+#appendix-ports-dvi-img {
+	width: 10.15em;
+}
+
+#appendix-ports-parallel-img {
+	width: 16.1em;
+}
+
+#appendix-ports-ps2-img {
+	width: 5.55em;
+}
+
+#appendix-ports-rj45-img {
+	width: 5.2em;
+}
+
+#appendix-ports-serial-img {
+	width: 8.35em;
+}
+
+#appendix-ports-rca-img {
+	width: 5em;
+}
+
+.appendix-ports table td {
+	text-align: center;
+}
+
+.appendix-ports table th {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+@media print
+{
+	.pre-release-warning {
+		display: none;
+	}
+}
+
+@media not print
+{
+    .pre-release-warning {
+        display: block;
+        margin:0;
+        padding: 12px;
+        background-color: #ba4423;
+        color: #fbf8f8;
+        font-size: 1.5em;
+
+        line-height: normal;
+        font-family: 'Cabin', sans-serif;
+		text-align: center;
+		min-width: 51em;
+    }
+    
+    .pre-release-warning a {
+        padding: 0.2em 1em;
+        background-color: #fbf8f8;
+        color: #ba4423;
+        display: inline-block;
+        margin-top: 7px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .pre-release-warning a:hover {
+        background-color: #e0dcdc;
+        color: #ba4423;
+    }
+    
+    .rounded {
+        -webkit-border-radius: 2.5em;
+        -moz-border-radius: 2.5em;
+        border-radius: 2.5em;
+    }
+}
+
+.error-highlight {
+	text-decoration: underline wavy red;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide from both screenreaders and browsers, but only for non-print
+ */
+.hide-screen {
+    display: none;
+    visibility: hidden;
+}
+
+@media print {
+    .hide-screen {
+        display: initial;
+        visibility: initial;
+    }
+}
+
+/*
+ * Hide from both screenreaders and browsers, but only for print
+ */
+@media print {
+    .hide-print {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    /* Removed all this stuff because we'll be aiming to make everything deliberate for print */
+    * {
+        /*background: transparent !important;
+        color: #000 !important;*/ /* Black prints faster: h5bp.com/s */
+        /*box-shadow: none !important;
+        text-shadow: none !important;*/
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+    
+    @page {
+        margin: 0;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: Special Elite, Miriam, sans-serif;
+}
+dd {
+    margin: 0 2.5em 0 0;
+}
+
+menu,
+ul {
+    padding: 0 1em 0 0;
+}
+
+ol {
+    padding: 0 2em 0 0;
+}
+.versioning {
+    margin: 2.5em auto 0;
+}
+.gamedisclaimer {
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+}

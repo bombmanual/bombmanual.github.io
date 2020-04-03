@@ -1,7 +1,10 @@
 Unofficial BombManual.com Translations
 ==============================
 
-## Contributors:
+This project was made possible by the support of many people we all should thank for.
+
+## Contributors
+> In alphabetical order
 
 ### Catalan
   * [DeXteRrBDN](https://steamcommunity.com/id/dexterrbdn)
@@ -11,11 +14,33 @@ Unofficial BombManual.com Translations
   * C04Le
   * Caken
   * Jan Baier
+  * [marians](https://github.com/mariansam)
+  * [mirroj](https://github.com/mirroj)
+
+### Finnish
+  * [MeitziQ](https://github.com/MeitziQ)
+
+### French
+  * [SebCorbin](https://github.com/SebCorbin)
+
+### German
+  * [FroznMine](https://github.com/FroznMine)
+  * [Intruder66](https://github.com/Intruder66)
+  * [Mave213](https://github.com/Mave213)
+  * [PeterRed4091](https://github.com/PeterRed4091)
+  * [reneroth](https://github.com/reneroth)
+  * [schoenwaldnils](https://github.com/schoenwaldnils)
+
+### Hebrew
+  * [E-RELevant](https://github.com/E-RELevant)
 
 ### Italian
-  * BrightSoul
+  * [BrightSoul](https://github.com/BrightSoul)
   * [brugnara](https://www.brugnara.me)
   * jaramir
+
+### Norwegian
+  * [olemartinorg](https://github.com/olemartinorg)
 
 ### Russian
   * [BTGDelta](http://steamcommunity.com/id/btgdelta/)
@@ -36,3 +61,6 @@ Unofficial BombManual.com Translations
 ### Swedish
   * Stefan [’FappaR’](http://steamcommunity.com/id/FappaR) Engdahl
   * Eric [’eric1894’](http://steamcommunity.com/id/eric1894) Odmyr
+
+### Turkish
+  * [AhmedSelim13](https://github.com/AhmedSelim13)

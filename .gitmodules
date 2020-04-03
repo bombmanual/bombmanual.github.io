@@ -1,0 +1,6 @@
+[submodule "swedish"]
+	path = swedish
+	url = https://github.com/svenskbombmanual/svenskbombmanual.github.io
+[submodule "hebrew"]
+	path = hebrew
+	url = https://github.com/HebrewBombManual/hebrewbombmanual.github.io

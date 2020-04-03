@@ -435,6 +435,10 @@ td, th {
     margin-right: auto;
 }
 
+.password-table td {
+    padding: 1em 1.5em;
+}
+
 .repeaters-table {
     width: 98%;
     border: none;
