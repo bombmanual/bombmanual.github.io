@@ -6,6 +6,10 @@ This project was made possible by the support of many people we all should thank
 ## Contributors
 > In alphabetical order
 
+
+### Belarusian
+  * [alpha-mouse](https://github.com/alpha-mouse)
+
 ### Catalan
   * [DeXteRrBDN](https://steamcommunity.com/id/dexterrbdn)
 
