@@ -13,6 +13,9 @@ This project was made possible by the support of many people we all should thank
 ### Catalan
   * [DeXteRrBDN](https://steamcommunity.com/id/dexterrbdn)
 
+### Croatian
+  * [thevoiddancer](https://github.com/thevoiddancer)
+
 ### Czech
   * Bee_Boo
   * C04Le
